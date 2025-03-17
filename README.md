@@ -30,12 +30,12 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 + **home-manager** - everything managed by Home Manager
     + **users** - place to put user Home Manager accounts
-        + **common** - modules accessable to each user
+        + **common** - modules accessible to each user
             + **core** - modules each user requires
         + **j** - my personal Home Manager modules
 + **nixos** - everything related to NixOS
     + **hosts** - computers managed by this repo
-        + **common** - modules accessable to each host
+        + **common** - modules accessible to each host
             + **core** - modules each host requires
             + **optional** - modules each host can opt in to
             + **users** - place to put user host accounts
