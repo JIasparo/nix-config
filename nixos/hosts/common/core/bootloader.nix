@@ -1,8 +1,10 @@
 { ... }:
 
 {
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  config = {
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.plymouth.enable = true;
+    boot.plymouth.enable = true;
+  };
 }

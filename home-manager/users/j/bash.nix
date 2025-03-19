@@ -1,14 +1,6 @@
 { ... }:
 
 {
-  imports = [
-    #aa
-  ];
-
-  options = {
-    #aa
-  };
-
   config = {
     programs.bash = {
       enable = true;
