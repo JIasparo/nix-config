@@ -21,4 +21,6 @@
     nvidiaSettings = false;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+
+  boot.blacklistedKernelModules = [ "nouveau" ];
 }
