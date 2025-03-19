@@ -1,0 +1,9 @@
+{ ... }:
+
+{
+  config = {
+    stylix = {
+      enable = true;
+    };
+  };
+}
