@@ -2,9 +2,9 @@
 
 {
   config = {
-    services.greetd = {
+    programs.rofi = {
       enable = true;
-      package = pkgs.greetd.regreet;
+      package = pkgs.rofi-wayland;
     };
   };
 }
