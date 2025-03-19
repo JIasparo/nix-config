@@ -7,7 +7,6 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 ## Features
 
-+ Flake.nix
 + Suboptimal config structure
 + Modularized config files
 + Standalone Home Manager
