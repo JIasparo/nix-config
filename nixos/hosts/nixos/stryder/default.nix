@@ -5,13 +5,14 @@
     ./hardware-configuration.nix
     ./../../common/core
     ./../../common/optional/cinnamon.nix
-    #./../../common/optional/regreet.nix
-    #./../../common/optional/hyprland.nix
+    #./../../common/optional/hyprland
     ./../../common/optional/nvidia.nix
     ./../../common/optional/steam.nix
 
     ./../../common/users/j.nix
   ];
-
-  networking.hostName = "stryder";
+  
+  config = {
+    networking.hostName = "stryder";
+  };
 }
