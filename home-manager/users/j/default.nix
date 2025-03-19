@@ -10,6 +10,7 @@ in
     ./bash.nix
     ./vscodium
     ./kitty.nix
+    ./rofi.nix
     ./git
   ];
 
