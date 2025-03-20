@@ -1,10 +1,7 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   config = {
-    services.greetd = {
-      enable = true;
-      package = pkgs.greetd.regreet;
-    };
+    programs.regreet.enable = true;
   };
 }

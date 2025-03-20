@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -7,6 +7,14 @@
   ];
 
   config = {
+    xdg.portal = {
+      enable = true;
+
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-gtk
+      ];
+    };
+
     programs.hyprland.enable = true;
 
     # Force apps to use Wayland
