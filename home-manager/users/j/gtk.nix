@@ -1,0 +1,9 @@
+{ ... }:
+
+{
+  config = {
+    gtk = {
+      enable = true;
+    };
+  };
+}
