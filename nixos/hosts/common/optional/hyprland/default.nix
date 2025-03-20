@@ -4,17 +4,10 @@
   imports = [
     # Needed for Hyprland to work
     ./../regreet.nix
+    ./../xdg.nix
   ];
 
   config = {
-    xdg.portal = {
-      enable = true;
-
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-gtk
-      ];
-    };
-
     programs.hyprland.enable = true;
 
     # Force apps to use Wayland
