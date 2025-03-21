@@ -15,7 +15,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 #### TODO
 
-+ [ ] setup Hyprland module
++ [ ] ~~setup~~ fix Hyprland modules
 + [ ] create a custom Base16 theme
 + [ ] manage Firefox derivatives with Home Manager
 + [ ] test Nvidia and Steam modules
@@ -31,7 +31,8 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
     + **users** - place to put user Home Manager accounts
         + **common** - modules accessible to each user
             + **core** - modules each user requires
-        + **j** - my personal Home Manager modules
+            + **optional** - modules each user can opt in to
+        + **j** - my personal configuration changes
 + **nixos** - everything related to NixOS
     + **hosts** - computers managed by this repo
         + **common** - modules accessible to each host
@@ -79,5 +80,6 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [NixOS Wiki](https://nixos.wiki/wiki/Main_Page) - Useful code snippets for Nixpkg and NixOS options. For instance, the [Nvidia](https://nixos.wiki/wiki/Nvidia) and the [Storage Optimization](https://nixos.wiki/wiki/Storage_optimization#Optimising_the_store) pages.
 + [Stylix User Guide](https://stylix.danth.me/) - Useful for setting up and configuring Stylix.
 + [nixd Editor Setup Guide](https://github.com/nix-community/nixd/blob/main/nixd/docs/editor-setup.md), [nixd LSP Configuration](https://github.com/nix-community/nixd/blob/main/nixd/docs/configuration.md), and [nixd Advanced Settings JSON](https://github.com/nix-community/vscode-nix-ide/blob/main/docs/snippets/advanced-nixd-settings.jsonc) - Useful for setting up nixd LSP in Visual Studio Code (VSCode)/VSCodium.
++ [Declarative GNOME configuration](https://hoverbear.org/blog/declarative-gnome-configuration-in-nixos/) - Great guide for declaratively setting up the GNOME DE.
 
 </details>
