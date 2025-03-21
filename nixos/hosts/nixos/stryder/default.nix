@@ -4,8 +4,8 @@
   imports = [
     ./hardware-configuration.nix
     ./../../common/core
-    #./../../common/optional/cinnamon.nix
-    ./../../common/optional/hyprland
+    ./../../common/optional/gnome.nix
+    #./../../common/optional/hyprland
     ./../../common/optional/nvidia.nix
     ./../../common/optional/steam.nix
 

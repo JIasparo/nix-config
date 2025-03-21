@@ -7,14 +7,17 @@ in
   imports = [
     ./../common/core
     ./../common/optional/git
-    ./../common/optional/hyprland
-    ./../common/optional/rofi
-    ./../common/optional/stylix
+    #./../common/optional/hyprland
+    #./../common/optional/rofi
+    ./../common/optional/kitty
+    #./../common/optional/stylix
     ./../common/optional/vscodium
     ./../common/optional/vscodium/nixd.nix
     ./bash.nix
+    ./gnome.nix
+    ./gtk.nix
     ./j-git.nix
-    ./stylix.nix
+    #./stylix.nix
   ];
   
   config = {
