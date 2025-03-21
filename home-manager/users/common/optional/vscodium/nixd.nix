@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   config =
@@ -11,9 +11,6 @@
       nixd
       nixfmt-rfc-style
     ];
-
-    # Set the $NIX_PATH env to follow flake.nix
-    nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 
     programs.vscode.profiles.default = {
       extensions = with pkgs.vscode-extensions; [

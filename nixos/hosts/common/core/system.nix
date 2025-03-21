@@ -1,4 +1,4 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   config = {
@@ -7,6 +7,9 @@
       "nix-command"
       "flakes"
     ];
+
+    # Set the $NIX_PATH env to follow flake.nix
+    nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 
     # Garbage collection
     nix.optimise.automatic = true;
