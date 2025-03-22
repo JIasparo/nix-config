@@ -31,7 +31,7 @@
         stryder = nixpkgs.lib.nixosSystem {
           inherit system;
           modules = [
-            ./nixos/hosts/nixos/stryder
+            ./hosts/nixos/stryder
           ];
           specialArgs = { inherit inputs pkgs-stable; };
         };
@@ -41,7 +41,7 @@
         j = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            ./home-manager/users/j
+            ./home-manager
             inputs.stylix.homeManagerModules.stylix
           ];
           extraSpecialArgs = { inherit inputs pkgs-stable; };

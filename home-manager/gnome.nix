@@ -13,6 +13,7 @@
           clock-show-weekday = true;
           color-scheme = "prefer-dark";
           enable-hot-corners = false;
+          enable-animations = false;
         };
 
         "org/gnome/desktop/peripherals/keyboard" = {

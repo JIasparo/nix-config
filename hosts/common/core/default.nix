@@ -7,5 +7,6 @@
     ./packages.nix
     ./pipewire.nix
     ./system.nix
+    ./user.nix
   ];
 }

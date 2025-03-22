@@ -2,16 +2,15 @@
 
 {
   imports = [
+    # Required
     ./hardware-configuration.nix
     ./../../common/core
-    ./../../common/optional/gnome.nix
-    #./../../common/optional/hyprland
+    # Optional
     ./../../common/optional/nvidia.nix
+    ./../../common/optional/gnome.nix
     ./../../common/optional/steam.nix
-
-    ./../../common/users/j.nix
   ];
-  
+
   config = {
     networking.hostName = "stryder";
   };
