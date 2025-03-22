@@ -3,6 +3,8 @@
 > [!CAUTION]
 > This repository is not designed to be used by anyone other than myself.
 
+> This current setup allows me to poorly manage multiple users per host using NixOS in addition to their dotfiles using Home Manager. After 7 hours of introspection, I realize this is not practical; realistically, I am the only user in this configuration. My config should reflect that.
+
 I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices; I am just bumbling about until stuff works. Feel free to look around. Something I did might be useful to somebody.
 
 ## Features
@@ -12,9 +14,11 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + Standalone Home Manager
 + Untested Nvidia and Steam modules
 + VSCodium with nixd Nix language server managed by Home Manager
++ Broken Hyprland and Regreet modules
 
 #### TODO
 
++ [ ] restructure my config
 + [ ] ~~setup~~ fix Hyprland modules
 + [ ] create a custom Base16 theme
 + [ ] manage Firefox derivatives with Home Manager
