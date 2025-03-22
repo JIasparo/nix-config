@@ -3,8 +3,6 @@
 > [!CAUTION]
 > This repository is not designed to be used by anyone other than myself.
 
-> This current setup allows me to poorly manage multiple users per host using NixOS in addition to their dotfiles using Home Manager. After 7 hours of introspection, I realize this is not practical; realistically, I am the only user in this configuration. My config should reflect that.
-
 I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices; I am just bumbling about until stuff works. Feel free to look around. Something I did might be useful to somebody.
 
 ## Features
@@ -18,7 +16,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 #### TODO
 
-+ [ ] restructure my config
++ [x] restructure my config
 + [ ] ~~setup~~ fix Hyprland modules
 + [ ] create a custom Base16 theme
 + [ ] manage Firefox derivatives with Home Manager
@@ -31,19 +29,13 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 ## Config Structure
 
-+ **home-manager** - everything managed by Home Manager
-    + **users** - place to put user Home Manager accounts
-        + **common** - modules accessible to each user
-            + **core** - modules each user requires
-            + **optional** - modules each user can opt in to
-        + **j** - my personal configuration changes
-+ **nixos** - everything related to NixOS
-    + **hosts** - computers managed by this repo
-        + **common** - modules accessible to each host
-            + **core** - modules each host requires
-            + **optional** - modules each host can opt in to
-            + **users** - place to put user host accounts
-        + **nixos** - hosts running NixOS
++ **home-manager** - my programs and dotfiles managed by Home Manager
+    + **default.nix** - used to import the desired modules
++ **hosts** - computers managed by this repo
+    + **common** - modules accessible to each host
+        + **core** - modules each host requires
+        + **optional** - modules each host can opt in to
+    + **nixos** - hosts running NixOS
             + *atlas* - unconfigured HP laptop used for running Klipper firmware
             + *ogre* - unconfigured work computer
             + **stryder** - my personal gaming computer (i7-8700K, Nvidia RTX 4070)
