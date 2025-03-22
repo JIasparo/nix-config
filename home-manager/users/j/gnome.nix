@@ -15,6 +15,10 @@
           enable-hot-corners = false;
         };
 
+        "org/gnome/desktop/peripherals/keyboard" = {
+          numlock-state = true;
+        };
+
         "org/gnome/mutter" = {
           dynamic-workspaces = false;
         };
