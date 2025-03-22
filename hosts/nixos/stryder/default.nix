@@ -10,8 +10,4 @@
     ./../../common/optional/gnome.nix
     ./../../common/optional/steam.nix
   ];
-
-  config = {
-    networking.hostName = "stryder";
-  };
 }

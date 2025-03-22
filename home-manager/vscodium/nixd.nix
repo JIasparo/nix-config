@@ -1,12 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, configpath, hostname, username, ... }:
 
 {
-  config =
-  let
-    username = "j";
-    hostname = "stryder";
-    pathconfig = "/home/${username}/nix-config";
-  in {
+  config = {
     home.packages = with pkgs; [
       nixd
       nixfmt-rfc-style
@@ -27,10 +22,10 @@
             };
             "options" = {
               "nixos" = {
-                "expr" = "(builtins.getFlake \"${pathconfig}\").nixosConfigurations.${hostname}.options";
+                "expr" = "(builtins.getFlake \"${configpath}\").nixosConfigurations.${hostname}.options";
               };
               "home-manager" = {
-                "expr" = "(builtins.getFlake \"${pathconfig}\").homeConfigurations.${username}.options";
+                "expr" = "(builtins.getFlake \"${configpath}\").homeConfigurations.${username}.options";
               };
             };
           };

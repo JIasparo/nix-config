@@ -18,33 +18,37 @@
       nixpkgs,
       nixpkgs-stable,
       home-manager,
-      stylix,
       ...
     }:
     let
+      username = "j";
+      useremail = "${username}@test.email";
+      hostname = "stryder";
       system = "x86_64-linux";
+      configpath = "/home/${username}/nix-config";
+
       pkgs = nixpkgs.legacyPackages.${system};
       pkgs-stable = nixpkgs-stable.legacyPackages.${system};
     in
     {
       nixosConfigurations = {
-        stryder = nixpkgs.lib.nixosSystem {
+        ${hostname} = nixpkgs.lib.nixosSystem {
           inherit system;
           modules = [
-            ./hosts/nixos/stryder
+            ./hosts/nixos/${hostname}
           ];
-          specialArgs = { inherit inputs pkgs-stable; };
+          specialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
         };
       };
 
       homeConfigurations = {
-        j = home-manager.lib.homeManagerConfiguration {
+        ${username} = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
             ./home-manager
             inputs.stylix.homeManagerModules.stylix
           ];
-          extraSpecialArgs = { inherit inputs pkgs-stable; };
+          extraSpecialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
         };
       };
     };
