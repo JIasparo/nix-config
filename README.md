@@ -36,9 +36,9 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
         + **core** - modules each host requires
         + **optional** - modules each host can opt in to
     + **nixos** - hosts running NixOS
-            + *atlas* - unconfigured HP laptop used for running Klipper firmware
-            + *ogre* - unconfigured work computer
-            + **stryder** - my personal gaming computer (i7-8700K, Nvidia RTX 4070)
+        + *atlas* - unconfigured HP laptop used for running Klipper firmware
+        + *ogre* - unconfigured work computer
+        + **stryder** - my personal gaming computer (i7-8700K, Nvidia RTX 4070)
 + **flake.nix** - uses unstable Nixpkgs as default, but allows stable Nixpkgs
 + **template.nix** - a module template
 
@@ -73,7 +73,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [Nixpkgs Search](https://search.nixos.org/packages) - Useful for looking up Nixpkgs.
 + [MyNixOS](https://mynixos.com/) - Useful for looking up Nixpkg and Home Manager options.
 + [Home Manager Options Appendix](https://nix-community.github.io/home-manager/options.xhtml) - Useful for looking up Home Manager commands not found in MyNixOS. For Example: `programs.vscode.profiles.<name>.extensions`
-+ [NixOS Wiki](https://nixos.wiki/wiki/Main_Page) - Useful code snippets for Nixpkg and NixOS options. For instance, the [Nvidia](https://nixos.wiki/wiki/Nvidia) and the [Storage Optimization](https://nixos.wiki/wiki/Storage_optimization#Optimising_the_store) pages.
++ [Official NixOS Wiki](https://wiki.nixos.org/wiki/NixOS_Wiki) and the [Unofficial NixOS Wiki](https://nixos.wiki/wiki/Main_Page) - Useful code snippets for Nixpkg and NixOS options.
 + [Stylix User Guide](https://stylix.danth.me/) - Useful for setting up and configuring Stylix.
 + [nixd Editor Setup Guide](https://github.com/nix-community/nixd/blob/main/nixd/docs/editor-setup.md), [nixd LSP Configuration](https://github.com/nix-community/nixd/blob/main/nixd/docs/configuration.md), and [nixd Advanced Settings JSON](https://github.com/nix-community/vscode-nix-ide/blob/main/docs/snippets/advanced-nixd-settings.jsonc) - Useful for setting up nixd LSP in Visual Studio Code (VSCode)/VSCodium.
 + [Declarative GNOME configuration](https://hoverbear.org/blog/declarative-gnome-configuration-in-nixos/) - Great guide for declaratively setting up the GNOME DE.
