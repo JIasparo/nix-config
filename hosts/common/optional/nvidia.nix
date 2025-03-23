@@ -12,8 +12,8 @@
 
     hardware.nvidia = {
       modesetting.enable = true;
-      # Experimental fix for sleep issues. Set to true if needed.
-      powerManagement.enable = true;
+      # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
+      powerManagement.enable = false;
       # Experimental option to turn off GPU when not in use. Set to true if wanted.
       powerManagement.finegrained = false;
       # Use Nvidia open source kernel module. Set to true if wanted.
