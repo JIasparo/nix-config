@@ -1,4 +1,4 @@
-{ pkgs, flakepath, hostname, username, ... }:
+{ pkgs, configpath, hostname, username, ... }:
 
 {
   config = {
@@ -13,7 +13,7 @@
       ];
         
       userSettings = {
-        "nix.enableLanguageServer" = "true";
+        "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
           "nixd" = {
@@ -22,10 +22,10 @@
             };
             "options" = {
               "nixos" = {
-                "expr" = "(builtins.getFlake \"${flakepath}\").nixosConfigurations.${hostname}.options";
+                "expr" = "(builtins.getFlake \"${configpath}\").nixosConfigurations.${hostname}.options";
               };
               "home-manager" = {
-                "expr" = "(builtins.getFlake \"${flakepath}\").homeConfigurations.${username}.options";
+                "expr" = "(builtins.getFlake \"${configpath}\").homeConfigurations.${username}.options";
               };
             };
           };
