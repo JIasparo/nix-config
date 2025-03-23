@@ -75,7 +75,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [Home Manager Options Appendix](https://nix-community.github.io/home-manager/options.xhtml) - Useful for looking up Home Manager commands not found in MyNixOS. For Example: `programs.vscode.profiles.<name>.extensions`
 + [Official NixOS Wiki](https://wiki.nixos.org/wiki/NixOS_Wiki) and the [Unofficial NixOS Wiki](https://nixos.wiki/wiki/Main_Page) - Useful code snippets for Nixpkg and NixOS options.
 + [Stylix User Guide](https://stylix.danth.me/) - Useful for setting up and configuring Stylix.
-+ [nixd Editor Setup Guide](https://github.com/nix-community/nixd/blob/main/nixd/docs/editor-setup.md), [nixd LSP Configuration](https://github.com/nix-community/nixd/blob/main/nixd/docs/configuration.md), and [nixd Advanced Settings JSON](https://github.com/nix-community/vscode-nix-ide/blob/main/docs/snippets/advanced-nixd-settings.jsonc) - Useful for setting up nixd LSP in Visual Studio Code (VSCode)/VSCodium.
++ [nixd Editor Setup Guide](https://github.com/nix-community/nixd/blob/main/nixd/docs/editor-setup.md), [nixd LSP Configuration](https://github.com/nix-community/nixd/blob/main/nixd/docs/configuration.md), and [nixd Advanced Settings JSON](https://github.com/nix-community/vscode-nix-ide?tab=readme-ov-file#lsp-plugin-support) - Useful for setting up nixd LSP in Visual Studio Code (VSCode)/VSCodium.
 + [Declarative GNOME configuration](https://hoverbear.org/blog/declarative-gnome-configuration-in-nixos/) - Great guide for declaratively setting up the GNOME DE.
 
 </details>
