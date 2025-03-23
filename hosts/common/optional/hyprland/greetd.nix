@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   config = {
@@ -7,7 +7,7 @@
 
       settings = {
         default_session = {
-          command = "${pkgs.greetd.regreet}/bin/regreet";
+          command = "${lib.getExe pkgs.greetd.tuigreet} --time --cmd Hyprland";
           user = "greeter";
         };
       };
