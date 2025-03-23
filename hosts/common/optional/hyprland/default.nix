@@ -1,10 +1,8 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   imports = [
-    # Needed for Hyprland to work
-    ./../regreet.nix
-    ./../xdg.nix
+    ./xdg.nix
   ];
 
   config = {
