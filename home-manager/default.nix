@@ -7,8 +7,9 @@
     # Optional
     ./bash.nix
     ./git
-    ./gnome.nix
+    #./gnome.nix
     ./gtk.nix
+    ./hyprland
     ./kitty
     #./stylix
     #./stylix.nix
