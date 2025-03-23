@@ -1,4 +1,4 @@
-{ pkgs, configpath, hostname, username, ... }:
+{ pkgs, flakepath, hostname, username, ... }:
 
 {
   config = {
@@ -22,10 +22,10 @@
             };
             "options" = {
               "nixos" = {
-                "expr" = "(builtins.getFlake \"${configpath}\").nixosConfigurations.${hostname}.options";
+                "expr" = "(builtins.getFlake \"${flakepath}\").nixosConfigurations.${hostname}.options";
               };
               "home-manager" = {
-                "expr" = "(builtins.getFlake \"${configpath}\").homeConfigurations.${username}.options";
+                "expr" = "(builtins.getFlake \"${flakepath}\").homeConfigurations.${username}.options";
               };
             };
           };

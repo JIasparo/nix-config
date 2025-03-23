@@ -25,7 +25,7 @@
       useremail = "${username}@test.email";
       hostname = "stryder";
       system = "x86_64-linux";
-      configpath = "/home/${username}/nix-config";
+      flakepath = "/home/${username}/nix-config/flake.nix";
 
       pkgs = nixpkgs.legacyPackages.${system};
       pkgs-stable = nixpkgs-stable.legacyPackages.${system};
@@ -37,7 +37,7 @@
           modules = [
             ./hosts/nixos/${hostname}
           ];
-          specialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
+          specialArgs = { inherit inputs username useremail hostname flakepath pkgs-stable; };
         };
       };
 
@@ -48,7 +48,7 @@
             ./home-manager
             inputs.stylix.homeManagerModules.stylix
           ];
-          extraSpecialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
+          extraSpecialArgs = { inherit inputs username useremail hostname flakepath pkgs-stable; };
         };
       };
     };
