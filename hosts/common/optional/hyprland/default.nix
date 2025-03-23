@@ -3,6 +3,7 @@
 {
   imports = [
     ./xdg.nix
+    ./greetd.nix
   ];
 
   config = {
