@@ -3,42 +3,49 @@
 {
   config = {
     wayland.windowManager.hyprland.settings = {
-        general = {
-          gaps_in = "5";
-          gaps_out = "20";
+      env = [
+        "NIXOS_OZONE_WL,1"
+        "XDG_CURRENT_DESKTOP,Hyprland"
+        "XDG_SESSION_TYPE,wayland"
+        "XDG_SESSION_DESKTOP,Hyprland"
+      ];
 
-          border_size = "2";
+      general = {
+        gaps_in = "5";
+        gaps_out = "20";
 
-          # Set to true enable resizing windows by clicking and dragging on borders and gaps
-          resize_on_border = false;
+        border_size = "2";
 
-          # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
-          allow_tearing = false;
+        # Set to true enable resizing windows by clicking and dragging on borders and gaps
+        resize_on_border = false;
 
-          layout = "dwindle";
-        };
+        # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
+        allow_tearing = false;
 
-        input = {
-          kb_layout = "us";
-          kb_variant = "";
-          kb_model = "";
-          kb_options = "";
-          kb_rules = "";
+        layout = "dwindle";
+      };
 
-          follow_mouse = "1";
+      input = {
+        kb_layout = "us";
+        kb_variant = "";
+        kb_model = "";
+        kb_options = "";
+        kb_rules = "";
 
-          sensitivity = "0"; # -1.0 - 1.0, 0 means no modification.
+        follow_mouse = "1";
 
-          numlock_by_default = true;
+        sensitivity = "0"; # -1.0 - 1.0, 0 means no modification.
 
-          touchpad = {
-            natural_scroll = false;
-          };
-        };
+        numlock_by_default = true;
 
-        gestures = {
-          workspace_swipe = false;
+        touchpad = {
+          natural_scroll = false;
         };
       };
+
+      gestures = {
+        workspace_swipe = false;
+      };
+    };
   };
 }
