@@ -13,6 +13,7 @@
     ./kitty
     ./rofi
     #./stylix
+    ./swaync
     ./vscodium
   ];
 }
