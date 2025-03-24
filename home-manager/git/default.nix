@@ -1,13 +1,13 @@
-{ username, useremail, ... }:
+{ ... }:
 
 {
+  imports = [
+    ./user.nix
+  ];
+
   config = {
     programs.git = {
       enable = true;
-
-      userName = "${username}";
-      userEmail = "${useremail}";
-      extraConfig.init.defaultBranch = "main";
     };
   };
 }
