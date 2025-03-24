@@ -12,8 +12,6 @@
     ./hyprland
     ./kitty
     #./stylix
-    #./stylix.nix
     ./vscodium
-    ./vscodium/nixd.nix
   ];
 }
