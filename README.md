@@ -11,13 +11,11 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + Modularized config files
 + Standalone Home Manager
 + Untested Nvidia and Steam modules
-+ VSCodium with nixd Nix language server managed by Home Manager
-+ Broken Hyprland and Regreet modules
 
 #### TODO
 
 + [x] restructure my config
-+ [ ] ~~setup~~ fix Hyprland modules
++ [x] ~~setup~~ fix Hyprland modules
 + [ ] create a custom Base16 theme
 + [ ] manage Firefox derivatives with Home Manager
 + [ ] test Nvidia and Steam modules
