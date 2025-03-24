@@ -3,8 +3,8 @@
 {
   imports = [
     ./binds.nix
+    ./extensions
     ./settings.nix
-    ./nixd.nix
   ];
 
   config = {
