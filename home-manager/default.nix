@@ -11,6 +11,7 @@
     ./gtk.nix
     ./hyprland
     ./kitty
+    ./rofi
     #./stylix
     ./vscodium
   ];
