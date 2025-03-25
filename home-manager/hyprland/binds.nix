@@ -12,7 +12,21 @@
       "$menu" = "rofi -show drun";
       "$editor" = "codium";
 
-      # Keybinds
+      /*
+        bind[flags] = [ ... ];
+        l -> work when input inhibitor (ex: lockscreen) is active
+        r -> triggered on release of key
+        o -> triggered on long press of key
+        e -> repeat when key is held
+        n -> non-consuming, events will pass to active window and trigger dispatcher
+        m -> mouse
+        t -> transparent, cannot be shadowed by other binds
+        i -> ignore modifiers
+        s -> separate, combines keys between each mod/key
+        d -> allows bind descriptions
+        p -> bypasses app's request to inhibit binds
+      */
+
       bind = [
         "$mod, Q, killactive"
         "$mod, SPACE, exec, $menu"
@@ -42,11 +56,25 @@
         "$mod $move, 9, movetoworkspace, 9"
       ];
 
-      # Mouse keybinds
       bindm = [
         # Move/resize windows with $mod + LMB/RMB and dragging
         "$mod, mouse:272, movewindow"
         "$mod, mouse:273, resizewindow"
+      ];
+
+      bindel = [
+        # Volume keybinds
+        ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
+        ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+      ];
+
+      bindl = [
+        # Media keybinds
+        ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
+        ", XF86AudioPlay, exec, playerctl play-pause"
+        ", XF86AudioPrev, exec, playerctl previous"
+        ", XF86AudioNext, exec, playerctl next"
       ];
     };
   };
