@@ -13,7 +13,7 @@
       "$editor" = "codium";
 
       /*
-        bind[flags] = [ ... ];
+        bind[flags] = [ "MODS, key, dispatcher, params" ];
         l -> work when input inhibitor (ex: lockscreen) is active
         r -> triggered on release of key
         o -> triggered on long press of key
@@ -28,10 +28,39 @@
       */
 
       bind = [
-        "$mod, Q, killactive"
-        "$mod, SPACE, exec, $menu"
         "$mod, E, exec, $editor"
+        "$mod, Q, killactive,"
         "$mod, RETURN, exec, $terminal"
+        "$mod, SPACE, exec, $menu"
+        #"mod, F, exec, $fileManager"
+        "ALT F4, F4, forcekillactive,"
+
+        # Toggle floating, resize active window and center it
+        "$mod, V, togglefloating,"
+        "$mod, V, resizeactive, exact 50% 50%"
+        "$mod, V, centerwindow,"
+
+        # When floating, change focus window on workspace and bring it to the top
+        "$mod, Tab, cyclenext,"
+        "$mod, Tab, bringactivetotop,"
+
+        # Move focus with $mod + arrow keys
+        "$mod, left, movefocus, l"
+        "$mod, right, movefocus, r"
+        "$mod, up, movefocus, u"
+        "$mod, down, movefocus, d"
+
+        # Move active window with $mod + $move + arrow keys
+        "$mod $move, left, movewindow, l"
+        "$mod $move, right, movewindow, r"
+        "$mod $move, up, movewindow, u"
+        "$mod $move, down, movewindow, d"
+
+        # Resize active window with $mod + CTRL + arrow keys
+        "$mod CTRL, left, splitratio, -0.1"
+        "$mod CTRL, right, splitratio, 0.1"
+        "$mod CTRL, up, splitratio, -0.1"
+        "$mod CTRL, down, splitratio, 0.1"
 
         # Switch workspaces with $mod + [0-9]
         "$mod, 1, workspace, 1"
@@ -66,15 +95,21 @@
         # Volume keybinds
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+
+        # Brightness keybinds
+        ", XF86MonBrightnessUp, exec, brightnessctl s 10%+"
+        ", XF86MonBrightnessDown, exec, brightnessctl s 10%-"
       ];
 
       bindl = [
         # Media keybinds
         ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 
         ", XF86AudioPlay, exec, playerctl play-pause"
         ", XF86AudioPrev, exec, playerctl previous"
         ", XF86AudioNext, exec, playerctl next"
+        ", XF86AudioStop, exec, playerctl stop"
       ];
     };
   };
