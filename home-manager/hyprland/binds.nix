@@ -11,7 +11,7 @@
       #"$fileManager" = "";
       "$menu" = "rofi -show drun";
       "$editor" = "codium";
-      "$browser" = "librewolf";
+      "$browser" = "floorp";
 
       /*
         bind[flags] = [ "MODS, key, dispatcher, params" ];
