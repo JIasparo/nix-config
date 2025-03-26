@@ -17,8 +17,6 @@
       # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
       (with pkgs; [
         # Packages placed here are unstable
-        floorp
-        librewolf
         bitwarden-desktop
       ])
       ++ (with pkgs-stable; [
