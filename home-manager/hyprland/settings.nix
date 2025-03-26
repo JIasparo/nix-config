@@ -5,6 +5,7 @@
     wayland.windowManager.hyprland.settings = {
       env = [
         "NIXOS_OZONE_WL,1"
+        "ELECTRON_OZONE_PLATFORM_HINT,auto"
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
