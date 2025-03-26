@@ -15,7 +15,6 @@
     #./stylix
     ./swaync
     ./vscodium
-    ./librewolf
     ./floorp
   ];
 }
