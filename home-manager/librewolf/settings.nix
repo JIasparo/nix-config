@@ -1,0 +1,9 @@
+{ ... }:
+
+{
+  config = {
+    programs.librewolf.settings = {
+      #
+    };
+  };
+}
