@@ -11,6 +11,7 @@
       #"$fileManager" = "";
       "$menu" = "rofi -show drun";
       "$editor" = "codium";
+      "$browser" = "librewolf";
 
       /*
         bind[flags] = [ "MODS, key, dispatcher, params" ];
@@ -34,6 +35,7 @@
         "$mod, SPACE, exec, $menu"
         #"mod, F, exec, $fileManager"
         "ALT F4, F4, forcekillactive,"
+        "$mod, W, exec, $browser"
 
         # Toggle floating, resize active window and center it
         "$mod, V, togglefloating,"
