@@ -2,11 +2,17 @@
 
 {
   config = {
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
-    
-    boot.tmp.cleanOnBoot = true;
+    boot = {
+      loader = {
+        systemd-boot = {
+          enable = true;
+          editor = false;
+        };
+        efi.canTouchEfiVariables = true;
+      };
 
-    boot.plymouth.enable = true;
+      tmp.cleanOnBoot = true;
+      plymouth.enable = true;
+    };
   };
 }
