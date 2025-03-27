@@ -7,11 +7,11 @@
       "$mod" = "SUPER";
       "$move" = "SHIFT";
 
-      "$terminal" = "kitty";
-      #"$fileManager" = "";
-      "$menu" = "rofi -show drun";
+      "$browser" = "librewolf";
       "$editor" = "codium";
-      "$browser" = "floorp";
+      "$fileManager" = "thunar";
+      "$menu" = "rofi -show drun";
+      "$terminal" = "kitty";
 
       /*
         bind[flags] = [ "MODS, key, dispatcher, params" ];
@@ -30,12 +30,12 @@
 
       bind = [
         "$mod, E, exec, $editor"
+        #"$mod, F, exec, $fileManager"
         "$mod, Q, killactive,"
         "$mod, RETURN, exec, $terminal"
         "$mod, SPACE, exec, $menu"
-        #"mod, F, exec, $fileManager"
-        "ALT, F4, forcekillactive,"
         "$mod, W, exec, $browser"
+        "ALT, F4, forcekillactive,"
 
         # Toggle floating, resize active window and center it
         "$mod, V, togglefloating,"

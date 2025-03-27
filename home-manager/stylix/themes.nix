@@ -1,4 +1,4 @@
-{ ... }:
+{ username, ... }:
 
 {
   config = {
@@ -23,6 +23,7 @@
       };
 
       targets.vscode.profileNames = [ "default" ];
+      targets.librewolf.profileNames = [ "default" "${username}" ];
     };
   };
 }

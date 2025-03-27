@@ -7,14 +7,13 @@
     # Optional
     ./bash.nix
     ./git
-    #./gnome
     ./gtk.nix
     ./hyprland
     ./kitty
+    ./librewolf
     ./rofi
-    #./stylix
+    ./stylix
     ./swaync
     ./vscodium
-    ./floorp
   ];
 }
