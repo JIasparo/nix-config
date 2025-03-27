@@ -34,7 +34,7 @@
         "$mod, RETURN, exec, $terminal"
         "$mod, SPACE, exec, $menu"
         #"mod, F, exec, $fileManager"
-        "ALT F4, F4, forcekillactive,"
+        "ALT, F4, forcekillactive,"
         "$mod, W, exec, $browser"
 
         # Toggle floating, resize active window and center it
