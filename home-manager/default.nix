@@ -11,6 +11,7 @@
     ./hyprland
     ./kitty
     ./librewolf
+    ./qt.nix
     ./rofi
     ./stylix
     ./swaync
