@@ -21,6 +21,8 @@
         "general.autoScroll" = true;
         "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
         "middlemouse.paste" = false;
+        #"privacy.clearOnShutdown.history" = true;
+        "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
         "privacy.resistFingerprinting.letterboxing" = true;
         "privacy.resistFingerprinting" = false;
       };
@@ -29,6 +31,9 @@
         default = {
           id = 0;
           name = "default";
+          settings = {
+            "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
+          };
         };
 
         ${username} = {
