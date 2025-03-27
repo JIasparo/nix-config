@@ -17,7 +17,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [x] restructure my config
 + [x] ~~setup~~ fix Hyprland modules
 + [ ] create a custom Base16 theme
-+ [ ] manage Firefox derivatives with Home Manager
++ [x] Somewhat manage Firefox derivatives with Home Manager (Floorp is kind of buggy)
 + [ ] test Nvidia and Steam modules
 + [ ] setup OrcaSlicer module
 + [ ] setup Atlas host
