@@ -6,7 +6,7 @@
       "org/gnome/desktop/interface" = {
         clock-show-day = true;
         clock-show-weekday = true;
-        color-scheme = "prefer-dark";
+        #color-scheme = "prefer-dark";
         enable-animations = false;
         enable-hot-corners = false;
       };
