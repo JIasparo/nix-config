@@ -11,6 +11,7 @@
         no = "sudo nixos-rebuild switch --flake ./nix-config";
 
         ll = "ls -l";
+        qqq = "poweroff";
       };
     };
   };
