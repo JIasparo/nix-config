@@ -1,4 +1,10 @@
-{ pkgs, configpath, hostname, username, ... }:
+{
+  pkgs,
+  configpath,
+  hostname,
+  username,
+  ...
+}:
 
 {
   config = {
@@ -11,14 +17,15 @@
       extensions = with pkgs.vscode-extensions; [
         jnoortheen.nix-ide
       ];
-        
+
       userSettings = {
         "nix.enableLanguageServer" = true;
+        "nix.hiddenLanguageServerErrors" = [ "textDocument/definition" ];
         "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
           "nixd" = {
             "formatting" = {
-              "command" = ["nixfmt"];
+              "command" = [ "nixfmt" ];
             };
             "options" = {
               "nixos" = {
