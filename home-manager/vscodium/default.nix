@@ -15,7 +15,6 @@
       profiles.default.userSettings = {
         "extensions.autoCheckUpdates" = false;
         "extensions.autoUpdate" = false;
-        "telemetry.telemetryLevel" = "off";
         "update.mode" = "none";
       };
     };
