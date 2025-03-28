@@ -80,7 +80,8 @@
 
       misc = {
         disable_autoreload = true;
-        vrr = 0;
+        middle_click_paste = false;
+        vrr = 2; # Only enabled for fullscreen i.e. games.
       };
 
       render = {
