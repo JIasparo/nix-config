@@ -10,6 +10,5 @@
     #./../../common/optional/gnome.nix
     ./../../common/optional/hyprland
     ./../../common/optional/steam.nix
-    ./../../common/optional/thunar.nix
   ];
 }

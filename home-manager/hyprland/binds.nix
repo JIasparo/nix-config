@@ -35,7 +35,7 @@
 
       bind = [
         "$mod, E, exec, $editor"
-        "$mod, F, exec, $fileManager"
+        #"$mod, F, exec, $fileManager"
         "$mod, Q, killactive,"
         "$mod, RETURN, exec, $terminal"
         "$mod, SPACE, exec, $menu"
