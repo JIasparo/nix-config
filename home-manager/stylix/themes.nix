@@ -3,6 +3,10 @@
 {
   config = {
     stylix = {
+      #polarity = "either"; # choose one: "dark" "light" "either"
+      
+      #image = ./wallpaper.png;
+
       base16Scheme = {
         base00 = "0c0e0f"; # Default Background
         base01 = "202324"; # Lighter Background (Used for status bars, line number and folding marks)
@@ -22,8 +26,52 @@
         base0F = "f2cdcd"; # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
       };
 
+/*
+      iconTheme = {
+        enable = true;
+        package = pkgs.test;
+        light = "";
+        dark = "";
+      };
+      */
+
+      /*
+        fonts = {
+          serif = {
+            package = pkgs.dejavu_fonts;
+            name = "DejaVu Serif";
+          };
+
+          sansSerif = {
+            package = pkgs.dejavu_fonts;
+            name = "DejaVu Sans";
+          };
+
+          monospace = {
+            package = pkgs.dejavu_fonts;
+            name = "DejaVu Sans Mono";
+          };
+
+          emoji = {
+            package = pkgs.noto-fonts-emoji;
+            name = "Noto Color Emoji";
+          };
+        };
+      */
+
+      /*
+      cursor = {
+        name = "";
+        package = pkgs.test;
+        size = 12;
+      };
+      */
+
       targets.vscode.profileNames = [ "default" ];
-      targets.librewolf.profileNames = [ "default" "${username}" ];
+      targets.librewolf.profileNames = [
+        "default"
+        "${username}"
+      ];
     };
   };
 }
