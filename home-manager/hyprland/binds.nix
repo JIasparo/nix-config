@@ -6,6 +6,11 @@
       # Variables
       "$mod" = "SUPER";
       "$move" = "SHIFT";
+      
+      "$left" = "left";
+      "$right" = "right";
+      "$up" = "up";
+      "$down" = "down";
 
       "$browser" = "librewolf";
       "$editor" = "codium";
@@ -30,7 +35,7 @@
 
       bind = [
         "$mod, E, exec, $editor"
-        #"$mod, F, exec, $fileManager"
+        "$mod, F, exec, $fileManager"
         "$mod, Q, killactive,"
         "$mod, RETURN, exec, $terminal"
         "$mod, SPACE, exec, $menu"
@@ -47,24 +52,25 @@
         "$mod, Tab, bringactivetotop,"
 
         # Move focus with $mod + arrow keys
-        "$mod, left, movefocus, l"
-        "$mod, right, movefocus, r"
-        "$mod, up, movefocus, u"
-        "$mod, down, movefocus, d"
+        "$mod, $left, movefocus, l"
+        "$mod, $right, movefocus, r"
+        "$mod, $up, movefocus, u"
+        "$mod, $down, movefocus, d"
 
         # Move active window with $mod + $move + arrow keys
-        "$mod $move, left, movewindow, l"
-        "$mod $move, right, movewindow, r"
-        "$mod $move, up, movewindow, u"
-        "$mod $move, down, movewindow, d"
+        "$mod $move, $left, movewindow, l"
+        "$mod $move, $right, movewindow, r"
+        "$mod $move, $up, movewindow, u"
+        "$mod $move, $down, movewindow, d"
 
         # Resize active window with $mod + CTRL + arrow keys
-        "$mod CTRL, left, splitratio, -0.1"
-        "$mod CTRL, right, splitratio, 0.1"
-        "$mod CTRL, up, splitratio, -0.1"
-        "$mod CTRL, down, splitratio, 0.1"
+        "$mod CTRL, $left, splitratio, -0.1"
+        "$mod CTRL, $right, splitratio, 0.1"
+        "$mod CTRL, $up, splitratio, -0.1"
+        "$mod CTRL, $down, splitratio, 0.1"
 
         # Switch workspaces with $mod + [0-9]
+        "$mod, 0, workspace, 0"
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
         "$mod, 3, workspace, 3"
@@ -76,6 +82,7 @@
         "$mod, 9, workspace, 9"
 
         # Move active window to a workspace with $mod + $move + [0-9]
+        "$mod $move, 0, movetoworkspace, 0"
         "$mod $move, 1, movetoworkspace, 1"
         "$mod $move, 2, movetoworkspace, 2"
         "$mod $move, 3, movetoworkspace, 3"
