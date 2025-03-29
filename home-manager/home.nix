@@ -19,6 +19,7 @@
         # Packages placed here are unstable
         bitwarden-desktop
         playerctl
+        brightnessctl
       ])
       ++ (with pkgs-stable; [
         # Packages placed here are stable
