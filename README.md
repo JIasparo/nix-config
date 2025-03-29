@@ -50,6 +50,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [EmergentMind/nix-config](https://github.com/EmergentMind/nix-config.git) - I took inspiration from the structure.
 + [Frost-Phoenix/nixos-config](https://github.com/Frost-Phoenix/nixos-config.git) - I took inspiration from how the modules are broken down.
 + [XNM1/linux-nixos-hyprland-config-dotfiles](https://github.com/XNM1/linux-nixos-hyprland-config-dotfiles.git) - I took inspiration from how the modules are broken down.
++ [justinmdickey/publicdots](https://github.com/justinmdickey/publicdots.git) - I copied most of the `hyprlock.conf` file.
 
 </details>
 
