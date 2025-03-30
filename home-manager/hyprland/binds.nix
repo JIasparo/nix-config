@@ -14,7 +14,7 @@
 
       "$browser" = "librewolf";
       "$editor" = "codium";
-      "$fileManager" = "yy";
+      "$fileManager" = "$terminal yazi";
       "$menu" = "rofi -show drun";
       "$terminal" = "kitty";
 
