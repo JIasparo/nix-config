@@ -16,5 +16,6 @@
     ./stylix
     ./swaync
     ./vscodium
+    ./yazi
   ];
 }
