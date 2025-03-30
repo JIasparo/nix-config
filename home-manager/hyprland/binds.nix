@@ -6,7 +6,7 @@
       # Variables
       "$mod" = "SUPER";
       "$move" = "SHIFT";
-      
+
       "$left" = "left";
       "$right" = "right";
       "$up" = "up";
@@ -92,6 +92,10 @@
         "$mod $move, 8, movetoworkspace, 8"
         "$mod $move, 9, movetoworkspace, 9"
         "$mod $move, 0, movetoworkspace, 10"
+
+        # Special workspaces
+        "$mod, grave, togglespecialworkspace"
+        "$mod $move, grave, movetoworkspace, special"
 
         # Screenshots
         "$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" - | wl-copy"
