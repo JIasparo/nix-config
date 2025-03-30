@@ -14,7 +14,7 @@
 
       "$browser" = "librewolf";
       "$editor" = "codium";
-      "$fileManager" = "thunar";
+      "$fileManager" = "yy";
       "$menu" = "rofi -show drun";
       "$terminal" = "kitty";
 
@@ -35,7 +35,7 @@
 
       bind = [
         "$mod, E, exec, $editor"
-        #"$mod, F, exec, $fileManager"
+        "$mod, F, exec, $fileManager"
         "$mod, Q, killactive,"
         "$mod, RETURN, exec, $terminal"
         "$mod, SPACE, exec, $menu"
@@ -97,9 +97,11 @@
         "$mod, grave, togglespecialworkspace"
         "$mod $move, grave, movetoworkspace, special"
 
-        # Screenshots
-        "$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" - | wl-copy"
-        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" - | wl-copy"
+        # Take a screenshot of active monitor or a select area, then save screenshot and copy to clipboard
+        "$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" | $GRIM_DEFAULT_DIR" # This one saves
+        "$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" - | wl-copy" # This one copies
+        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" | $GRIM_DEFAULT_DIR" # This one saves
+        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" - | wl-copy" # This one copies
       ];
 
       bindm = [
