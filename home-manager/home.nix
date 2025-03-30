@@ -20,6 +20,10 @@
         bitwarden-desktop
         playerctl
         brightnessctl
+        protonvpn-gui
+        grim
+        slurp
+        wl-clipboard
       ])
       ++ (with pkgs-stable; [
         # Packages placed here are stable
