@@ -77,5 +77,6 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [nixd Editor Setup Guide](https://github.com/nix-community/nixd/blob/main/nixd/docs/editor-setup.md), [nixd LSP Configuration](https://github.com/nix-community/nixd/blob/main/nixd/docs/configuration.md), and [nixd Advanced Settings JSON](https://github.com/nix-community/vscode-nix-ide?tab=readme-ov-file#lsp-plugin-support) - Useful for setting up nixd LSP in Visual Studio Code (VSCode)/VSCodium.
 + [Declarative GNOME configuration](https://hoverbear.org/blog/declarative-gnome-configuration-in-nixos/) - Great guide for declaratively setting up the GNOME DE.
 + [Hyprland Wiki](https://wiki.hyprland.org/) - Useful for setting up and configuring Hyprland
++ [How to screenshot only the focused monitor with grim?](https://www.reddit.com/r/hyprland/comments/1cbetfa/comment/mbg9o4y/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) - I copied `u/nixgang`'s response to this Reddit post.
 
 </details>
