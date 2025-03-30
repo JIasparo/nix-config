@@ -6,6 +6,8 @@
     ./home.nix
     # Optional
     ./bash.nix
+    ./fastfetch
+    ./fzf.nix
     ./git
     ./gtk.nix
     ./hyprland
