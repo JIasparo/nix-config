@@ -92,6 +92,10 @@
         "$mod $move, 8, movetoworkspace, 8"
         "$mod $move, 9, movetoworkspace, 9"
         "$mod $move, 0, movetoworkspace, 10"
+
+        # Screenshots
+        "$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" - | wl-copy"
+        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" - | wl-copy"
       ];
 
       bindm = [
