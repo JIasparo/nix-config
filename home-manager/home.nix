@@ -23,7 +23,9 @@
         protonvpn-gui
         grim
         slurp
+        swappy
         wl-clipboard
+        ffmpeg-full
       ])
       ++ (with pkgs-stable; [
         # Packages placed here are stable
