@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   config = {
@@ -7,9 +7,12 @@
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
+        "ELECTRON_OZONE_PLATFORM_HINT,auto"
       ];
 
-      #exec-once = [];
+      exec-once = [
+        "swaybg -i ${config.stylix.image}"
+      ];
 
       general = {
         gaps_in = "3";
@@ -43,7 +46,7 @@
         };
 
         shadow = {
-          enabled = true;
+          enabled = false;
           offset = "0 15";
           range = 4;
           render_power = 2;
@@ -78,6 +81,9 @@
       };
 
       misc = {
+        disable_hyprland_logo = true;
+        disable_splash_rendering = true;
+        
         disable_autoreload = true;
         middle_click_paste = false;
         vrr = 2; # Only enabled for fullscreen i.e. games.

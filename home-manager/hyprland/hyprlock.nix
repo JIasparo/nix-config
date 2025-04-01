@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   config = {
@@ -12,7 +12,7 @@
 
         background = {
           monitor = "";
-          path = "screenshot";
+          path = "${config.stylix.image}";
           blur_passes = 2;
           contrast = 1;
           brightness = 0.5;
