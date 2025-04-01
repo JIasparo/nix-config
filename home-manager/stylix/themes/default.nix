@@ -1,10 +1,8 @@
-{...}:
+{ ... }:
 
 {
-  config = {
-    imports = [
-      ./themes.nix
-      #./new-theme.nix
-    ];
-  };
+  imports = [
+    ./themes.nix
+    #./new-theme.nix
+  ];
 }
