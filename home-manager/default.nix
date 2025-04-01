@@ -13,6 +13,7 @@
     ./hyprland
     ./kitty
     ./librewolf
+    ./playerctl.nix
     ./qt.nix
     ./rofi
     ./stylix
