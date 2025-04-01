@@ -2,7 +2,8 @@
 
 {
   imports = [
-    ./themes.nix
+    ./targets.nix
+    ./themes
   ];
 
   config = {
