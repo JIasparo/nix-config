@@ -18,14 +18,14 @@
       (with pkgs; [
         # Packages placed here are unstable
         bitwarden-desktop
-        playerctl
         brightnessctl
-        protonvpn-gui
+        ffmpeg-full
         grim
+        protonvpn-gui
         slurp
         swappy
         wl-clipboard
-        ffmpeg-full
+        swaybg
       ])
       ++ (with pkgs-stable; [
         # Packages placed here are stable
