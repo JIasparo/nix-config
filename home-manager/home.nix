@@ -7,57 +7,70 @@
 
 {
   config = {
-    # Home Manager needs a bit of information about you and the paths it should
-    # manage.
-    home.username = "${username}";
-    home.homeDirectory = "/home/${username}";
+ 
+    home = {
+      username = "${username}";
+      homeDirectory = "/home/${username}";
 
-    home.packages =
-      # Override example for installing a specific Nerd Font:
-      # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-      (with pkgs; [
-        # Packages placed here are unstable
-        bitwarden-desktop
-        brightnessctl
-        ffmpeg-full
-        grim
-        protonvpn-gui
-        slurp
-        swappy
-        wl-clipboard
-        swaybg
-      ])
-      ++ (with pkgs-stable; [
-        # Packages placed here are stable
-      ]);
+      packages =
+        # Override example for installing a specific Nerd Font:
+        # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+        (with pkgs; [
+          # Packages placed here are unstable
+          bitwarden-desktop
+          brightnessctl
+          discord
+          ffmpeg-full
+          grim
+          protonvpn-gui
+          pwvucontrol
+          slurp
+          swappy
+          swaybg
+          wl-clipboard
+        ])
+        ++ (with pkgs-stable; [
+          # Packages placed here are stable
+        ]);
 
-    # Home Manager is pretty good at managing dotfiles. The primary way to manage
-    # plain files is through 'home.file'.
-    home.file = {
-      # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-      # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-      # # symlink to the Nix store copy.
-      # ".screenrc".source = dotfiles/screenrc;
+      # Home Manager is pretty good at managing dotfiles. The primary way to manage
+      # plain files is through 'home.file'.
+      file = {
+        # # Building this configuration will create a copy of 'dotfiles/screenrc' in
+        # # the Nix store. Activating the configuration will then make '~/.screenrc' a
+        # # symlink to the Nix store copy.
+        # ".screenrc".source = dotfiles/screenrc;
 
-      # # You can also set the file content immediately.
-      # ".gradle/gradle.properties".text = ''
-      #   org.gradle.console=verbose
-      #   org.gradle.daemon.idletimeout=3600000
-      # '';
+        # # You can also set the file content immediately.
+        # ".gradle/gradle.properties".text = ''
+        #   org.gradle.console=verbose
+        #   org.gradle.daemon.idletimeout=3600000
+        # '';
+      };
+
+      sessionVariables = {
+        # Force apps to use Wayland
+        #NIXOS_OZONE_WL = "1";
+        #ELECTRON_OZONE_PLATFORM_HINT = "auto";
+
+        #EDITOR = "codium";
+        TERM = "kitty";
+      };
+
+      # Read Home Manager release notes before changing this value.
+      stateVersion = "24.11";
     };
 
-    home.sessionVariables = {
-      # Force apps to use Wayland
-      NIXOS_OZONE_WL = "1";
-      
-      #EDITOR = "codium";
-      TERM = "kitty";
+    # Allow unfree packages
+    nixpkgs.config.allowUnfree = true;
+
+    services.home-manager.autoExpire = {
+      enable = true;
+      frequency = "daily";
+      timestamp = "-4 days";
     };
 
-    # Let Home Manager install and manage itself.
+        # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
-
-    # Read Home Manager release notes before changing this value.
-    home.stateVersion = "24.11";
   };
 }
