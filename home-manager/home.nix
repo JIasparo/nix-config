@@ -7,7 +7,7 @@
 
 {
   config = {
- 
+
     home = {
       username = "${username}";
       homeDirectory = "/home/${username}";
@@ -49,10 +49,6 @@
       };
 
       sessionVariables = {
-        # Force apps to use Wayland
-        #NIXOS_OZONE_WL = "1";
-        #ELECTRON_OZONE_PLATFORM_HINT = "auto";
-
         #EDITOR = "codium";
         TERM = "kitty";
       };
@@ -70,7 +66,7 @@
       timestamp = "-4 days";
     };
 
-        # Let Home Manager install and manage itself.
+    # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
   };
 }
