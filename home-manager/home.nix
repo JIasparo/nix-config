@@ -21,6 +21,7 @@
           brightnessctl
           discord
           ffmpeg-full
+          font-awesome # Needed for swappy icons
           grim
           protonvpn-gui
           pwvucontrol
