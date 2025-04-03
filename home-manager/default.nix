@@ -6,6 +6,7 @@
     ./home.nix
     # Optional
     ./bash.nix
+    ./btop.nix
     ./fastfetch
     ./fzf.nix
     ./git
