@@ -14,6 +14,7 @@
     ./kitty
     ./librewolf
     ./mpd.nix
+    ./mpv.nix
     ./playerctl.nix
     ./qt.nix
     ./rofi
