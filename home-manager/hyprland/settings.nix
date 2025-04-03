@@ -4,6 +4,10 @@
   config = {
     wayland.windowManager.hyprland.settings = {
       env = [
+        # Force apps to use Wayland
+        #"NIXOS_OZONE_WL,1"
+        #"ELECTRON_OZONE_PLATFORM_HINT,auto"
+
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
@@ -55,7 +59,7 @@
 
       animations = {
         enabled = true;
-        
+
         animation = [
           "border, 1, 2, default"
           "fade, 1, 4, default"
@@ -82,7 +86,7 @@
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
-        
+
         disable_autoreload = true;
         middle_click_paste = false;
         vrr = 2; # Only enabled for fullscreen i.e. games.
