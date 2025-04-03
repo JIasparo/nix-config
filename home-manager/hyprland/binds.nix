@@ -16,6 +16,7 @@
       "$editor" = "codium";
       "$fileManager" = "$terminal yazi";
       "$menu" = "rofi -show drun";
+      "$sysMon" = "btop";
       "$terminal" = "kitty";
 
       /*
@@ -41,6 +42,7 @@
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
         "ALT, F4, forcekillactive,"
+        "CTRL ALT, DELETE, exec, $terminal $sysMon"
 
         # Toggle floating, resize active window and center it
         "$mod, V, togglefloating,"
