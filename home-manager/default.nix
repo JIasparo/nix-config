@@ -16,6 +16,7 @@
     ./librewolf
     ./mpd.nix
     ./mpv.nix
+    ./nixcord.nix
     ./playerctl.nix
     ./qt.nix
     ./rofi
