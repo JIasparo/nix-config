@@ -19,7 +19,6 @@
           # Packages placed here are unstable
           bitwarden-desktop
           brightnessctl
-          discord
           ffmpeg-full
           font-awesome # Needed for swappy icons
           grim
@@ -29,7 +28,6 @@
           swappy
           swaybg
           wl-clipboard
-          ytmdl
         ])
         ++ (with pkgs-stable; [
           # Packages placed here are stable
