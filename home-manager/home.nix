@@ -29,6 +29,7 @@
           swappy
           swaybg
           wl-clipboard
+          ytmdl
         ])
         ++ (with pkgs-stable; [
           # Packages placed here are stable
