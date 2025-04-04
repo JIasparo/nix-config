@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   config = {
@@ -59,13 +59,12 @@
         };
       */
 
-      /*
         cursor = {
-          name = "";
-          package = pkgs.test;
-          size = 12;
+          #name = "volantes_cursors";
+          name = "volantes_light_cursors"; # volantes_cursors for light theme | volantes_light_cursors for dark theme
+          package = pkgs.volantes-cursors;
+          size = 24;
         };
-      */
     };
   };
 }
