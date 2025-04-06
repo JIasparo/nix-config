@@ -7,7 +7,9 @@
     # Optional
     ./bash.nix
     ./btop.nix
+    ./eza.nix
     ./fastfetch
+    ./fd.nix
     ./fzf.nix
     ./git
     ./gtk.nix
@@ -16,13 +18,14 @@
     ./librewolf
     ./mpd.nix
     ./mpv.nix
-    ./nixcord.nix
     ./playerctl.nix
     ./qt.nix
+    ./ripgrep.nix
     ./rofi
     ./stylix
     ./swaync
     ./vscodium
     ./yazi
+    ./zoxide.nix
   ];
 }
