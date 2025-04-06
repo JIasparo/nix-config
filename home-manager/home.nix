@@ -19,6 +19,7 @@
           # Packages placed here are unstable
           bitwarden-desktop
           brightnessctl
+          discord
           ffmpeg-full
           font-awesome # Needed for swappy icons
           grim
@@ -63,7 +64,7 @@
     services.home-manager.autoExpire = {
       enable = true;
       frequency = "daily";
-      timestamp = "-4 days";
+      timestamp = "-2 days";
     };
 
     # Let Home Manager install and manage itself.
