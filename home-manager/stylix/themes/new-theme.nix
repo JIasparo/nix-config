@@ -35,36 +35,34 @@
         };
       */
 
-      /*
-        fonts = {
-          serif = {
-            package = pkgs.dejavu_fonts;
-            name = "DejaVu Serif";
-          };
-
-          sansSerif = {
-            package = pkgs.dejavu_fonts;
-            name = "DejaVu Sans";
-          };
-
-          monospace = {
-            package = pkgs.dejavu_fonts;
-            name = "DejaVu Sans Mono";
-          };
-
-          emoji = {
-            package = pkgs.noto-fonts-emoji;
-            name = "Noto Color Emoji";
-          };
+      fonts = {
+        serif = {
+          package = pkgs.dejavu_fonts;
+          name = "DejaVu Serif";
         };
-      */
 
-        cursor = {
-          #name = "volantes_cursors";
-          name = "volantes_light_cursors"; # volantes_cursors for light theme | volantes_light_cursors for dark theme
-          package = pkgs.volantes-cursors;
-          size = 24;
+        sansSerif = {
+          package = pkgs.dejavu_fonts;
+          name = "DejaVu Sans";
         };
+
+        monospace = {
+          package = pkgs.source-code-pro;
+          name = "SourceCodePro-Light";
+        };
+
+        emoji = {
+          package = pkgs.noto-fonts-emoji;
+          name = "Noto Color Emoji";
+        };
+      };
+
+      cursor = {
+        #name = "volantes_cursors";
+        name = "volantes_light_cursors"; # volantes_cursors for light theme | volantes_light_cursors for dark theme
+        package = pkgs.volantes-cursors;
+        size = 24;
+      };
     };
   };
 }
