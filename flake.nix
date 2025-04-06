@@ -10,14 +10,10 @@
 
     stylix.url = "github:danth/stylix";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
-
-    nixcord.url = "github:kaylorben/nixcord";
-    nixcord.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
     inputs@{
-      self,
       nixpkgs,
       nixpkgs-stable,
       home-manager,
@@ -50,7 +46,6 @@
           modules = [
             ./home-manager
             inputs.stylix.homeManagerModules.stylix
-            inputs.nixcord.homeManagerModules.nixcord
           ];
           extraSpecialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
         };
