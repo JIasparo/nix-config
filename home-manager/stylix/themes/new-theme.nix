@@ -19,11 +19,14 @@
         base08 = "b32834"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
         base09 = "c5693e"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
         base0A = "d7aa48"; # Classes, Markup Bold, Search Text Background
-        base0B = "aba65d"; # Strings, Inherited Class, Markup Code, Diff Inserted
-        base0C = "8ea27b"; # Support, Regular Expressions, Escape Characters, Markup Quotes
+        base0B = "8ea27b"; # Strings, Inherited Class, Markup Code, Diff Inserted
+        base0C = "9376a1"; # Support, Regular Expressions, Escape Characters, Markup Quotes
         base0D = "709d99"; # Functions, Methods, Attribute IDs, Headings, Accent color
         base0E = "bd843b"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
         base0F = "597479"; # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+
+        #base0C = "709d99"; # Support, Regular Expressions, Escape Characters, Markup Quotes
+        #base0D = "9376a1"; # Functions, Methods, Attribute IDs, Headings, Accent color
       };
 
       /*
