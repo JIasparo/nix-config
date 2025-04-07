@@ -37,9 +37,9 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
         + *atlas* - unconfigured HP laptop used to run Klipper 3D printing firmware
         + *ogre* - unconfigured work computer
         + **stryder** - my personal gaming computer (i7-8700K, Nvidia RTX 4070)
++ **templates** - useful templates
 + **wallpapers** - a place for storing wallpapers
 + **flake.nix** - uses unstable Nixpkgs as default, but allows stable Nixpkgs
-+ **template.nix** - a module template
 
 ## Credits and Useful Resources
 
