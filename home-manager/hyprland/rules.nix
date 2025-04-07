@@ -16,8 +16,15 @@
         "10, monitor:DP-1"
       ];
 
-      windowrule = [
-        #
+      windowrulev2 = [
+        # Make VSCodium's popup windows float and center
+        "float, class:^(Codium)$, title:^(VSCodium|Open File)$"
+        "center, class:^(Codium)$, title:^(VSCodium|Open File)$"
+
+        # Prevent idling while watching videos
+        "idleinhibit focus, class:^(mpv)$"
+        "idleinhibit focus, class:^($browser)$, title:^(.*YouTube.*)$"
+        "idleinhibit fullscreen, class:^($browser)$"
       ];
 
       layerrule = [
