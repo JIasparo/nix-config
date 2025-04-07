@@ -65,6 +65,8 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [NixOS Config Guides for Nerds and Other Cool People](https://youtube.com/playlist?list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG&si=iUsgDu18w59NrzD0) - The tutorial series I followed to get this config started.
 + [Ricing Linux Has Never Been Easier | NixOS + Stylix](https://youtu.be/ljHkWgBaQWU?si=CZmFbFHVJJnvLMHU) - Introduction to Stylix.
 + [Easiest Way To Write Nix | Code Editor Setup](https://youtu.be/M_zMoHlbZBY?si=erGxw4dS4HITbgjE) - Introduction to nixd.
++ [Best Way To Manage Project Dependencies | Nix Shells](https://youtu.be/0YBWhSNTgV8?si=-ZEeQvPLavGtx5jy) - Introduction to declarative nix shells.
++ [ NixOS tutorial - Nix Packages](https://youtu.be/CqFcl4BmbN4?si=RD2GMkBToGD8401c) - Useful tutorial showing how to build nix packages from binary and source.
 
 </details>
 
