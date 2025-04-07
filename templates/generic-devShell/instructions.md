@@ -1,0 +1,1 @@
+run `nix develop` in the shell's directory.
