@@ -1,1 +1,1 @@
-run `nix-build -E 'with import <nixpkgs> {}; callPackage ./package.nix {}'` in the package's directory
+Run `nix-build -E 'with import <nixpkgs> {}; callPackage ./package.nix {}'` in the package's directory.
