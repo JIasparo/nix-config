@@ -25,6 +25,9 @@
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit focus, class:^($browser)$, title:^(.*YouTube.*)$"
         "idleinhibit fullscreen, class:^($browser)$"
+
+        # Center the Steam Sign In client
+        "center, class:^(steam)$, title:^(Sign in .*)$"
       ];
 
       layerrule = [
