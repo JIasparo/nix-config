@@ -17,9 +17,9 @@
       ];
 
       windowrulev2 = [
-        # Make VSCodium's popup windows float and center
-        "float, class:^(Codium)$, title:^(VSCodium|Open File)$"
-        "center, class:^(Codium)$, title:^(VSCodium|Open File)$"
+        # Make VSCodium's pop-up windows float and center
+        "float, class:^(Codium)$"
+        "center, class:^(Codium)$"
 
         # Prevent idling while watching videos
         "idleinhibit focus, class:^(mpv)$"
