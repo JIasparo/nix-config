@@ -5,10 +5,9 @@
     programs.rofi = {
 
       extraConfig = {
-        modi = "drun,window";
+        modi = "drun,calc,window";
         show-icons = true;
         display-drun = "apps";
-        display-window = "windows";
         drun-display-format = "{name}";
         window-format = "{w} · {c} · {t}";
       };
