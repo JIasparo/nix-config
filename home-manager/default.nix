@@ -27,5 +27,6 @@
     ./vscodium
     ./yazi
     ./zoxide.nix
+    ./gytmdl
   ];
 }
