@@ -22,26 +22,16 @@ python3Packages.buildPythonApplication rec {
   # This application has no tests
   doCheck = false; # set to true if it has tests
 
-  # Dependencies that should exist in the runtime environment
-  buildInputs = [
-    #
-  ];
-
-  # Dependencies that should only exist in the build environment
-  nativeBuildInputs = [
-    #
-  ];
-
   # Dependencies that should exist in the runtime environment and also propagated to downstream runtime environments
   propagatedBuildInputs = with python3Packages; [
     click
+    colorama
+    flit-core
     inquirerpy
     mutagen
     pillow
     yt-dlp
     ytmusicapi
-    flit-core
-    colorama
   ];
 
   makeWrapperArgs = [
