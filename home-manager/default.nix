@@ -26,7 +26,7 @@
     ./swaync
     ./vscodium
     ./yazi
+    ./yt-dlp.nix
     ./zoxide.nix
-    ./gytmdl
   ];
 }
