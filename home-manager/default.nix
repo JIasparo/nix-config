@@ -28,5 +28,6 @@
     ./yazi
     ./gytmdl
     ./zoxide.nix
+    ./nemo.nix
   ];
 }
