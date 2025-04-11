@@ -29,14 +29,12 @@
         #base0D = "9376a1"; # Functions, Methods, Attribute IDs, Headings, Accent color
       };
 
-      /*
         iconTheme = {
           enable = true;
-          package = pkgs.test;
-          light = "";
-          dark = "";
+          package = pkgs.dracula-icon-theme;
+          light = "Dracula";
+          dark = "Dracula";
         };
-      */
 
       fonts = {
         serif = {
@@ -61,7 +59,6 @@
       };
 
       cursor = {
-        #name = "volantes_cursors";
         name = "volantes_light_cursors"; # volantes_cursors for light theme | volantes_light_cursors for dark theme
         package = pkgs.volantes-cursors;
         size = 24;
