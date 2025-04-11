@@ -23,11 +23,13 @@
           ffmpeg-full
           font-awesome # Needed for swappy icons
           grim
+          picard
           protonvpn-gui
           pwvucontrol
           slurp
           swappy
           swaybg
+          vlc
           wl-clipboard
         ])
         ++ (with pkgs-stable; [
