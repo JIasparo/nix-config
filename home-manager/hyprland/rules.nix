@@ -28,6 +28,9 @@
 
         # Center the Steam Sign In client
         "center, class:^(steam)$, title:^(Sign in .*)$"
+        # Make Steam's Special Offers float and center
+        "float, class:^(steam)$, title:^(Special Offers)$"
+        "center, class:^(steam)$, title:^(Special Offers)$"
       ];
 
       layerrule = [
