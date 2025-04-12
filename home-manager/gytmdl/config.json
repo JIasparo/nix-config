@@ -3,7 +3,7 @@
     "overwrite": false,
     "log_level": "INFO",
     "no_exceptions": false,
-    "output_path": "Music",
+    "output_path": "Music/tag",
     "temp_path": "temp",
     "cookies_path": null,
     "ffmpeg_path": "ffmpeg",
