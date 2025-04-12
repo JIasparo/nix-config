@@ -13,11 +13,13 @@
     ./fzf.nix
     ./git
     ./gtk.nix
+    ./gytmdl
     ./hyprland
     ./kitty
     ./librewolf
-    ./mpd.nix
     ./mpv.nix
+    ./nemo.nix
+    ./network-applet.nix
     ./playerctl.nix
     ./qt.nix
     ./ripgrep.nix
@@ -26,8 +28,6 @@
     ./swaync
     ./vscodium
     ./yazi
-    ./gytmdl
     ./zoxide.nix
-    ./nemo.nix
   ];
 }
