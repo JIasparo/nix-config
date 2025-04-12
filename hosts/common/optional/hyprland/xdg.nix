@@ -8,5 +8,9 @@
         xdg-desktop-portal-gtk
       ];
     };
+
+    environment.systemPackages = with pkgs; [
+      xdg-utils
+    ];
   };
 }
