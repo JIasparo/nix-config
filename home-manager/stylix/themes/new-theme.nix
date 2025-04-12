@@ -31,9 +31,12 @@
 
         iconTheme = {
           enable = true;
-          package = pkgs.dracula-icon-theme;
-          light = "Dracula";
-          dark = "Dracula";
+          #package = pkgs.dracula-icon-theme;
+          #light = "Dracula";
+          #dark = "Dracula";
+          package = pkgs.papirus-icon-theme;
+          light = "Papirus-Light";
+          dark = "Papirus-Dark";
         };
 
       fonts = {
