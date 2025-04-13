@@ -35,6 +35,7 @@
       */
 
       bind = [
+        "$mod $move, V, fullscreen"
         "$mod, E, exec, $editor"
         "$mod, F, exec, $fileManager"
         "$mod, Q, killactive,"
