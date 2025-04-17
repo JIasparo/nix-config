@@ -36,6 +36,10 @@
         # Make Steam's Special Offers float and center
         "float, class:^(steam)$, title:^(Special Offers)$"
         "center, class:^(steam)$, title:^(Special Offers)$"
+
+        # Make Bitwarden's pop-up windows float and center
+        "float, class:^(Electron)$, title:^(Log out)$"
+        "center, class:^(Electron)$, title:^(Log out)$"
       ];
 
       layerrule = [
