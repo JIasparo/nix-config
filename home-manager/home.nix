@@ -24,7 +24,6 @@
           font-awesome # Needed for swappy icons
           grim
           picard
-          protonvpn-gui
           pwvucontrol
           slurp
           swappy
