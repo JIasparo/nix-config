@@ -4,6 +4,10 @@
   config = {
     wayland.windowManager.hyprland.settings = {
 
+      exec-once = [
+        "[workspace special silent] bitwarden"
+      ];
+
       workspace = [
         "1, monitor:DP-2, default:true"
         "2, monitor:DP-2"
