@@ -38,9 +38,14 @@
         # Make Steam's Special Offers float and center
         "float, class:^(steam)$, title:^(Special Offers)$"
         "center, class:^(steam)$, title:^(Special Offers)$"
+        # Make Steam's Notifications spawn on primary monitor
+        "monitor DP-2, class:^(steam)$, title:^(notificationtoasts.*)$"
         # Make Steam's Uninstall prompt float and center
         "float, class:^(steam)$, title:^(Uninstall)$"
         "center, class:^(steam)$, title:^(Uninstall)$"
+        # Make Steam games launch in fullscreen on Workspace 6
+        "workspace 6, class:^(steam_app.*)$"
+        "fullscreen, class:^(steam_app.*)$"
 
         # Make Bitwarden's pop-up windows float and center
         "float, class:^(Electron)$, title:^(Log out)$"
