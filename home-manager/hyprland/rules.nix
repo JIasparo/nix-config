@@ -31,11 +31,16 @@
         "idleinhibit focus, class:^($browser)$, title:^(.*YouTube.*)$"
         "idleinhibit fullscreen, class:^($browser)$"
 
+        # Open Steam on Workspace 5
+        "workspace 5, class:^(steam)$"
         # Center the Steam Sign In client
         "center, class:^(steam)$, title:^(Sign in .*)$"
         # Make Steam's Special Offers float and center
         "float, class:^(steam)$, title:^(Special Offers)$"
         "center, class:^(steam)$, title:^(Special Offers)$"
+        # Make Steam's Uninstall prompt float and center
+        "float, class:^(steam)$, title:^(Uninstall)$"
+        "center, class:^(steam)$, title:^(Uninstall)$"
 
         # Make Bitwarden's pop-up windows float and center
         "float, class:^(Electron)$, title:^(Log out)$"
