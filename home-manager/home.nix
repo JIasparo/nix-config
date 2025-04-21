@@ -22,7 +22,9 @@
           discord
           ffmpeg-full
           font-awesome # Needed for swappy icons
+          freecad-wayland
           grim
+          orca-slicer
           picard
           pwvucontrol
           slurp
