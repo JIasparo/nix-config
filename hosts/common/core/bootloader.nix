@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   config = {
@@ -12,7 +12,11 @@
       };
 
       tmp.cleanOnBoot = true;
-      plymouth.enable = true;
+      plymouth = {
+        enable = true;
+        themePackages = [pkgs.plymouth-blahaj-theme];
+        theme = "blahaj";
+      };
     };
   };
 }
