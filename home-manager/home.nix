@@ -18,11 +18,14 @@
         (with pkgs; [
           # Packages placed here are unstable
           bitwarden-desktop
+          #blender
+          bottles
           brightnessctl
+          #davinci-resolve
           discord
           ffmpeg-full
           font-awesome # Needed for swappy icons
-          freecad-wayland
+          #freecad-wayland
           grim
           orca-slicer
           picard
