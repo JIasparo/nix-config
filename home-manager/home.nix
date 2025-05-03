@@ -27,6 +27,7 @@
           font-awesome # Needed for swappy icons
           #freecad-wayland
           grim
+          heroic
           orca-slicer
           picard
           pwvucontrol
