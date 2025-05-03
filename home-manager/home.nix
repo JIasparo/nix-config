@@ -28,6 +28,7 @@
           #freecad-wayland
           grim
           heroic
+          #obsidian
           orca-slicer
           picard
           pwvucontrol
