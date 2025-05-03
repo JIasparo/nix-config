@@ -18,6 +18,7 @@
         extraCompatPackages = with pkgs; [
           # Glorious Eggroll Proton fork.
           proton-ge-bin
+          steamtinkerlaunch
         ];
       };
 
@@ -29,5 +30,9 @@
         ];
       };
     };
+
+    environment.systemPackages = with pkgs; [
+      #steamtinkerlaunch
+    ];
   };
 }
