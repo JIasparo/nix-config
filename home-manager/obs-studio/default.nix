@@ -10,4 +10,9 @@
       ];
     };
   };
+
+  home.file = {
+    #".config/obs-studio/global.ini".source = ./global.ini;
+    #".config/obs-studio/user.ini".source = ./user.ini;
+  };
 }
