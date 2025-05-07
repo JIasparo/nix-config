@@ -20,7 +20,7 @@
     ./mpv.nix
     ./nemo.nix
     ./network-applet.nix
-    ./obs-studio.nix
+    ./obs-studio
     ./playerctl.nix
     ./qt.nix
     ./ripgrep.nix
