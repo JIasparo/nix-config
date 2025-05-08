@@ -31,6 +31,12 @@
         "idleinhibit focus, class:^($browser)$, title:^(.*YouTube.*)$"
         "idleinhibit fullscreen, class:^($browser)$"
 
+        # Open Discord on Workspace 9
+        "workspace 9, class:^(discord)$"
+
+        # Open OBS-Studio on Workspace 10
+        "workspace 10, class:^(com.obsproject.Studio)$"
+
         # Open Steam on Workspace 5
         "workspace 5, class:^(steam)$"
         # Center the Steam Sign In client
