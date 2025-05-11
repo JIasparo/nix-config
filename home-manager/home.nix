@@ -24,13 +24,13 @@
           #davinci-resolve
           discord
           ffmpeg-full
+          file-roller
           font-awesome # Needed for swappy icons
           #freecad-wayland
           grim
           heroic
           #obsidian
           orca-slicer
-          picard
           pwvucontrol
           slurp
           swappy
