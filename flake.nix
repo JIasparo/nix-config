@@ -10,6 +10,9 @@
 
     stylix.url = "github:danth/stylix";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
+
+    disko.url = "github:nix-community/disko";
+    disko.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -35,6 +38,7 @@
           inherit system;
           modules = [
             ./hosts/nixos/${hostname}
+            inputs.disko.nixosModules.disko
           ];
           specialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
         };
