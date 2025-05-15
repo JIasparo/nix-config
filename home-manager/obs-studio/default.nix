@@ -19,6 +19,7 @@
     #  ".config/obs-studio/basic/profiles/Untitled/basic.ini".source = ./basic.ini;
     #  ".config/obs-studio/basic/profiles/Untitled/recordEncoder.json".source = ./recordEncoder.json;
     #  ".config/obs-studio/basic/profiles/Untitled/streamEncoder.json".source = ./streamEncoder.json;
+    #  ".config/obs-studio/basic/scenes/Untitled.json".source = ./untitled.json;
     #};
   };
 }
