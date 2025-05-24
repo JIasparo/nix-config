@@ -29,6 +29,7 @@
           #freecad-wayland
           grim
           heroic
+          kdePackages.okular
           #obsidian
           orca-slicer
           pwvucontrol
