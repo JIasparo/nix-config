@@ -8,6 +8,7 @@
         "browser.download.autohideButton" = true;
         "browser.quitShortcut.disabled" = true;
         "browser.search.separatePrivateDefault" = false;
+        "browser.tabs.unloadOnLowMemory" = true;
         "browser.urlbar.shortcuts.bookmarks" = false;
         "browser.urlbar.shortcuts.history" = false;
         "browser.urlbar.shortcuts.tabs" = false;
