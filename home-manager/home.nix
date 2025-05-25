@@ -1,7 +1,6 @@
 {
   username,
   pkgs,
-  pkgs-stable,
   ...
 }:
 
@@ -12,35 +11,30 @@
       username = "${username}";
       homeDirectory = "/home/${username}";
 
-      packages =
+      packages = with pkgs; [
         # Override example for installing a specific Nerd Font:
         # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-        (with pkgs; [
-          # Packages placed here are unstable
-          bitwarden-desktop
-          #blender
-          bottles
-          brightnessctl
-          #davinci-resolve
-          ffmpeg-full
-          file-roller
-          font-awesome # Needed for swappy icons
-          #freecad-wayland
-          grim
-          heroic
-          kdePackages.okular
-          #obsidian
-          orca-slicer
-          pwvucontrol
-          slurp
-          swappy
-          swaybg
-          vlc
-          wl-clipboard
-        ])
-        ++ (with pkgs-stable; [
-          # Packages placed here are stable
-        ]);
+        bitwarden-desktop
+        #blender
+        bottles
+        brightnessctl
+        #davinci-resolve
+        ffmpeg-full
+        file-roller
+        font-awesome # Needed for swappy icons
+        #freecad-wayland
+        grim
+        heroic
+        kdePackages.okular
+        #obsidian
+        orca-slicer
+        pwvucontrol
+        slurp
+        swappy
+        swaybg
+        vlc
+        wl-clipboard
+      ];
 
       # Home Manager is pretty good at managing dotfiles. The primary way to manage
       # plain files is through 'home.file'.

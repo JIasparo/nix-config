@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "nixpkgs/nixos-24.11";
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -21,7 +20,6 @@
   outputs =
     inputs@{
       nixpkgs,
-      nixpkgs-stable,
       home-manager,
       ...
     }:
@@ -33,7 +31,6 @@
       configpath = "/home/${username}/nix-config";
 
       pkgs = nixpkgs.legacyPackages.${system};
-      pkgs-stable = nixpkgs-stable.legacyPackages.${system};
     in
     {
       nixosConfigurations = {
@@ -43,7 +40,7 @@
             ./hosts/nixos/${hostname}
             inputs.disko.nixosModules.disko
           ];
-          specialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
+          specialArgs = { inherit inputs username useremail hostname configpath; };
         };
       };
 
@@ -55,7 +52,7 @@
             inputs.stylix.homeModules.stylix
             inputs.nixcord.homeModules.nixcord
           ];
-          extraSpecialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
+          extraSpecialArgs = { inherit inputs username useremail hostname configpath; };
         };
       };
     };
