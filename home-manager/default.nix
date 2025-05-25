@@ -20,6 +20,7 @@
     ./mpv.nix
     ./nemo.nix
     ./network-applet.nix
+    ./nixcord
     ./obs-studio
     ./playerctl.nix
     ./qt.nix

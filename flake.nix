@@ -13,6 +13,9 @@
 
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixcord.url = "github:kaylorben/nixcord";
+    nixcord.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -49,7 +52,8 @@
           inherit pkgs;
           modules = [
             ./home-manager
-            inputs.stylix.homeManagerModules.stylix
+            inputs.stylix.homeModules.stylix
+            inputs.nixcord.homeModules.nixcord
           ];
           extraSpecialArgs = { inherit inputs username useremail hostname configpath pkgs-stable; };
         };
