@@ -42,7 +42,7 @@
         "$mod, RETURN, exec, $terminal"
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
-        "ALT, F4, forcekillactive,"
+        "$mod, F4, forcekillactive,"
         "CTRL ALT, DELETE, exec, $terminal $sysMon"
 
         # Toggle floating, resize active window and center it
