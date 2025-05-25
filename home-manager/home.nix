@@ -22,7 +22,6 @@
           bottles
           brightnessctl
           #davinci-resolve
-          discord
           ffmpeg-full
           file-roller
           font-awesome # Needed for swappy icons
