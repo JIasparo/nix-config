@@ -10,6 +10,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + Suboptimal config structure
 + Modularized config files
 + Standalone Home Manager
++ Declarative disk partitioning using Disko
 
 #### TODO
 
