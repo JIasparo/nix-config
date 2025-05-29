@@ -25,9 +25,9 @@
         #freecad-wayland
         grim
         heroic
-        kdePackages.okular
+        #kdePackages.okular # Good for annotating PDFs
         #obsidian
-        orca-slicer
+        #orca-slicer
         pwvucontrol
         slurp
         swappy
