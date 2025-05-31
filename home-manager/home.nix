@@ -15,7 +15,7 @@
         # Override example for installing a specific Nerd Font:
         # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
         bitwarden-desktop
-        #blender
+        blender
         bottles
         brightnessctl
         #davinci-resolve
