@@ -60,6 +60,8 @@
             nitroFirst = true;
           };
 
+          fixYoutubeEmbeds.enable = true;
+
           forceOwnerCrown.enable = true;
 
           newGuildSettings = {
