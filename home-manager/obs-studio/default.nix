@@ -16,10 +16,10 @@
     #home.file = {
     #  ".config/obs-studio/global.ini".source = ./global.ini;
     #  ".config/obs-studio/user.ini".source = ./user.ini;
-    #  ".config/obs-studio/basic/profiles/Untitled/basic.ini".source = ./basic.ini;
-    #  ".config/obs-studio/basic/profiles/Untitled/recordEncoder.json".source = ./recordEncoder.json;
-    #  ".config/obs-studio/basic/profiles/Untitled/streamEncoder.json".source = ./streamEncoder.json;
-    #  ".config/obs-studio/basic/scenes/Untitled.json".source = ./untitled.json;
+    #  ".config/obs-studio/basic/profiles/Untitled/basic.ini".source = ./profiles/Untitled/basic.ini;
+    #  ".config/obs-studio/basic/profiles/Untitled/recordEncoder.json".source = ./profiles/Untitled/recordEncoder.json;
+    #  ".config/obs-studio/basic/profiles/Untitled/streamEncoder.json".source = ./profiles/Untitled/streamEncoder.json;
+    #  ".config/obs-studio/basic/scenes/Untitled.json".source = ./scenes/untitled.json;
     #};
   };
 }
