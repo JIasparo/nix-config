@@ -5,11 +5,12 @@
     programs.bash = {
       enable = true;
 
-      shellAliases = {
+      shellAliases = rec {
         # NixOS and Home Manager aliases
         nf = "nix flake update --flake ./nix-config";
         hm = "home-manager switch --flake ./nix-config";
         no = "sudo nixos-rebuild switch --flake ./nix-config";
+        full-upgrade = "${nf} && ${no} && ${hm}";
 
         # General aliases
         ll = "ls -l";
