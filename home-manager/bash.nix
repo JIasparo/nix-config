@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   config = {
@@ -13,6 +13,7 @@
         full-upgrade = "${nf} && ${no} && ${hm}";
 
         # General aliases
+        ff = "${pkgs.fastfetch}/bin/fastfetch";
         ll = "ls -l";
         qqq = "poweroff";
 
