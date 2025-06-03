@@ -3,6 +3,7 @@
 {
   imports = [
     ./settings.nix
+    ./logos
   ];
 
   config = {
