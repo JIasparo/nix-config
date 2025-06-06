@@ -24,16 +24,13 @@
         base0D = "709d99"; # Functions, Methods, Attribute IDs, Headings, Accent color
         base0E = "bd843b"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
         base0F = "597479"; # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
-
+      
         #base0C = "709d99"; # Support, Regular Expressions, Escape Characters, Markup Quotes
         #base0D = "9376a1"; # Functions, Methods, Attribute IDs, Headings, Accent color
       };
 
         iconTheme = {
           enable = true;
-          #package = pkgs.dracula-icon-theme;
-          #light = "Dracula";
-          #dark = "Dracula";
           package = pkgs.papirus-icon-theme;
           light = "Papirus-Light";
           dark = "Papirus-Dark";
@@ -41,18 +38,18 @@
 
       fonts = {
         serif = {
-          package = pkgs.dejavu_fonts;
-          name = "DejaVu Serif";
+          package = pkgs.maple-mono.Normal-NF-unhinted;
+          name = "MapleMonoNormal-NF-Regular"; # MapleMonoNormal-NF-Thin
         };
 
         sansSerif = {
           package = pkgs.dejavu_fonts;
-          name = "DejaVu Sans";
+          name = "DejaVuSans";
         };
 
         monospace = {
-          package = pkgs.source-code-pro;
-          name = "SourceCodePro-Light";
+          package = pkgs.maple-mono.Normal-NF-unhinted;
+          name = "MapleMonoNormal-NF-Regular"; # MapleMonoNormal-NF-Thin
         };
 
         emoji = {
@@ -62,8 +59,8 @@
       };
 
       cursor = {
-        name = "volantes_light_cursors"; # volantes_cursors for light theme | volantes_light_cursors for dark theme
         package = pkgs.volantes-cursors;
+        name = "volantes_light_cursors"; # volantes_cursors for light theme | volantes_light_cursors for dark theme
         size = 24;
       };
     };
