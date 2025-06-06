@@ -9,6 +9,7 @@
         # NixOS and Home Manager aliases
         nf = "nix flake update --flake ./nix-config";
         hm = "home-manager switch --flake ./nix-config";
+        hmn = "home-manager news";
         no = "sudo nixos-rebuild switch --flake ./nix-config";
         full-upgrade = "${nf} && ${no} && ${hm}";
 
