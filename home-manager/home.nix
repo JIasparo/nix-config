@@ -12,8 +12,6 @@
       homeDirectory = "/home/${username}";
 
       packages = with pkgs; [
-        # Override example for installing a specific Nerd Font:
-        # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
         bitwarden-desktop
         blender
         bottles
@@ -21,7 +19,6 @@
         #davinci-resolve
         ffmpeg-full
         file-roller
-        font-awesome # Needed for swappy icons
         #freecad-wayland
         grim
         heroic
