@@ -16,6 +16,7 @@
       "$editor" = "codium";
       "$fileManager" = "$terminal yazi";
       "$menu" = "rofi -show drun";
+      "$passManager" = "bitwarden";
       "$sysMon" = "btop";
       "$terminal" = "kitty";
 

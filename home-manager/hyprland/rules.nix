@@ -5,7 +5,7 @@
     wayland.windowManager.hyprland.settings = {
 
       exec-once = [
-        "[workspace special silent] bitwarden"
+        "[workspace special silent] $passManager"
       ];
 
       workspace = [
