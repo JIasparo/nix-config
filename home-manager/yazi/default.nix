@@ -4,6 +4,7 @@
   imports = [
     ./binds.nix
     ./settings.nix
+    ./plugins
   ];
 
   config = {
