@@ -39,6 +39,10 @@
         rounding = 10;
         rounding_power = 3.0;
 
+        active_opacity = 0.95;
+        inactive_opacity = 0.95;
+        fullscreen_opacity = 1.0;
+
         blur = {
           enabled = true;
           brightness = 1.0;
