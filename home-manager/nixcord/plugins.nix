@@ -50,6 +50,8 @@
 
       forceOwnerCrown.enable = true;
 
+      fullSearchContext.enable = true;
+
       newGuildSettings = {
         enable = true;
         guild = true;
