@@ -52,6 +52,14 @@
 
       fullSearchContext.enable = true;
 
+      gifPaste.enable = true;
+
+      messageLinkEmbeds = {
+        enable = true;
+        messageBackgroundColor = false;
+        automodEmbeds = "prefer";
+      };
+
       newGuildSettings = {
         enable = true;
         guild = true;
@@ -63,7 +71,10 @@
         showAllChannels = true;
       };
 
-      previewMessage.enable = true;
+      permissionsViewer = {
+        enable = true;
+        permissionsSortOrder = "highestRole";
+      };
 
       replyTimestamp.enable = true;
 
@@ -74,7 +85,7 @@
         voiceUsers = true;
         reactorsList = true;
         colorChatMessages = true;
-        messageSaturation = 30;
+        messageSaturation = 40;
       };
 
       showHiddenChannels = {
