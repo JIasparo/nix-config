@@ -27,7 +27,6 @@
         #orca-slicer
         pwvucontrol
         slurp
-        swappy
         swaybg
         vlc
         wl-clipboard
