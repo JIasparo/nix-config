@@ -27,6 +27,7 @@
     ./ripgrep.nix
     ./rofi
     ./stylix
+    ./swappy
     ./swaync
     ./vscodium
     ./yazi
