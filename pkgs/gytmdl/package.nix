@@ -7,13 +7,13 @@
 
 python3Packages.buildPythonApplication rec {
   pname = "gytmdl";
-  version = "2.1.4";
+  version = "2.1.5";
 
   src = fetchFromGitHub {
     owner = "glomatico";
     repo = "gytmdl";
     tag = "${version}";
-    hash = "sha256-TnXuIz3UbUOqjUPRC7iZ+PgKcStOZ7OWKWiIvuj1ZfE=";
+    hash = "sha256-foA+E9CCixpQGRE/cw5VRruVFSyY2fU0m1EC9dUJVWk=";
   };
 
   # Uncomment if the application has a pyproject.toml
