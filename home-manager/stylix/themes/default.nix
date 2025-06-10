@@ -2,6 +2,6 @@
 
 {
   imports = [
-    ./new-theme.nix
+    ./dark-brutalism.nix
   ];
 }

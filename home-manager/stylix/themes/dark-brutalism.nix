@@ -5,7 +5,7 @@
     stylix = {
       polarity = "dark"; # choose one: "dark" "light" "either"
 
-      image = ./../../../wallpapers/pexels-serinus-5602124.png;
+      image = ./../../../wallpapers/pexels-serinus-5602124.jpg;
 
       base16Scheme = {
         base00 = "141414"; # Default Background
