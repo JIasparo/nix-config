@@ -13,6 +13,12 @@
       plugins = with pkgs; [
         rofi-calc
       ];
+
+      modes = [
+        "drun"
+        "calc"
+        "window"
+      ];
     };
   };
 }
