@@ -54,6 +54,11 @@
 
       gifPaste.enable = true;
 
+      mentionAvatars = {
+        enable = true;
+        showAtSymbol = false;
+      };
+
       messageLinkEmbeds = {
         enable = true;
         messageBackgroundColor = false;
@@ -70,6 +75,8 @@
         events = true;
         showAllChannels = true;
       };
+
+      noTypingAnimation.enable = true;
 
       permissionsViewer = {
         enable = true;
