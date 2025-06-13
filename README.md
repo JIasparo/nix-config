@@ -15,7 +15,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 #### TODO
 
 + [ ] setup OrcaSlicer module
-+ [ ] setup Atlas host
++ [x] setup Atlas host
 + [ ] setup dev environments
 + [ ] overhaul my modules
 + [ ] setup impermanence
