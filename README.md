@@ -29,7 +29,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
         + **core** - modules each host requires
         + **optional** - modules each host can opt in to
     + **nixos** - hosts running NixOS
-        + *atlas* - unconfigured HP laptop used to run Klipper 3D printing firmware
+        + **atlas** - HP laptop used to run Klipper 3D printing firmware
         + *ogre* - unconfigured work computer
         + **stryder** - my personal gaming computer (i7-8700K, Nvidia RTX 4070)
 + **pkgs** - contains packages built from binary or source
