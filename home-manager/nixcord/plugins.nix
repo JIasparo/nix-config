@@ -28,10 +28,10 @@
 
       fakeNitro = {
         enable = true;
-        enableEmojiBypass = true;
+        enableEmojiBypass = false;
         emojiSize = 48;
         transformEmojis = true;
-        enableStickerBypass = true;
+        enableStickerBypass = false;
         stickerSize = 160;
         transformStickers = true;
         transformCompoundSentence = false;
@@ -63,6 +63,20 @@
         enable = true;
         messageBackgroundColor = false;
         automodEmbeds = "prefer";
+      };
+
+      messageLogger = {
+        enable = true;
+        deleteStyle = "overlay";
+        logDeletes = true;
+        collapseDeleted = false;
+        logEdits = true;
+        inlineEdits = true;
+        ignoreBots = true;
+        ignoreSelf = false;
+        #ignoreUsers = "";
+        #ignoreChannels = "";
+        #ignoreGuilds = "";
       };
 
       newGuildSettings = {
