@@ -94,11 +94,11 @@
 
         disable_autoreload = true;
         middle_click_paste = false;
-        vrr = 2; # Only enabled for fullscreen i.e. games.
+        vrr = 2; # 0 - off, 1 - on, 2 - only on for fullscreen
       };
 
       render = {
-        direct_scanout = 2; # 0 - off, 1 - on, 2 - on for games
+        direct_scanout = 0; # 0 - off, 1 - on, 2 - on for games
       };
     };
   };
