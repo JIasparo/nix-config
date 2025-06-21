@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./dictionary.nix
     ./plugins.nix
     ./settings.nix
   ];
