@@ -8,6 +8,7 @@
         "browser.download.autohideButton" = true;
         "browser.quitShortcut.disabled" = true;
         "browser.search.separatePrivateDefault" = false;
+        "browser.tabs.fadeOutUnloadedTabs" = true;
         "browser.tabs.unloadOnLowMemory" = true;
         "browser.urlbar.shortcuts.bookmarks" = false;
         "browser.urlbar.shortcuts.history" = false;
@@ -21,8 +22,6 @@
         "general.autoScroll" = true;
         "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
         "middlemouse.paste" = false;
-        #"privacy.clearOnShutdown.history" = true;
-        #"privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
         "privacy.resistFingerprinting.letterboxing" = true;
         "privacy.resistFingerprinting" = false;
       };
