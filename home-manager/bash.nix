@@ -20,7 +20,6 @@
 
         # General aliases
         ff = "${pkgs.fastfetch}/bin/fastfetch";
-        ll = "ls -l";
         qqq = "poweroff";
 
         # VPN aliases
