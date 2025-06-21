@@ -26,6 +26,7 @@
     ./qt.nix
     ./ripgrep.nix
     ./rofi
+    ./starship
     ./stylix
     ./swappy
     ./swaync
