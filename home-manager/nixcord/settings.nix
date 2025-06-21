@@ -16,9 +16,12 @@
       };
 
       config = {
-        frameless = true;
-        transparent = true;
+        autoUpdate = false;
+        autoUpdateNotification = false;
         disableMinSize = true;
+        frameless = true;
+        notifyAboutUpdates = false;
+        transparent = true;
       };
     };
   };
