@@ -3,6 +3,6 @@
 {
   imports = [
     ./mediainfo.nix
-    #./starship.nix
+    ./starship.nix
   ];
 }
