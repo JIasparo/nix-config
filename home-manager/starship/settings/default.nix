@@ -46,7 +46,7 @@
         show_always = true;
         style_user = "bg:red bold fg:black";
         style_root = "bg:red bold underline fg:black";
-        format = "[ $user]($style)";
+        format = "[ $user ]($style)";
       };
 
       directory = {
