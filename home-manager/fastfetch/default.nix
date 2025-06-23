@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./settings.nix
     ./logos
+    ./settings.nix
   ];
 
   config = {
