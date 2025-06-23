@@ -14,8 +14,8 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 #### TODO
 
++ [ ] fix Niri setup
 + [ ] setup OrcaSlicer module
-+ [x] setup Atlas host
 + [ ] setup dev environments
 + [ ] overhaul my modules
 + [ ] setup impermanence
