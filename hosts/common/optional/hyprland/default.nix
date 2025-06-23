@@ -2,9 +2,9 @@
 
 {
   imports = [
-    ./xdg.nix
     ./greetd.nix
     ./gvfs.nix
+    ./xdg.nix
   ];
 
   config = {
