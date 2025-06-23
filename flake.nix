@@ -13,6 +13,9 @@
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
 
+    niri.url = "github:sodiboo/niri-flake";
+    niri.inputs.nixpkgs.follows = "nixpkgs";
+
     nixcord.url = "github:kaylorben/nixcord";
     nixcord.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -39,6 +42,7 @@
           modules = [
             ./hosts/nixos/${hostname}
             inputs.disko.nixosModules.disko
+            inputs.niri.nixosModules.niri
           ];
           specialArgs = { inherit inputs username useremail hostname configpath; };
         };
@@ -51,6 +55,7 @@
             ./home-manager
             inputs.stylix.homeModules.stylix
             inputs.nixcord.homeModules.nixcord
+            inputs.niri.homeModules.niri
           ];
           extraSpecialArgs = { inherit inputs username useremail hostname configpath; };
         };
