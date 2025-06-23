@@ -138,7 +138,7 @@
         show_milliseconds = false;
         format = "in $duration ";
         style = "bg:purple";
-        disabled = false;
+        disabled = true;
         show_notifications = true;
         min_time_to_notify = 45000;
       };
