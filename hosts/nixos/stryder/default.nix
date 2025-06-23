@@ -7,9 +7,10 @@
     ./hardware-configuration.nix
     ./../../common/core
     # Optional
-    ./../../common/optional/nvidia.nix
     #./../../common/optional/gnome.nix
-    ./../../common/optional/hyprland
+    #./../../common/optional/hyprland
+    ./../../common/optional/niri
+    ./../../common/optional/nvidia.nix
     ./../../common/optional/steam.nix
     ./../../common/optional/wireguard.nix
   ];
