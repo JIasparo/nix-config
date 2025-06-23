@@ -15,7 +15,7 @@
     ./gtk.nix
     ./gytmdl
     ./hyprland
-    ./niri
+    #./niri
     ./kitty
     ./librewolf
     ./mpv.nix
