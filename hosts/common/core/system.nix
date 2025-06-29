@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, configpath, ... }:
 
 {
   config = {
@@ -17,6 +17,16 @@
       automatic = true;
       dates = "daily";
       options = "--delete-older-than 4d";
+    };
+
+    # Auto Upgrades
+    system.autoUpgrade = {
+      enable = true;
+      dates = "daily";
+      flake = configpath;
+      flags = [
+        #
+      ];
     };
 
     # Timezone/localization
