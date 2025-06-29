@@ -24,6 +24,11 @@
 
       biggerStreamPreview.enable = true;
 
+      callTimer = {
+        enable = true;
+        format = "stopwatch";
+      };
+
       clearURLs.enable = true;
 
       dontRoundMyTimestamps.enable = true;
