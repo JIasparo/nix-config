@@ -22,6 +22,8 @@
         showFolderIcon = "never";
       };
 
+      biggerStreamPreview.enable = true;
+
       clearURLs.enable = true;
 
       dontRoundMyTimestamps.enable = true;
@@ -79,6 +81,8 @@
         #ignoreGuilds = "";
       };
 
+      mutualGroupDMs.enable = true;
+
       newGuildSettings = {
         enable = true;
         guild = true;
@@ -116,6 +120,8 @@
         showHiddenChannels = true;
       };
 
+      stickerPaste.enable = true;
+
       typingIndicator = {
         enable = true;
         includeCurrentChannel = true;
@@ -137,10 +143,25 @@
         showSelf = true;
       };
 
+      userVoiceShow = {
+        enable = true;
+        showInMemberList = true;
+        showInMessages = false;
+        showInUserProfileModal = false;
+        showVoiceChannelSectionHeader = true;
+      };
+
+      validReply.enable = true;
+
       voiceMessages = {
         enable = true;
         noiseSuppression = true;
         echoCancellation = true;
+      };
+
+      volumeBooster = {
+        enable = true;
+        multiplier = 2;
       };
 
       youtubeAdblock.enable = true;
