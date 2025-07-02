@@ -1,7 +1,7 @@
 {...}:
 {
   imports = [
-    #./nixos-default.nix
-    ./nixos-rainbow.nix
+    ./nixos-default.nix
+    #./nixos-rainbow.nix
   ];
 }
