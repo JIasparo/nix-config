@@ -98,7 +98,7 @@
       };
 
       render = {
-        direct_scanout = 0; # 0 - off, 1 - on, 2 - on for games
+        direct_scanout = 2; # 0 - off, 1 - on, 2 - on for games
       };
     };
   };
