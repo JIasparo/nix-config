@@ -1,4 +1,4 @@
-{ configpath, pkgs, hostname, ... }:
+{ configpath, pkgs, hostname, lib, ... }:
 
 {
   config = {
@@ -19,7 +19,7 @@
         #full-install = "${disko-format} && ${nix-install} && ${home-standalone-install}";
 
         # General aliases
-        ff = "${pkgs.fastfetch}/bin/fastfetch";
+        ff = "${lib.getExe pkgs.fastfetch}";
         qqq = "poweroff";
 
         # VPN aliases
