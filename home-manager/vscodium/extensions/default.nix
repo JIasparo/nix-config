@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./clangd.nix
+    #./clangd.nix
     ./icons.nix
     ./nixd.nix
   ];
