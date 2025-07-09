@@ -47,8 +47,8 @@
         # Make Steam's Uninstall prompt float and center
         "float, class:^(steam)$, title:^(Uninstall)$"
         "center, class:^(steam)$, title:^(Uninstall)$"
-        # Make Steam games float and center on Workspace 6
-        "workspace 6, class:^(steam_app_.*)$"
+        # Make Steam games float and center on Workspace 5
+        "workspace 5, class:^(steam_app_.*)$"
         "float, class:^(steam_app_.*)"
         "center, class:^(steam_app_.*)$"
 
