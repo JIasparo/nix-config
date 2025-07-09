@@ -23,6 +23,7 @@
         grim
         heroic
         #kdePackages.okular # Good for annotating PDFs
+        lutris
         #obsidian
         #orca-slicer
         pwvucontrol
