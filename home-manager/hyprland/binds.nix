@@ -41,6 +41,7 @@
         "$mod, F, exec, $fileManager"
         "$mod, Q, killactive,"
         "$mod, RETURN, exec, $terminal"
+        "$mod, S, exec, steam"
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
         "$mod, F4, forcekillactive,"
