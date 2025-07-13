@@ -15,7 +15,7 @@
       ];
 
       exec-once = [
-        "swaybg -i ${config.stylix.image}"
+        "hyprpaper"
       ];
 
       general = {
