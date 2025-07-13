@@ -5,6 +5,7 @@
     ./binds.nix
     ./hypridle.nix
     ./hyprlock.nix
+    ./hyprpaper.nix
     ./monitors.nix
     ./rules.nix
     ./settings.nix
