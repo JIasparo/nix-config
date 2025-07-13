@@ -28,7 +28,6 @@
         #orca-slicer
         pwvucontrol
         slurp
-        swaybg
         vlc
         wl-clipboard
       ];
