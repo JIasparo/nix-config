@@ -13,15 +13,15 @@
 
       packages = with pkgs; [
         bitwarden-desktop
-        blender
-        bottles
+        #blender
+        #bottles
         brightnessctl
         #davinci-resolve
         ffmpeg-full
         file-roller
         #freecad-wayland
         grim
-        heroic
+        #heroic
         #kdePackages.okular # Good for annotating PDFs
         lutris
         #obsidian
