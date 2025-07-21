@@ -14,6 +14,10 @@
   config = {
     wayland.windowManager.hyprland = {
       enable = true;
+
+      extraConfig = ''
+        ecosystem:no_update_news=true;
+      '';
     };
   };
 }
