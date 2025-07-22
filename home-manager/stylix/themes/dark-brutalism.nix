@@ -13,8 +13,8 @@
         base02 = "313131"; # Selection Background
         base03 = "4c4c4c"; # Comments, Invisibles, Line Highlighting
         base04 = "777777"; # Dark Foreground (Used for status bars)
-        base05 = "959595"; # Default Foreground, Caret, Delimiters, Operators
-        base06 = "bababa"; # Light Foreground (Not often used)
+        base05 = "c2c2c2"; # Default Foreground, Caret, Delimiters, Operators
+        base06 = "d6d6d6"; # Light Foreground (Not often used)
         base07 = "e9e9e9"; # Light Background (Not often used)
         base08 = "b32834"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
         base09 = "c5693e"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
