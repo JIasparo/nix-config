@@ -20,14 +20,14 @@
     };
 
     # Auto Upgrades
-    system.autoUpgrade = {
-      enable = true;
-      dates = "daily";
-      flake = configpath;
-      flags = [
-        #
-      ];
-    };
+    #system.autoUpgrade = {
+    #  enable = true;
+    #  dates = "daily";
+    #  flake = configpath;
+    #  flags = [
+    #    #
+    #  ];
+    #};
 
     # Timezone/localization
     time.timeZone = "America/New_York";
