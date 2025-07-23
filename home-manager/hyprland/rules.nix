@@ -31,6 +31,10 @@
         "idleinhibit focus, class:^($browser)$, title:^(.*YouTube.*)$"
         "idleinhibit fullscreen, class:^($browser)$"
 
+        # Prevent idling while playing games
+        "idleinhibit focus, class:^(steam_app_.*)$"
+        "idleinhibit fullscreen, class:^(steam_app_.*)$"
+
         # Open Discord on Workspace 9
         "workspace 9, class:^(discord)$"
 
