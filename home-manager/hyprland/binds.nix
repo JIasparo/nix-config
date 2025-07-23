@@ -40,12 +40,13 @@
         "$mod, D, exec, discord"
         "$mod, E, exec, $editor"
         "$mod, F, exec, $fileManager"
+        "$mod, F4, forcekillactive,"
+        "$mod, M, exec, vlc"
         "$mod, Q, killactive,"
         "$mod, RETURN, exec, $terminal"
         "$mod, S, exec, steam"
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
-        "$mod, F4, forcekillactive,"
         "CTRL ALT, DELETE, exec, $terminal $sysMon"
 
         # Toggle floating, resize active window and center it
