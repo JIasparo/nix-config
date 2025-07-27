@@ -16,6 +16,7 @@
       "$editor" = "codium";
       "$fileManager" = "$terminal yazi";
       "$menu" = "rofi -show drun";
+      "$musicplayer" = "vlc";
       "$passManager" = "bitwarden";
       "$sysMon" = "btop";
       "$terminal" = "kitty";
@@ -36,23 +37,29 @@
       */
 
       bind = [
-        "$mod $move, V, fullscreen"
+        # Application binds
         "$mod, D, exec, discord"
         "$mod, E, exec, $editor"
         "$mod, F, exec, $fileManager"
-        "$mod, F4, forcekillactive,"
-        "$mod, M, exec, vlc"
-        "$mod, Q, killactive,"
+        "$mod, M, exec, $musicplayer"
+        "$mod, V, exec, vlc"
         "$mod, RETURN, exec, $terminal"
         "$mod, S, exec, steam"
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
         "CTRL ALT, DELETE, exec, $terminal $sysMon"
 
+        # Kill the active window
+        "$mod, Q, killactive,"
+        "$mod, F4, forcekillactive,"
+
         # Toggle floating, resize active window and center it
-        "$mod, V, togglefloating,"
-        "$mod, V, resizeactive, exact 50% 50%"
-        "$mod, V, centerwindow,"
+        "$mod, RETURN, togglefloating,"
+        "$mod, RETURN, resizeactive, exact 50% 50%"
+        "$mod, RETURN, centerwindow,"
+
+        # Toggle Fullscreen
+        "$mod $move, RETURN, fullscreen"
 
         # When floating, change focus window on workspace and bring it to the top
         "$mod, Tab, cyclenext,"
