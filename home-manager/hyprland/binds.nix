@@ -15,8 +15,8 @@
       "$browser" = "librewolf";
       "$editor" = "codium";
       "$fileManager" = "$terminal yazi";
+      "$mediaplayer" = "vlc";
       "$menu" = "rofi -show drun";
-      "$musicplayer" = "vlc";
       "$passManager" = "bitwarden";
       "$sysMon" = "btop";
       "$terminal" = "kitty";
@@ -41,8 +41,7 @@
         "$mod, D, exec, discord"
         "$mod, E, exec, $editor"
         "$mod, F, exec, $fileManager"
-        "$mod, M, exec, $musicplayer"
-        "$mod, V, exec, vlc"
+        "$mod, M, exec, $mediaplayer"
         "$mod, RETURN, exec, $terminal"
         "$mod, S, exec, steam"
         "$mod, SPACE, exec, $menu"
@@ -54,9 +53,9 @@
         "$mod, F4, forcekillactive,"
 
         # Toggle floating, resize active window and center it
-        "$mod, RETURN, togglefloating,"
-        "$mod, RETURN, resizeactive, exact 50% 50%"
-        "$mod, RETURN, centerwindow,"
+        "$mod, V, togglefloating,"
+        "$mod, V, resizeactive, exact 50% 50%"
+        "$mod, V, centerwindow,"
 
         # Toggle Fullscreen
         "$mod $move, RETURN, fullscreen"
