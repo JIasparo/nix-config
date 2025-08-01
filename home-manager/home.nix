@@ -26,6 +26,7 @@
         lutris
         #obsidian
         #orca-slicer
+        prismlauncher
         pwvucontrol
         slurp
         vlc
