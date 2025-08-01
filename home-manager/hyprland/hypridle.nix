@@ -27,8 +27,8 @@
           }
 
           {
-            # Suspend PC after 30 minutes of inactivity
-            timeout = 1800;
+            # Suspend PC after 20 minutes of inactivity
+            timeout = 1200;
             on-timeout = "systemctl suspend";
           }
         ];
