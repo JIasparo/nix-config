@@ -43,12 +43,15 @@
 
         # Open Steam on Workspace 5
         "workspace 5, class:^(steam)$"
-        # Center the Steam Sign In client
+        # Center the Steam Sign In client on Workspace 5
+        "workspace 5, class:^(steam)$, title:^(Sign in .*)$"
         "center, class:^(steam)$, title:^(Sign in .*)$"
-        # Make Steam's Special Offers float and center
+        # Make Steam's Special Offers float and center on Workspace 5
+        "workspace 5, class:^(steam)$, title:^(Special Offers)$"
         "float, class:^(steam)$, title:^(Special Offers)$"
         "center, class:^(steam)$, title:^(Special Offers)$"
-        # Make Steam's Uninstall prompt float and center
+        # Make Steam's Uninstall prompt float and center on Workspace 5
+        "workspace 5, class:^(steam)$, title:^(Uninstall)$"
         "float, class:^(steam)$, title:^(Uninstall)$"
         "center, class:^(steam)$, title:^(Uninstall)$"
         # Make Steam games float and center on Workspace 5
