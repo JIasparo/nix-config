@@ -10,7 +10,7 @@
         show_panel=false
         line_size=5
         text_size=20
-        text_font=mono
+        text_font=sans-serif
         paint_mode=brush
         early_exit=false
         fill_shape=false
