@@ -37,8 +37,8 @@
 
       fonts = {
         serif = {
-          package = pkgs.maple-mono.Normal-NF-unhinted;
-          name = "MapleMonoNormal-NF-Regular"; # MapleMonoNormal-NF-Thin
+          package = pkgs.maple-mono.NF-unhinted;
+          name = "MapleMono-NF-Regular"; # MapleMono-NF-Thin
         };
 
         sansSerif = {
@@ -47,8 +47,8 @@
         };
 
         monospace = {
-          package = pkgs.maple-mono.Normal-NF-unhinted;
-          name = "MapleMonoNormal-NF-Regular"; # MapleMonoNormal-NF-Thin
+          package = pkgs.maple-mono.NF-unhinted;
+          name = "MapleMono-NF-Regular"; # MapleMono-NF-Thin
         };
 
         emoji = {
