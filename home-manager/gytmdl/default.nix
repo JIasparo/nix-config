@@ -10,10 +10,8 @@
       gytmdl = pkgs.callPackage ./../../pkgs/gytmdl/package.nix { };
     };
 
-    home = {
-      packages = with pkgs; [
-        gytmdl
-      ];
-    };
+    home.packages = with pkgs; [
+      gytmdl
+    ];
   };
 }
