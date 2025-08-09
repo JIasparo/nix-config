@@ -23,6 +23,7 @@
     ./network-applet.nix
     ./nixcord
     ./obs-studio
+    ./obsidian.nix
     ./playerctl.nix
     ./qt.nix
     ./ripgrep.nix
