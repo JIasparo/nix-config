@@ -6,6 +6,7 @@
     ./../../common/core
     ./disk-configuration.nix
     ./hardware-configuration.nix
+    
     # Optional
     #./../../common/optional/gnome.nix
     ./../../common/optional/hyprland
