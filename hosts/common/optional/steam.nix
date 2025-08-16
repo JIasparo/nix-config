@@ -18,9 +18,11 @@
         extraCompatPackages = with pkgs; [
           # Glorious Eggroll Proton fork.
           proton-ge-bin
-          steamtinkerlaunch
+          #steamtinkerlaunch
         ];
       };
+
+      gamemode.enable = true;
 
       gamescope = {
         enable = true;
