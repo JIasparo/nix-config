@@ -14,7 +14,7 @@
       packages = with pkgs; [
         bitwarden-desktop
         #blender
-        #bottles
+        bottles
         brightnessctl
         #davinci-resolve
         ffmpeg-full
@@ -23,9 +23,10 @@
         grim
         #heroic
         #kdePackages.okular # Good for annotating PDFs
-        lutris
+        #lutris
         #orca-slicer
-        prismlauncher
+        piper
+        #prismlauncher
         pwvucontrol
         slurp
         vlc
