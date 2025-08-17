@@ -7,6 +7,7 @@
     # Optional
     ./bash.nix
     ./btop.nix
+    ./easyeffects
     ./eza.nix
     ./fastfetch
     ./fd.nix
