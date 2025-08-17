@@ -10,4 +10,8 @@
     ./system.nix
     ./user.nix
   ];
+
+  config = {
+    programs.dconf.enable = true;
+  };
 }
