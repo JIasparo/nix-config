@@ -12,6 +12,7 @@
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
         "hyprctl setcursor ${config.stylix.cursor.name} ${toString config.stylix.cursor.size}"
+        "easyeffects --gapplication-service"
       ];
 
       exec-once = [
