@@ -18,7 +18,6 @@
         brightnessctl
         #davinci-resolve
         ffmpeg-full
-        file-roller
         #freecad-wayland
         grim
         #heroic
