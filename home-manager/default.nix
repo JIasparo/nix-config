@@ -29,9 +29,10 @@
     ./qt.nix
     ./ripgrep.nix
     ./rofi
+    ./satty
     ./starship
     ./stylix
-    ./swappy
+    #./swappy
     ./swaync
     ./vscodium
     ./yazi

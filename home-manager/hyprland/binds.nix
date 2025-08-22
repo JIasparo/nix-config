@@ -110,15 +110,12 @@
         "$mod, grave, togglespecialworkspace"
         "$mod $move, grave, movetoworkspace, special"
 
-        # Take a screenshot of active monitor or a select area, then open it in swappy
-        "$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" - | swappy -f -"
-        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" - | swappy -f -"
+        # Take a screenshot of active monitor, then open it in satty
+        "$mod, Print, exec, grim -g \"$(slurp -o -r -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"
 
-        # Take a screenshot of active monitor or a select area, then save screenshot and copy to clipboard
-        #"$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" | $GRIM_DEFAULT_DIR" # This one saves
-        #"$mod, Print, exec, grim -o \"$(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}')\" - | wl-copy" # This one copies
-        #"$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" | $GRIM_DEFAULT_DIR" # This one saves
-        #"$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" - | wl-copy" # This one copies
+
+        # Take a screenshot of select area, then open it in satty
+        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"
       ];
 
       bindm = [
