@@ -2,8 +2,7 @@
 
 {
   config = {
-    # Enable drivers for Xbox One controllers.
-    #hardware.xone.enable = true;
+    hardware.xone.enable = true; # Enable drivers for Xbox One controllers.
 
     programs = {
       steam = {
@@ -16,8 +15,7 @@
 
         # These packages are added to the Steam compatibility tools.
         extraCompatPackages = with pkgs; [
-          # Glorious Eggroll Proton fork.
-          proton-ge-bin
+          proton-ge-bin # Glorious Eggroll Proton fork
           #steamtinkerlaunch
         ];
       };
