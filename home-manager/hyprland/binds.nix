@@ -58,7 +58,7 @@
         "$mod, V, centerwindow,"
 
         # Toggle Fullscreen
-        "$mod $move, RETURN, fullscreen"
+        "$mod $move, V, fullscreen"
 
         # When floating, change focus window on workspace and bring it to the top
         "$mod, Tab, cyclenext,"
