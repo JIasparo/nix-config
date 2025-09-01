@@ -58,6 +58,7 @@
         "workspace 5, class:^(steam_app_.*)$"
         "float, class:^(steam_app_.*)"
         "center, class:^(steam_app_.*)$"
+        "fullscreen, class:^(steam_app_.*)$"
 
         # Make Bitwarden's pop-up windows float and center
         "float, class:^(Electron)$, title:^(Log out)$"
