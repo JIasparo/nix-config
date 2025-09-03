@@ -6,11 +6,11 @@
 
       logo = let 
         bottom-left={r = "82"; g = "119"; b = "195";};
-        middle-left={r = "127"; g = "183"; b = "255";};
+        middle-left={r = "126"; g = "186"; b = "228";};
         top-left={r = "82"; g = "119"; b = "195";};
-        top-right={r = "127"; g = "183"; b = "255";};
+        top-right={r = "126"; g = "186"; b = "228";};
         middle-right={r = "82"; g = "119"; b = "195";};
-        bottom-right={r = "127"; g = "183"; b = "255";};
+        bottom-right={r = "126"; g = "186"; b = "228";};
       in{
         type = "data";
         source = ''
