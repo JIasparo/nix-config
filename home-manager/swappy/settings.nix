@@ -2,21 +2,22 @@
 
 {
   config = {
-    home.file = {
-      ".config/swappy/config".text = ''
-        [Default]
-        save_dir=$HOME/Pictures/Screenshots
-        save_filename_format=swappy-%Y%m%d-%H%M%S.png
-        show_panel=false
-        line_size=5
-        text_size=20
-        text_font=sans-serif
-        paint_mode=brush
-        early_exit=false
-        fill_shape=false
-        auto_save=false
-        custom_color=rgba(193,125,17,1)
-      '';
+    programs.swappy.settings = {
+      default = {
+        auto_save = false;
+        custom_color = "rgba(193,125,17,1)";
+        early_exit = false;
+        fill_shape = false;
+        line_size = 5;
+        paint_mode = "brush";
+        save_dir = "$HOME/Pictures/Screenshots";
+        save_filename_format = "swappy-%Y%m%d-%H%M%S.png";
+        show_panel = false;
+        text_font = "sans-serif";
+        text-size = 20;
+        transparancy = 50;
+        transparent = false;
+      };
     };
   };
 }
