@@ -1,4 +1,5 @@
-{...}:
+{ ... }:
+
 {
   imports = [
     ./nixos-default.nix
