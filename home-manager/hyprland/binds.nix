@@ -120,8 +120,8 @@
 
       bindm = [
         # Move/resize windows with $mod + LMB/RMB and dragging
-        "$mod, mouse:272, movewindow"
-        "$mod, mouse:273, resizewindow"
+        "$mod $move, mouse:272, movewindow"
+        "$mod $move, mouse:273, resizewindow"
       ];
 
       bindel = [
