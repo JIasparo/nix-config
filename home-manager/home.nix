@@ -25,6 +25,7 @@
         #lutris
         #orca-slicer
         piper
+        picard
         #prismlauncher
         pwvucontrol
         slurp
