@@ -24,10 +24,10 @@
         brush-smooth-history-size = 0; # Adjust history size for brush input smooting (0: disabled, default: 0, try e.g. 5 or 10)
       };
 
-      font = {
-        family = "Roboto";
-        style = "Bold";
-      };
+      #font = {
+      #  family = "Roboto";
+      #  style = "Bold";
+      #};
 
       color-palette = {
         #palette = [
