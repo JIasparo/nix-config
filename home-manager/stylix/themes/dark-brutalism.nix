@@ -28,7 +28,7 @@
         #base0D = "9376a1"; # Functions, Methods, Attribute IDs, Headings, Accent color
       };
 
-      iconTheme = {
+      icons = {
         enable = true;
         package = pkgs.papirus-icon-theme;
         light = "Papirus-Light";
@@ -38,7 +38,7 @@
       fonts = {
         serif = {
           package = pkgs.maple-mono.NF-unhinted;
-          name = "MapleMono-NF-Regular"; # MapleMono-NF-Thin
+          name = "MapleMono-NF-Regular";
         };
 
         sansSerif = {
@@ -48,11 +48,11 @@
 
         monospace = {
           package = pkgs.maple-mono.NF-unhinted;
-          name = "MapleMono-NF-Regular"; # MapleMono-NF-Thin
+          name = "MapleMono-NF-Regular";
         };
 
         emoji = {
-          package = pkgs.noto-fonts-emoji;
+          package = pkgs.noto-fonts-color-emoji;
           name = "Noto Color Emoji";
         };
       };
