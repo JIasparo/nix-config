@@ -5,8 +5,8 @@
     wayland.windowManager.hyprland.settings = {
       env = [
         # Force apps to use Wayland
-        #"NIXOS_OZONE_WL,1"
-        #"ELECTRON_OZONE_PLATFORM_HINT,auto"
+        "NIXOS_OZONE_WL,1"
+        "ELECTRON_OZONE_PLATFORM_HINT,auto"
 
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
