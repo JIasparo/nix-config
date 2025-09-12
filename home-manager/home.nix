@@ -1,6 +1,7 @@
 {
   username,
   pkgs,
+  inputs,
   ...
 }:
 
@@ -43,9 +44,13 @@
       stateVersion = "24.11";
     };
 
+    # Set the $NIX_PATH env to follow flake.nix
+    nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
+    # Garbage collection
     services.home-manager.autoExpire = {
       enable = true;
       frequency = "daily";
