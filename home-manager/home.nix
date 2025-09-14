@@ -23,6 +23,7 @@
         grim
         #heroic
         #kdePackages.okular # Good for annotating PDFs
+        #krita
         #lutris
         #orca-slicer
         piper
