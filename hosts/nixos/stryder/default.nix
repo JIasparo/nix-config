@@ -15,6 +15,7 @@
     ./../../common/optional/openrgb.nix
     ./../../common/optional/ratbagd.nix
     ./../../common/optional/steam.nix
+    ./../../common/optional/thunar.nix
     ./../../common/optional/wireguard.nix
   ];
 }
