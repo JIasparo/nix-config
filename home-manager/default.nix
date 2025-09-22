@@ -19,12 +19,12 @@
     #./niri
     ./kitty
     ./librewolf
-    ./mpv.nix
-    ./nemo.nix
+    #./mpv.nix
+    #./nemo.nix
     ./network-applet.nix
     ./nixcord
     ./obs-studio
-    ./obsidian.nix
+    #./obsidian.nix
     ./playerctl.nix
     ./qt.nix
     ./ripgrep.nix

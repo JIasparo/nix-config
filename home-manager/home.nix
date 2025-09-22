@@ -14,8 +14,8 @@
 
       packages = with pkgs; [
         bitwarden-desktop
-        #blender
-        bottles
+        blender
+        #bottles
         brightnessctl
         #davinci-resolve
         ffmpeg-full
