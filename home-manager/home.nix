@@ -19,7 +19,7 @@
         brightnessctl
         #davinci-resolve
         ffmpeg-full
-        #freecad-wayland
+        #freecad
         grim
         #heroic
         #kdePackages.okular # Good for annotating PDFs
