@@ -118,6 +118,8 @@
         messageSaturation = 40;
       };
 
+      serverInfo.enable = true;
+
       showHiddenChannels = {
         enable = true;
         hideUnreads = true;
