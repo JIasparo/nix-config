@@ -25,6 +25,7 @@
         #kdePackages.okular # Good for annotating PDFs
         #krita
         #lutris
+        #nexusmods-app
         #orca-slicer
         piper
         picard
