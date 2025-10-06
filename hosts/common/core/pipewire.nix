@@ -15,59 +15,7 @@
 
         pulse.enable = true;
 
-        wireplumber = {
-          enable = true;
-          extraConfig = {
-            "disable-suspension" = {
-              "monitor.alsa.rules" = [
-                {
-                  matches = [
-                    { "node.name" = "~alsa_input.*"; }
-                    { "node.name" = "~alsa_output.*"; }
-                  ];
-
-                  actions = {
-                    update-props = {
-                      "session.suspend-timeout-seconds" = 0;
-                    };
-                  };
-                }
-              ];
-
-              "monitor.bluez.rules" = [
-                {
-                  matches = [
-                    { "node.name" = "~bluez_input.*"; }
-                    { "node.name" = "~bluez_output.*"; }
-                  ];
-
-                  actions = {
-                    update-props = {
-                      "session.suspend-timeout-seconds" = 0;
-                    };
-                  };
-                }
-              ];
-            };
-
-            "alsa-config" = {
-              "monitor.alsa.rules" = [
-                {
-                  matches = [
-                    { "node.name" = "~alsa_output.*"; }
-                  ];
-
-                  actions = {
-                    update-props = {
-                      "api.alsa.period-size" = 1024;
-                      "api.alsa.headroom" = 8192;
-                    };
-                  };
-                }
-              ];
-            };
-          };
-        };
+        wireplumber.enable = true;
       };
     };
   };
