@@ -3,6 +3,7 @@
 {
   imports = [
     ./bootloader.nix
+    ./dconf.nix
     ./network.nix
     ./packages.nix
     ./pipewire.nix
@@ -10,8 +11,4 @@
     ./system.nix
     ./user.nix
   ];
-
-  config = {
-    programs.dconf.enable = true;
-  };
 }
