@@ -1,11 +1,13 @@
-{...}:
+{ ... }:
 
 {
-    imports = [
-        ./settings.nix
-    ];
+  imports = [
+    ./settings.nix
+  ];
 
-    config = {
-        programs.librewolf.enable = true;
+  config = {
+    programs.librewolf = {
+      enable = true;
     };
+  };
 }
