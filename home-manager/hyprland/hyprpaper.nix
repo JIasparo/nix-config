@@ -4,6 +4,7 @@
   config = {
     services.hyprpaper = {
       enable = true;
+      
       settings = {
         preload = [
           "${config.stylix.image}"

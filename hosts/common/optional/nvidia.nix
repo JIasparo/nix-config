@@ -15,16 +15,19 @@
       # Modesetting is required
       modesetting.enable = true;
 
-      # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
-      powerManagement.enable = true;
+      # Nvidia power management
+      powerManagement = {
+        # Experimental, and can cause sleep/suspend to fail.
+        enable = true;
+        
+        # Experimental option to turn off GPU when not in use.
+        finegrained = false;
+      };
 
-      # Experimental option to turn off GPU when not in use. Set to true if wanted.
-      powerManagement.finegrained = false;
-
-      # Use Nvidia open source kernel module. Set to true if wanted.
+      # Use Nvidia open source kernel module.
       open = true;
 
-      # Enables the `nvidia-settings` menu. Set to true if wanted.
+      # Enables the `nvidia-settings` menu.
       nvidiaSettings = false;
 
       package = config.boot.kernelPackages.nvidiaPackages.stable;

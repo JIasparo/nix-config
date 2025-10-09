@@ -2,7 +2,8 @@
 
 {
   config = {
-    hardware.xone.enable = true; # Enable drivers for Xbox One controllers.
+    # Enable drivers for Xbox One controllers.
+    hardware.xone.enable = true;
 
     programs = {
       steam = {

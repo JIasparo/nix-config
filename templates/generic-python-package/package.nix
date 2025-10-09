@@ -18,7 +18,7 @@ python3Packages.buildPythonApplication rec {
   # Uncomment if the application has a pyproject.toml
   #format = "pyproject";
 
-  # This application has no tests
+  # Does this application have tests?
   doCheck = false; # set to true if it has tests
 
   # Dependencies that should exist in the runtime environment

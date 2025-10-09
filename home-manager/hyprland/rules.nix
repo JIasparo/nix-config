@@ -3,7 +3,6 @@
 {
   config = {
     wayland.windowManager.hyprland.settings = {
-
       exec-once = [
         "[workspace special silent] $passManager"
       ];

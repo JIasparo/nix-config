@@ -55,7 +55,9 @@
         {
           type = "command";
           key = "/ Age";
-          text = # bash script
+
+          # bash script
+          text =
             /*
               `birth_install` - takes the time, in seconds, from the unix epoch to the creation of the root directory.
               `current` - takes the time, in seconds, from the epoch to today's date.

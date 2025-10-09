@@ -42,8 +42,8 @@
         TERM = "kitty";
       };
 
-      # Read Home Manager release notes before changing this value.
-      stateVersion = "24.11";
+      # The NixOS version the config was built upon.
+      stateVersion = "24.11"; # Read Home Manager release notes before changing this value.
     };
 
     # Set the $NIX_PATH env to follow flake.nix

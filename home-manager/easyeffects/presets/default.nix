@@ -7,7 +7,8 @@
 
   config = {
     services.easyeffects = {
-      preset = "blue-yeti"; # Preset to use when starting application.
+      # Preset to use when starting application.
+      preset = "blue-yeti"; # Use the name of the desired easyeffects config file.
     };
   };
 }
