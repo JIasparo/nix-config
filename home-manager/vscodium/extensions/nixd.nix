@@ -10,7 +10,7 @@
   config = {
     home.packages = with pkgs; [
       nixd
-      nixfmt-rfc-style
+      nixfmt
     ];
 
     programs.vscode.profiles.default = {
