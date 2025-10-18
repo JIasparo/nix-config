@@ -32,6 +32,7 @@
         #prismlauncher
         pwvucontrol
         slurp
+        unrar
         vlc
         wl-clipboard
       ];
