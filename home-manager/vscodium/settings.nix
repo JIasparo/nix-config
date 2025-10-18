@@ -5,11 +5,16 @@
     programs.vscode.profiles = {
       default = {
         userSettings = {
-          "telemetry.telemetryLevel" = "off";
+          "breadcrumbs.enabled" = false;
+          "chat.disableAIFeatures" = true;
           "editor.selectionClipboard" = false; # Turns off middle-mouse paste
           "editor.wordWrap" = "on";
+          "extensions.autoCheckUpdates" = false;
+          "extensions.autoUpdate" = false;
+          "telemetry.telemetryLevel" = "off";
+          "update.mode" = "none";
           "workbench.activityBar.location" = "top";
-          "breadcrumbs.enabled" = false;
+          "workbench.settings.showAISearchToggle" = false;
           "workbench.tree.indent" = 15;
         };
       };
