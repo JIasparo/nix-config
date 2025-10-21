@@ -38,9 +38,11 @@
       ];
 
       sessionVariables = {
-        #EDITOR = "codium";
-        VISUAL = "codium";
+        BROWSER = "librewolf";
+        EDITOR = "nano";
         TERM = "kitty";
+        VISUAL_EDITOR = "codium";
+        MEDIA_PLAYER = "vlc";
       };
 
       # The NixOS version the config was built upon.
