@@ -3,82 +3,44 @@
 {
   config = {
     programs.niri.settings = {
-      clipboard.disable-primary = true; # Disable primary selection clipboard (middle mouse paste)
-      prefer-no-csd = false; # Prefer server-side decorations (SSD) over client-side decorations (CSD)
-      screenshot-path = "";
-
       environment = {
-        #
+        "NIXOS_OZONE_WL" = "1";
       };
 
       spawn-at-startup = [
-        { command = [ "swaybg -i ${config.stylix.image}" ]; }
+        { argv = [ "swaybg" "-i" "${config.stylix.image}" ]; }
       ];
-
-      input = {
-        power-key-handling.enable = true;
-
-        keyboard = {
-          numlock = true;
-        };
-
-        mouse = {
-          #accel-profile = "flat";
-          #accel-speed = 0;
-          left-handed = false;
-        };
-
-        touchpad = {
-          #accel-profile = "flat";
-          #accel-speed = 0;
-          disabled-on-external-mouse = false;
-          dwt = false; # Disables touchpad while typing
-          dwtp = false; # Disables touchpad while using trackpoint
-          natural-scroll = true;
-          #scroll-method = "two-finger"; # Type: null, "no-scroll", "two-finger", "edge", "on-button-down"
-          tap = true; # Enable tap-to-click
-        };
-      };
 
       cursor = {
         size = config.stylix.cursor.size;
         theme = "${config.stylix.cursor.name}";
       };
 
+      gestures = {
+        hot-corners.enable = false;
+      };
+
+      hotkey-overlay = {
+        skip-at-startup = true;
+        hide-not-bound = false;
+      };
+
+      screenshot-path = "~/Pictures/Screenshots/niri-$(date '+%Y%m%d-%H:%M:%S').png";
+      clipboard.disable-primary = true; # Disable primary selection clipboard (middle mouse paste)
+      prefer-no-csd = true; # Prefer server-side decorations (SSD) over client-side decorations (CSD)
+
       layout = {
         border = {
           enable = true;
           width = 2;
-          #active.color = "";
-          #inactive.color = "";
-          #urgent.color = "";
         };
 
-        focus-ring = {
-          enable = true;
-          width = 4;
-          #active.color = "";
-          #inactive.color = "";
-          #urgent.color = "";
-        };
+        focus-ring.enable = false;
 
-        shadow = {
-          enable = true;
-          #color = "";
-          #inactive-color = "";
-          draw-behind-window = true;
-          softness = 30.0;
-          spread = 5.0;
-
-          offset = {
-            x = 0.0;
-            y = 0.0;
-          };
-        };
+        shadow.enable = false;
 
         insert-hint = {
           enable = true;
-          #display.color = "";
         };
 
         preset-column-widths = [
@@ -95,29 +57,33 @@
           { proportion = 1.0; }
         ];
 
+        always-center-single-column = false;
         center-focused-column = "never"; # Type: "never", "always", "on-overflow"
         default-column-display = "normal"; # Type: "normal", "tabbed"
-        default-column-width = { proportion = 0.5; };
+        default-column-width = {
+          proportion = 0.5;
+        };
 
         tab-indicator = {
           enable = true;
-          corner-radius = 0.0;
-          gap = 5.0;
-          gaps-between-tabs = 0.0;
-          length.total-proportion = 0.5;
-          place-within-column = true;
           hide-when-single-tab = true;
+          place-within-column = true;
           position = "left"; # Type: "left", "right", "top", "bottom"
-          width = 4.0;
+
+          length.total-proportion = 1.0;
+          corner-radius = 0.0;
+          gap = 2.5;
+          gaps-between-tabs = 2.5;
+          width = 2.0;
         };
 
-        gaps = 6;
+        gaps = 3;
 
         struts = {
-          bottom = 0;
-          left = 0;
-          right = 0;
-          top = 0;
+          bottom = 6;
+          left = 6;
+          right = 6;
+          top = 6;
         };
       };
 
@@ -125,8 +91,35 @@
         enable = true;
       };
 
-      gestures = {
-        hot-corners.enable = true;
+      input = {
+        keyboard = {
+          xkb.layout = "us";
+          numlock = true;
+        };
+
+        focus-follows-mouse = {
+          enable = true;
+          max-scroll-amount = "95%";
+        };
+
+        mouse = {
+          accel-profile = "flat";
+          accel-speed = 0;
+          left-handed = false;
+        };
+
+        touchpad = {
+          accel-profile = "flat";
+          accel-speed = 0;
+          disabled-on-external-mouse = false;
+          dwt = false; # Disables touchpad while typing
+          dwtp = false; # Disables touchpad while using trackpoint
+          natural-scroll = false;
+          #scroll-method = "two-finger"; # Type: null, "no-scroll", "two-finger", "edge", "on-button-down"
+          tap = true; # Enable tap-to-click
+        };
+
+        warp-mouse-to-focus.enable = true;
       };
     };
   };
