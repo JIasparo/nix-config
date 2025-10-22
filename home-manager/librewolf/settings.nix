@@ -40,6 +40,9 @@
             # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
             "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
           };
+
+          containers = { };
+          #containersForce = true;
         };
 
         ${username} = {
@@ -49,6 +52,9 @@
             # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
             "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = false;
           };
+
+          containers = { };
+          #containersForce = true;
         };
       };
     };
