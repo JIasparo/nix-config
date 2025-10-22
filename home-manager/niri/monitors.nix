@@ -3,51 +3,51 @@
 {
   config = {
     programs.niri.settings.outputs = {
+      # Acer Technologies ED320QR S
       "DP-1" = {
         enable = true;
         focus-at-startup = false;
-        name = "Acer Technologies ED320QR S";
-        scale = null;
-        variable-refresh-rate = false; # Type: false, "on-demand", true
+        scale = 1;
+        variable-refresh-rate = "on-demand"; # Type: false, "on-demand", true
 
-        #position = {
-        #  x = 0;
-        #  y = 0;
-        #};
+        mode = {
+          width = 1920;
+          height = 1080;
+          refresh = 144.001;
+        };
 
-        #mode = {
-        #  width = "";
-        #  height = "";
-        #  refresh = null;
-        #};
+        position = {
+          x = 2560;
+          y = 0;
+        };
 
         transform = {
           flipped = false;
-          rotation = 0; # Type 0, 80, 180, 270
+          rotation = 0; # Type 0, 90, 180, 270
         };
       };
 
+      # Dell Inc. Dell S2716DG
       "DP-2" = {
         enable = true;
         focus-at-startup = true;
-        name = "Dell Inc. Dell S2716DG";
-        scale = null;
-        variable-refresh-rate = false; # Type: false, "on-demand", true
+        scale = 1;
+        variable-refresh-rate = "on-demand"; # Type: false, "on-demand", true
 
-        #position = {
-        #  x = 0;
-        #  y = 0;
-        #};
+        mode = {
+          width = 2560;
+          height = 1440;
+          refresh = 143.964;
+        };
 
-        #mode = {
-        #  width = "";
-        #  height = "";
-        #  refresh = null;
-        #};
+        position = {
+          x = 0;
+          y = 0;
+        };
 
         transform = {
           flipped = false;
-          rotation = 0; # Type 0, 80, 180, 270
+          rotation = 0; # Type 0, 90, 180, 270
         };
       };
     };
