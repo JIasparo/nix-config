@@ -56,6 +56,7 @@
             inputs.stylix.homeModules.stylix
             inputs.nixcord.homeModules.nixcord
             inputs.niri.homeModules.niri
+            inputs.niri.homeModules.stylix
           ];
           extraSpecialArgs = { inherit inputs username useremail hostname configpath; };
         };
