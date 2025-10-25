@@ -9,8 +9,8 @@
     
     # Optional
     #./../../common/optional/gnome.nix
-    #./../../common/optional/hyprland
-    ./../../common/optional/niri
+    ./../../common/optional/hyprland
+    #./../../common/optional/niri
     ./../../common/optional/nvidia.nix
     ./../../common/optional/openrgb.nix
     ./../../common/optional/pipewire-fixes/disable-suspension.nix
