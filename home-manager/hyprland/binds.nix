@@ -64,6 +64,17 @@
         "$mod, Tab, cyclenext,"
         "$mod, Tab, bringactivetotop,"
 
+        # Toggle group
+        "$mod, Slash, togglegroup"
+
+        # Move focus in a group
+        "$mod, Comma, changegroupactive, b"
+        "$mod, Period, changegroupactive, f"
+
+        # Move window into group
+        "$mod $move, Comma, movewindoworgroup, l"
+        "$mod $move, Period, movewindoworgroup, r"
+
         # Move focus with $mod + arrow keys
         "$mod, $left, movefocus, l"
         "$mod, $right, movefocus, r"
