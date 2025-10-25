@@ -12,7 +12,6 @@
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
         "hyprctl setcursor ${config.stylix.cursor.name} ${toString config.stylix.cursor.size}"
-        "easyeffects --gapplication-service"
       ];
 
       exec-once = [
@@ -37,8 +36,8 @@
       };
 
       decoration = {
-        rounding = 10;
-        rounding_power = 3.0;
+        #rounding = 10;
+        #rounding_power = 3.0;
 
         active_opacity = 0.95;
         inactive_opacity = 0.95;
@@ -85,13 +84,24 @@
         };
       };
 
+      group = {
+        groupbar = {
+          render_titles = false;
+          rounding = 0;
+
+          keep_upper_gap = false;
+          gaps_in = 3;
+          gaps_out = 3;
+        };
+      };
+
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
 
         disable_autoreload = true;
         middle_click_paste = false;
-        vrr = 2; # 0 - off, 1 - on, 2 - only on for fullscreen
+        vrr = 2; # 0 - off, 1 - on, 2 - only on for fullscreen, 3 - fullscreen with `video` or `game` content type
       };
 
       render = {
