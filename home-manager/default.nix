@@ -19,6 +19,7 @@
     #./niri
     ./kitty
     ./librewolf
+    ./lutris.nix
     #./mpv.nix
     #./nemo.nix
     ./network-applet.nix
