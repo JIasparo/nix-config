@@ -82,7 +82,8 @@
       "Mod+Shift+Print".action = spawn "sh" "-c" "grim -g \"$(slurp -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png";
 
       # Move / resize windows/columns with mouse
-      #
+      #"Mod+Shift+MouseLeft".action = ;
+      #"Mod+Ctrl+MouseLeft".action = ;
 
       # Volume keybinds
       "XF86AudioRaiseVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+";
