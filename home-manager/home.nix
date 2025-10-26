@@ -15,7 +15,6 @@
       packages = with pkgs; [
         bitwarden-desktop
         blender
-        #bottles
         brightnessctl
         #davinci-resolve
         ffmpeg-full
@@ -28,7 +27,7 @@
         #orca-slicer
         piper
         picard
-        #prismlauncher
+        prismlauncher
         pwvucontrol
         slurp
         unrar
