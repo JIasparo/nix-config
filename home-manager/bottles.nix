@@ -2,8 +2,8 @@
 
 {
   config = {
-    home.packages = with pkgs; [
-      bottles.override { removeWarningPopup = true; }
+    home.packages = [
+      (pkgs.bottles.override { removeWarningPopup = true; })
     ];
   };
 }
