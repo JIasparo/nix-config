@@ -21,47 +21,97 @@
       ];
 
       windowrulev2 = [
-        # Make VSCodium's pop-up windows float and center
-        "float, class:^(Codium)$"
-        "center, class:^(Codium)$"
+        # Assign tags for windows
+        # Browser tags
+        "tag +browser, class:^([Ll]ibrewolf)$"
+        "tag +browser, class:^([Gg]oogle-chrome(-beta|-dev|-unstable)?)$"
+        "tag +browser, class:^(chrome-.+-Default)$" # Chrome PWAs
+        "tag +browser, class:^([Cc]hromium)$"
+        "tag +browser, class:^(Brave-browser(-beta|-dev|-unstable)?)$"
+        "tag +browser, class:^([Tt]horium-browser|[Cc]achy-browser)$"
+        "tag +browser, class:^(zen-alpha|zen)$"
 
-        # Prevent idling while watching videos
-        "idleinhibit focus, class:^(mpv)$"
-        "idleinhibit focus, class:^($browser)$, title:^(.*YouTube.*)$"
-        "idleinhibit fullscreen, class:^($browser)$"
+        # Notification tags
+        "tag +notif, class:^(swaync-control-center|swaync-notification-window|swaync-client|class)$"
+
+        # Terminal tags
+        "tag +terminal, class:^(Alacritty|kitty|kitty-dropterm)$"
+
+        # Editor tags
+        "tag +editor, class:^(codium|codium-url-handler|VSCodium)$"
+
+        # Recording tags
+        "tag +recording, class:^(com.obsproject.Studio)$"
+
+        # Instant Messenger tags
+        "tag +im, class:^([Dd]iscord|[Ww]ebCord|[Vv]esktop)$"
+
+        # Game tags
+        "tag +games, class:^(gamescope)$"
+        "tag +games, class:^(steam_app_\d+)$"
+
+        # Game launcher tags
+        "tag +game-launcher, class:^([Ss]team)$"
+        "tag +game-launcher, title:^([Ll]utris)$"
+        "tag +game-launcher, class:^(com.heroicgameslauncher.hgl)$"
+
+        # File-manager tags
+        "tag +file-manager, class:^([Tt]hunar)$"
+        "tag +file-manager, title:^([Yy]azi|[Yy]azi.*)$"
+
+        # Multimedia-video tags
+        "tag +multimedia-video, class:^([Mm]pv|vlc)$"
+
+        # Sensitive tags
+        "tag +sensitive, class:^([Bb]itwarden)$"
+
+        # Pop-up tags
+        "tag +pop-up, title:^(Open File)(.*)$"
+        "tag +pop-up, title:^(Select a File)(.*)$"
+        "tag +pop-up, title:^(Open Folder)(.*)$"
+        "tag +pop-up, title:^(Save As)(.*)$"
+        "tag +pop-up, title:^(Save Workspace)(.*)$"
+        "tag +pop-up, title:^(Library)(.*)$"
+        "tag +pop-up, title:^(File Upload)(.*)$"
+        "tag +pop-up, title:^(.*)(wants to save)$"
+        "tag +pop-up, title:^(.*)(wants to open)$"
+        "tag +pop-up, title:^(Log out)(.*)$"
+
+        # Assign window rules
+        # Float, center, and resize pop-ups and dialogue boxes
+        "float, center, size 40% 40%, tag:pop-up*"
+
+        # Make multimedia-video windows opaque
+        "noblur, opaque, tag:multimedia-video*"
+
+        # Make games float and center
+        "float, center, tag:games*"
+
+        # Disable eye candy for games
+        "decorate 0, tag:games*"
+
+        # Prevent sensitive windows from showing in a screenshare
+        "noscreenshare, tag:sensitive*"
 
         # Prevent idling while playing games
-        "idleinhibit focus, class:^(steam_app_.*)$"
-        "idleinhibit fullscreen, class:^(steam_app_.*)$"
+        "idleinhibit always, tag:games*"
 
-        # Open Discord on Workspace 9
-        "workspace 9, class:^(discord)$"
+        # Prevent idling while playing videos
+        "idleinhibit focus, tag:multimedia-video*"
+        "idleinhibit focus, title:^(.*YouTube.*)$"
 
-        # Open OBS-Studio on Workspace 10
-        "workspace 10, class:^(com.obsproject.Studio)$"
+        # Workspace specific rules
+        # Make game-launchers spawn on workspace 5
+        "workspace 5, tag:game-launcher*"
 
-        # Open Steam on Workspace 5
-        "workspace 5, class:^(steam)$"
-        # Center the Steam Sign In client on Workspace 5
-        "workspace 5, class:^(steam)$, title:^(Sign in .*)$"
-        "center, class:^(steam)$, title:^(Sign in .*)$"
-        # Make Steam's Special Offers float and center on Workspace 5
-        "workspace 5, class:^(steam)$, title:^(Special Offers)$"
-        "float, class:^(steam)$, title:^(Special Offers)$"
-        "center, class:^(steam)$, title:^(Special Offers)$"
-        # Make Steam's Uninstall prompt float and center on Workspace 5
-        "workspace 5, class:^(steam)$, title:^(Uninstall)$"
-        "float, class:^(steam)$, title:^(Uninstall)$"
-        "center, class:^(steam)$, title:^(Uninstall)$"
-        # Make Steam games float and center on Workspace 5
-        "workspace 5, class:^(steam_app_.*)$"
-        "float, class:^(steam_app_.*)"
-        "center, class:^(steam_app_.*)$"
-        "fullscreen, class:^(steam_app_.*)$"
+        # Make games spawn on workspace 6
+        "workspace 6, tag:games*"
 
-        # Make Bitwarden's pop-up windows float and center
-        "float, class:^(Electron)$, title:^(Log out)$"
-        "center, class:^(Electron)$, title:^(Log out)$"
+        # Make instant messengers open on workspace 9
+        "workspace 9, tag:im*"
+
+        # Make recording software open on workspace 10
+        "workspace 10, tag:recording*"
       ];
 
       layerrule = [
