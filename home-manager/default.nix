@@ -6,6 +6,7 @@
     ./home.nix
     # Optional
     ./bash.nix
+    ./bottles.nix
     ./btop.nix
     ./easyeffects
     ./eza.nix
@@ -19,7 +20,7 @@
     #./niri
     ./kitty
     ./librewolf
-    ./lutris.nix
+    #./lutris.nix
     #./mpv.nix
     #./nemo.nix
     ./network-applet.nix
