@@ -24,7 +24,7 @@
         border_size = "2";
 
         # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
-        allow_tearing = false;
+        allow_tearing = true;
         resize_on_border = false;
 
         layout = "dwindle";
@@ -101,7 +101,7 @@
 
         disable_autoreload = true;
         middle_click_paste = false;
-        vrr = 2; # 0 - off, 1 - on, 2 - only on for fullscreen, 3 - fullscreen with `video` or `game` content type
+        vrr = 3; # 0 - off, 1 - on, 2 - only on for fullscreen, 3 - fullscreen with `video` or `game` content type
       };
 
       render = {
