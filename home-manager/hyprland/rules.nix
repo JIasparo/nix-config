@@ -49,11 +49,15 @@
         # Game tags
         "tag +games, class:^(gamescope)$"
         "tag +games, class:^(steam_app_\d+)$"
+        "tag +games, title:^([Bb]attlefield 4)$"
+        "tag +games, title:^([Tt]itanfall 2)$"
 
         # Game launcher tags
         "tag +game-launcher, class:^([Ss]team)$"
         "tag +game-launcher, title:^([Ll]utris)$"
+        "tag +game-launcher, title:^(EA)$"
         "tag +game-launcher, class:^(com.heroicgameslauncher.hgl)$"
+        "tag +game-launcher, class:^(org.prismlauncher.PrismLauncher)$"
 
         # File-manager tags
         "tag +file-manager, class:^([Tt]hunar)$"
