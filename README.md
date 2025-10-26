@@ -47,10 +47,11 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 + [EmergentMind/nix-config](https://github.com/EmergentMind/nix-config.git) - I took inspiration from the structure.
 + [Frost-Phoenix/nixos-config](https://github.com/Frost-Phoenix/nixos-config.git) - I took inspiration from how the modules are broken down.
 + [XNM1/linux-nixos-hyprland-config-dotfiles](https://github.com/XNM1/linux-nixos-hyprland-config-dotfiles.git) - I took inspiration from how the modules are broken down.
-+ [justinmdickey/publicdots](https://github.com/justinmdickey/publicdots.git) - I copied most of the `hyprlock.conf` file.
++ [justinmdickey/publicdots](https://github.com/justinmdickey/publicdots.git) - I copied most of the `.config/hypr/hyprlock.conf` file.
 + [4DBug/nix-ansi](https://github.com/4DBug/nix-ansi.git) - The ansi NixOS logo I use for fastfetch. Tip: `ESC[38;2;${r};${g};${b}m` sets the foreground color, and `ESC[48;2;${r};${g};${b}m` sets the background color.
-+ [TheDummyUser/nixflakes](https://github.com/TheDummyUser/nixflakes.git) - I copied the bash script from `fastfetch/default.nix`.
-+ [adi1090x/rofi](https://github.com/adi1090x/rofi.git) - I copied most of the Rofi theme from `launchers/type-1/style-5.rasi`.
++ [TheDummyUser/nixflakes](https://github.com/TheDummyUser/nixflakes.git) - I copied the bash script from `config/fastfetch/default.nix`.
++ [adi1090x/rofi](https://github.com/adi1090x/rofi.git) - I copied most of the Rofi theme from `files/launchers/type-1/style-5.rasi`.
++ [JaKooLit/Hyprland-Dots](https://github.com/jakoolit/hyprland-dots.git) - I copied most of the Hyprland window rules from `config/hypr/UserConfigs/WindowRules.conf`.
 
 </details>
 
