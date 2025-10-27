@@ -2,10 +2,12 @@
 
 {
   config = {
-    programs.git = {
-      userName = "${username}";
-      userEmail = "${useremail}";
-      extraConfig.init.defaultBranch = "main";
+    programs.git.settings = {
+      user = {
+        name = "${username}";
+        email = "${useremail}";
+      };
     };
+    #init.defaultBranch = "main";
   };
 }
