@@ -48,7 +48,7 @@
 
         # Game tags
         "tag +games, class:^(gamescope)$"
-        "tag +games, class:^(steam_app_\d+)$"
+        "tag +games, class:^(steam_app_\\d+)$"
         "tag +games, title:^([Bb]attlefield 4)$"
         "tag +games, title:^([Tt]itanfall 2)$"
 
