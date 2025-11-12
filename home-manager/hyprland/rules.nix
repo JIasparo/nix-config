@@ -51,6 +51,7 @@
         "tag +games, class:^(steam_app_\\d+)$"
         "tag +games, title:^([Bb]attlefield 4)$"
         "tag +games, title:^([Tt]itanfall 2)$"
+        "tag +games, class:^(.*)(.x86_64)$"
 
         # Game launcher tags
         "tag +game-launcher, class:^([Ss]team)$"
