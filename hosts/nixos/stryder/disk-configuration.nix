@@ -20,6 +20,7 @@
                 mountOptions = [ "umask=0077" ];
               };
             };
+
             root = {
               size = "100%";
               priority = 2;
