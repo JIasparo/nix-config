@@ -103,7 +103,7 @@
 
         # Prevent idling while playing videos
         "idleinhibit focus, tag:multimedia-video*"
-        "idleinhibit focus, title:^(.*YouTube.*)$"
+        "idleinhibit fullscreen, title:^(.*YouTube.*)$"
 
         # Workspace specific rules
         # Make game-launchers spawn on workspace 5
