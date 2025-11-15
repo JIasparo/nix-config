@@ -27,6 +27,7 @@
     ./nixcord
     ./obs-studio
     #./obsidian.nix
+    ./packages.nix
     ./playerctl.nix
     ./qt.nix
     ./ripgrep.nix
