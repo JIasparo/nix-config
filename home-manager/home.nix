@@ -1,9 +1,4 @@
-{
-  username,
-  pkgs,
-  inputs,
-  ...
-}:
+{ username, inputs, ... }:
 
 {
   config = {
@@ -11,29 +6,6 @@
     home = {
       username = "${username}";
       homeDirectory = "/home/${username}";
-
-      packages = with pkgs; [
-        bitwarden-desktop
-        blender
-        brightnessctl
-        #davinci-resolve
-        ffmpeg-full
-        #freecad
-        grim
-        #heroic
-        #kdePackages.okular # Good for annotating PDFs
-        #krita
-        #nexusmods-app
-        #orca-slicer
-        piper
-        picard
-        prismlauncher
-        pwvucontrol
-        slurp
-        unrar
-        vlc
-        wl-clipboard
-      ];
 
       sessionVariables = {
         BROWSER = "librewolf";
