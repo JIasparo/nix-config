@@ -22,6 +22,13 @@
         showFolderIcon = "never";
       };
 
+      betterSettings = {
+        enable = true;
+        disableFade = true;
+        organizeMenu = true;
+        eagerLoad = true;
+      };
+
       biggerStreamPreview.enable = true;
 
       callTimer = {
@@ -119,6 +126,11 @@
       };
 
       serverInfo.enable = true;
+
+      settings = {
+        enable = true;
+        settingsLocation = "belowNitro";
+      };
 
       showHiddenChannels = {
         enable = true;
