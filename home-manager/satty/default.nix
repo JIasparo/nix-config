@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -6,6 +6,11 @@
   ];
 
   config = {
+    home.packages = with pkgs; [
+      grim
+      slurp
+    ];
+
     programs.satty = {
       enable = true;
     };
