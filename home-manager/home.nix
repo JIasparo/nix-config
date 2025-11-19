@@ -30,6 +30,11 @@
       enable = true;
       frequency = "daily";
       timestamp = "-2 days";
+
+      store = {
+        cleanup = true;
+        options = "--delete-older-than 4d";
+      };
     };
 
     # Let Home Manager install and manage itself.
