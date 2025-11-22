@@ -45,7 +45,7 @@
         enableEmojiBypass = false;
         emojiSize = 48;
         transformEmojis = true;
-        useEmojiHyprLinks = true;
+        useEmojiHyperLinks = true;
         enableStickerBypass = false;
         stickerSize = 160;
         transformStickers = true;
