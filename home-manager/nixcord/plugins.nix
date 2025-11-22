@@ -45,12 +45,13 @@
         enableEmojiBypass = false;
         emojiSize = 48;
         transformEmojis = true;
+        useEmojiHyprLinks = true;
         enableStickerBypass = false;
         stickerSize = 160;
         transformStickers = true;
+        useStickerHyperLinks = true;
         transformCompoundSentence = false;
         enableStreamQualityBypass = true;
-        useHyperLinks = true;
         hyperLinkText = "{{NAME}}";
         disableEmbedPermissionCheck = false;
       };
