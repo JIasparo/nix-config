@@ -1,0 +1,9 @@
+{ ... }:
+
+{
+  config = {
+    programs.obsidian.defaultSettings = {
+      #
+    };
+  };
+}
