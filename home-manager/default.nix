@@ -26,7 +26,7 @@
     ./network-applet.nix
     ./nixcord
     ./obs-studio
-    #./obsidian.nix
+    ./obsidian
     ./packages.nix
     ./playerctl.nix
     ./qt.nix
