@@ -8,7 +8,7 @@
     ./bash.nix
     ./bottles.nix
     ./btop.nix
-    ./easyeffects
+    #./easyeffects
     ./eza.nix
     ./fastfetch
     ./fd.nix
