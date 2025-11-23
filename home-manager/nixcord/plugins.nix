@@ -17,9 +17,10 @@
         closeAllFolders = true;
         closeAllHomeButton = false;
         closeOthers = true;
+        closeServerFolder = true;
         forceOpen = false;
         keepIcons = false;
-        showFolderIcon = "never";
+        showFolderIcon = 0; # 0 = Never, 1 = Always, 2 = When more than one folder is expanded
       };
 
       betterSettings = {
@@ -36,18 +37,18 @@
         format = "stopwatch";
       };
 
-      clearURLs.enable = true;
+      clearUrLs.enable = true;
 
       dontRoundMyTimestamps.enable = true;
 
       fakeNitro = {
         enable = true;
         enableEmojiBypass = false;
-        emojiSize = 48;
+        emojiSize = 48.0;
         transformEmojis = true;
         useEmojiHyperLinks = true;
         enableStickerBypass = false;
-        stickerSize = 160;
+        stickerSize = 160.0;
         transformStickers = true;
         useStickerHyperLinks = true;
         transformCompoundSentence = false;
@@ -99,19 +100,21 @@
       newGuildSettings = {
         enable = true;
         guild = true;
-        messages = "serverDefault";
+        messages = 3; # 0 = All messages, 1 = Only @mentions, 2 = Nothing, 3 = Server default
         everyone = false;
         role = false;
         highlights = true;
         events = true;
         showAllChannels = true;
+        mobilePush = false;
+        voiceChannels = false;
       };
 
       noTypingAnimation.enable = true;
 
       permissionsViewer = {
         enable = true;
-        permissionsSortOrder = "highestRole";
+        permissionsSortOrder = 0; # 0 = Highest Role, 1 = Lowest Role
       };
 
       replyTimestamp.enable = true;
@@ -123,21 +126,22 @@
         voiceUsers = true;
         reactorsList = true;
         colorChatMessages = true;
-        messageSaturation = 40;
+        messageSaturation = 40.0;
+        pollResults = true;
       };
 
       serverInfo.enable = true;
 
-      settings = {
-        enable = true;
-        settingsLocation = "belowNitro";
-      };
+      #settings = {
+      #  enable = true;
+      #  settingsLocation = "belowNitro";
+      #};
 
       showHiddenChannels = {
         enable = true;
-        hideUnreads = true;
-        showMode = "muted";
-        showHiddenChannels = true;
+        channelStyle = 0;
+        defaultAllowedUsersAndRolesDropdownState = true;
+        showMode = 0; # 0 = Lock Icon replacing channel icon, 2 = Eye icon on the right, 1 = Lock icon on the right
       };
 
       stickerPaste.enable = true;
@@ -147,7 +151,8 @@
         includeCurrentChannel = true;
         includeMutedChannels = true;
         includeBlockedUsers = true;
-        indicatorMode = "both";
+        includeIgnoredUsers = true;
+        indicatorMode = 1; # 1 = Animated dots, 2 = Avatars
       };
 
       typingTweaks = {
@@ -168,7 +173,6 @@
         showInMemberList = true;
         showInMessages = false;
         showInUserProfileModal = false;
-        showVoiceChannelSectionHeader = true;
       };
 
       validReply.enable = true;
@@ -181,7 +185,7 @@
 
       volumeBooster = {
         enable = true;
-        multiplier = 2;
+        multiplier = 2.0;
       };
 
       youtubeAdblock.enable = true;
