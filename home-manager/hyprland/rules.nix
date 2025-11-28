@@ -83,6 +83,7 @@
         "tag +pop-up, title:^(.*)(wants to open)$"
         "tag +pop-up, title:^(Log out)(.*)$"
         "tag +pop-up, title:^(Save Image As)(.*)$"
+        "tag +pop-up, title:^(File Operation Progress)$"
 
         # Assign window rules
         # Float, center, and resize pop-ups and dialogue boxes
