@@ -8,7 +8,10 @@
         prioritizeServerProfile = true;
       };
 
-      alwaysExpandRoles.enable = true;
+      alwaysExpandRoles = {
+        enable = true;
+        hideArrow = true;
+      };
 
       betterFolders = {
         enable = true;
@@ -78,21 +81,26 @@
       messageLinkEmbeds = {
         enable = true;
         messageBackgroundColor = false;
-        automodEmbeds = "prefer";
+        automodEmbeds = "prefer"; # "always", "prefer", "never"
+        #clearMessageCache = ;
+        #idList = ""; # "ID-1,ID-2,ID-3"
+        listMode = "blacklist"; # "blacklist", "whitelist"
       };
 
       messageLogger = {
         enable = true;
-        deleteStyle = "overlay";
+        deleteStyle = "overlay"; # "text", "overlay"
         logDeletes = true;
         collapseDeleted = false;
         logEdits = true;
         inlineEdits = true;
         ignoreBots = true;
         ignoreSelf = false;
-        #ignoreUsers = "";
-        #ignoreChannels = "";
-        #ignoreGuilds = "";
+        separatedDiffs = true;
+        showEditDiffs = true;
+        #ignoreUsers = ""; "ID-1,ID-2,ID-3"
+        #ignoreChannels = ""; # "ID-1,ID-2,ID-3"
+        #ignoreGuilds = ""; # "ID-1,ID-2,ID-3"
       };
 
       mutualGroupDMs.enable = true;
@@ -100,7 +108,7 @@
       newGuildSettings = {
         enable = true;
         guild = true;
-        messages = 3; # 0 = All messages, 1 = Only @mentions, 2 = Nothing, 3 = Server default
+        messages = 1; # 0 = All messages, 1 = Only @mentions, 2 = Nothing, 3 = Server default
         everyone = false;
         role = false;
         highlights = true;
@@ -130,7 +138,10 @@
         pollResults = true;
       };
 
-      serverInfo.enable = true;
+      serverInfo = {
+        enable = true;
+        sorting = "displayname"; # "username", "displayname", "none"
+      };
 
       #settings = {
       #  enable = true;
@@ -139,7 +150,7 @@
 
       showHiddenChannels = {
         enable = true;
-        channelStyle = 0;
+        channelStyle = 0; # 0 = Classic, 1 = Muted, 2 = Show Unreads, 3 = Muted and Show Unreads
         defaultAllowedUsersAndRolesDropdownState = true;
         showMode = 0; # 0 = Lock Icon replacing channel icon, 2 = Eye icon on the right, 1 = Lock icon on the right
       };
@@ -164,7 +175,7 @@
 
       userMessagesPronouns = {
         enable = true;
-        pronounsFormat = "LOWERCASE";
+        pronounsFormat = "LOWERCASE"; # “LOWERCASE”, “CAPITALIZED”
         showSelf = true;
       };
 
