@@ -5,12 +5,12 @@
     programs.fastfetch.settings = {
 
       logo = let 
-        bottom-left={r = "77"; g = "111"; b = "183";};
-        middle-left={r = "119"; g = "182"; b = "225";};
-        top-left={r = "77"; g = "111"; b = "183";};
-        top-right={r = "119"; g = "182"; b = "225";};
-        middle-right={r = "77"; g = "111"; b = "183";};
-        bottom-right={r = "119"; g = "182"; b = "225";};
+        bottom-left={r = "77"; g = "111"; b = "183";}; # Dark Blue: #4D6FB7
+        middle-left={r = "119"; g = "182"; b = "225";}; # Light Blue: #77B6E1
+        top-left={r = "77"; g = "111"; b = "183";}; # Dark Blue: #4D6FB7
+        top-right={r = "119"; g = "182"; b = "225";}; # Light Blue: #77B6E1
+        middle-right={r = "77"; g = "111"; b = "183";}; # Dark Blue: #4D6FB7
+        bottom-right={r = "119"; g = "182"; b = "225";}; # Light Blue: #77B6E1
       in{
         type = "data";
         source = ''
