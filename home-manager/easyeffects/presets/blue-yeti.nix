@@ -4,7 +4,7 @@
   config = {
     services.easyeffects.extraPresets = {
       # Name of the easyeffects config file.
-      blue-yeti = {
+      "blue-yeti" = {
         input = {
           blocklist = [ ];
 
