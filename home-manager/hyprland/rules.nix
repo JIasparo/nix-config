@@ -53,6 +53,7 @@
         "tag +games, title:^([Tt]itanfall 2)$"
         "tag +games, class:^(Slay the Spire)$"
         "tag +games, class:^(.*)(.x86_64)$"
+        "tag +games, initialTitle:^([Gg]odot)$"
 
         # Game launcher tags
         "tag +game-launcher, class:^([Ss]team)$"
