@@ -37,18 +37,18 @@
 
       fonts = {
         serif = {
-          package = pkgs.maple-mono.NF-unhinted;
-          name = "MapleMono-NF-Regular";
+          #package = pkgs.maple-mono.NF-unhinted;
+          #name = "MapleMono-NF-Regular";
         };
 
         sansSerif = {
-          package = pkgs.dejavu_fonts;
-          name = "DejaVuSans";
+          #package = pkgs.maple-mono.NF-unhinted;
+          #name = "MapleMono-NF-Regular";
         };
 
         monospace = {
-          package = pkgs.maple-mono.NF-unhinted;
-          name = "MapleMono-NF-Regular";
+          #package = pkgs.maple-mono.NF-unhinted;
+          #name = "MapleMono-NF-Regular";
         };
 
         emoji = {
