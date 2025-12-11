@@ -4,6 +4,7 @@
   imports = [
     ./binds.nix
     ./hypridle.nix
+    ./hyprlauncher.nix
     ./hyprlock.nix
     ./hyprpaper.nix
     ./monitors.nix

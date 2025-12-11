@@ -16,7 +16,8 @@
       "$editor" = "codium";
       "$fileManager" = "$terminal yazi";
       "$mediaplayer" = "vlc";
-      "$menu" = "rofi -show drun";
+      #"$menu" = "rofi -show drun";
+      "$menu" = "hyprlauncher";
       "$passManager" = "bitwarden";
       "$sysMon" = "btop";
       "$terminal" = "kitty";
