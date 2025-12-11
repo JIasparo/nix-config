@@ -12,6 +12,7 @@
     ./eza.nix
     ./fastfetch
     ./fd.nix
+    ./fonts.nix
     ./fzf.nix
     ./git
     ./gtk.nix
@@ -31,7 +32,7 @@
     ./playerctl.nix
     ./qt.nix
     ./ripgrep.nix
-    ./rofi
+    #./rofi
     ./satty
     ./starship
     ./stylix
