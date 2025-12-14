@@ -7,11 +7,11 @@
 
       shellAliases = rec {
         # NixOS and Home Manager aliases
-        nf = "nix flake update --flake ${configpath}";
-        hm = "home-manager switch --flake ${configpath}";
-        hn = "home-manager news --flake ${configpath}";
-        no = "sudo nixos-rebuild switch --flake ${configpath}";
-        full-upgrade = "${nf} && ${no} && ${hm}";
+        nfu = "nix flake update --flake ${configpath}";
+        hms = "home-manager switch --flake ${configpath}";
+        hmn = "home-manager news --flake ${configpath}";
+        nrs = "sudo nixos-rebuild switch --flake ${configpath}";
+        full-upgrade = "${nfu} && ${nrs} && ${hms}";
 
         #disko-format = "sudo nix --experimental-features \"nix-command flakes\" run github:nix-community/disko -- --flake ${configpath}#${hostname} --mode destroy,format,mount ${configpath}/hosts/nixos/${hostname}/disk-configuration.nix";
         #nix-install = "sudo nixos-install --flake ${configpath}#${hostname}";
