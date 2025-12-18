@@ -32,7 +32,7 @@
     ./playerctl.nix
     ./qt.nix
     ./ripgrep.nix
-    #./rofi
+    ./rofi
     ./satty
     ./starship
     ./stylix
