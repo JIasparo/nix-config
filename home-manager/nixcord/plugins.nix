@@ -40,7 +40,7 @@
         format = "stopwatch";
       };
 
-      clearUrLs.enable = true;
+      ClearURLs.enable = true;
 
       dontRoundMyTimestamps.enable = true;
 
@@ -103,7 +103,7 @@
         #ignoreGuilds = ""; # "ID-1,ID-2,ID-3"
       };
 
-      mutualGroupDMs.enable = true;
+      MutualGroupDMs.enable = true;
 
       newGuildSettings = {
         enable = true;
