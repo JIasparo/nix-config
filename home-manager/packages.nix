@@ -9,7 +9,7 @@
       #davinci-resolve
       ffmpeg-full
       #freecad
-      #heroic
+      heroic
       #kdePackages.okular # Good for annotating PDFs
       #krita
       #nexusmods-app
