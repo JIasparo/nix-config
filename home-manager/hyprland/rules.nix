@@ -59,7 +59,7 @@
         "tag +game-launcher, class:^([Ss]team)$"
         "tag +game-launcher, title:^([Ll]utris)$"
         "tag +game-launcher, title:^(EA)$"
-        "tag +game-launcher, class:^(com.heroicgameslauncher.hgl)$"
+        "tag +game-launcher, class:^([Hh]eroic)$"
         "tag +game-launcher, class:^(org.prismlauncher.PrismLauncher)$"
 
         # File-manager tags
@@ -85,6 +85,7 @@
         "tag +pop-up, title:^(Log out)(.*)$"
         "tag +pop-up, title:^(Save Image As)(.*)$"
         "tag +pop-up, title:^(File Operation Progress)$"
+        "tag +pop-up, title:^(Select Install Path)$"
 
         # Assign window rules
         # Float, center, and resize pop-ups and dialogue boxes
