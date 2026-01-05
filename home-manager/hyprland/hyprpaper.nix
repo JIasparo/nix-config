@@ -4,14 +4,16 @@
   config = {
     services.hyprpaper = {
       enable = true;
-      
-      settings = {
-        preload = [
-          "${config.stylix.image}"
-        ];
 
+      settings = {
+        splash = false;
+        
         wallpaper = [
-          ", ${config.stylix.image}"
+          {
+            monitor = "";
+            path = "${config.stylix.image}";
+            fit_mode = "cover"; # contain, cover, tile, fill
+          }
         ];
       };
     };
