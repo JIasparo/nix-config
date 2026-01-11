@@ -3,7 +3,19 @@
 {
   config = {
     programs.nixcord = {
+      config = {
+        autoUpdate = false;
+        autoUpdateNotification = false;
+        disableMinSize = true;
+        frameless = true;
+        notifyAboutUpdates = false;
+        transparent = true;
+      };
+
       discord = {
+        autoscroll.enable = true;
+        openASAR.enable = true;
+
         settings = {
           "MINIMIZE_TO_TRAY" = false;
           "OPEN_ON_STARTUP" = false;
@@ -13,15 +25,6 @@
             "setup" = true;
           };
         };
-      };
-
-      config = {
-        autoUpdate = false;
-        autoUpdateNotification = false;
-        disableMinSize = true;
-        frameless = true;
-        notifyAboutUpdates = false;
-        transparent = true;
       };
     };
   };
