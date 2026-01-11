@@ -35,7 +35,8 @@
         "tag +terminal, match:class ^(Alacritty|kitty|kitty-dropterm)$"
 
         # Editor tags
-        "tag +editor, match:class ^(codium|codium-url-handler|VSCodium)$"
+        "tag +text-editor, match:class ^(codium|codium-url-handler|VSCodium)$"
+        #"tag +video-editor, match:class ^()$"
 
         # Recording tags
         "tag +recording, match:class ^(com.obsproject.Studio)$"
@@ -68,6 +69,8 @@
 
         # Sensitive tags
         "tag +sensitive, match:class ^([Bb]itwarden)$"
+        "tag +sensitive, match:tag browser, match:title ^(.*)([Tt][Dd] [Bb]ank)(.*)$"
+        "tag +sensitive, match:tag browser, match:title ^(Discover - Personal Banking.*)$"
 
         # Pop-up tags
         "tag +pop-up, match:title ^(Open File)(.*)$"
