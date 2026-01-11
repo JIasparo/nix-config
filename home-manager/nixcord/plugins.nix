@@ -37,7 +37,7 @@
 
       callTimer = {
         enable = true;
-        format = "stopwatch";
+        format = "stopwatch"; # "stopwatch", "human"
       };
 
       ClearURLs.enable = true;
@@ -71,7 +71,22 @@
 
       fullSearchContext.enable = true;
 
+      gameActivityToggle = {
+        enable = true;
+        oldIcon = true;
+        location = "PANEL"; # "PANEL", "TOOLBOX"
+      };
+
       gifPaste.enable = true;
+
+      loadingQuotes = {
+        enable = true;
+        replaceEvents = true;
+        enablePluginPresetQuotes = true;
+        enableDiscordPresetQuotes = false;
+        additionalQuotes = "Good Girl :3";
+        additionalQuotesDelimiter = "|";
+      };
 
       mentionAvatars = {
         enable = true;
@@ -82,9 +97,9 @@
         enable = true;
         messageBackgroundColor = false;
         automodEmbeds = "prefer"; # "always", "prefer", "never"
-        #clearMessageCache = ;
-        #idList = ""; # "ID-1,ID-2,ID-3"
         listMode = "blacklist"; # "blacklist", "whitelist"
+        #idList = ""; # "ID-1,ID-2,ID-3"
+        #clearMessageCache = {};
       };
 
       messageLogger = {
@@ -96,11 +111,11 @@
         inlineEdits = true;
         ignoreBots = true;
         ignoreSelf = false;
-        separatedDiffs = true;
-        showEditDiffs = true;
         #ignoreUsers = ""; "ID-1,ID-2,ID-3"
         #ignoreChannels = ""; # "ID-1,ID-2,ID-3"
         #ignoreGuilds = ""; # "ID-1,ID-2,ID-3"
+        separatedDiffs = true;
+        showEditDiffs = true;
       };
 
       MutualGroupDMs.enable = true;
@@ -118,11 +133,33 @@
         voiceChannels = false;
       };
 
+      noPendingCount = {
+        enable = true;
+        hideFriendRequestsCount = false;
+        hideMessageRequestsCount = false;
+        hidePremiumOffersCount = true;
+      };
+
+      notificationVolume = {
+        enable = true;
+        notificationVolume = 75.0;
+      };
+
       noTypingAnimation.enable = true;
 
       permissionsViewer = {
         enable = true;
         permissionsSortOrder = 0; # 0 = Highest Role, 1 = Lowest Role
+      };
+
+      relationshipNotifier = {
+        enable = true;
+        notices = true;
+        offlineRemovals = true;
+        friends = true;
+        friendRequestCancels = true;
+        servers = true;
+        groups = true;
       };
 
       replyTimestamp.enable = true;
@@ -136,6 +173,11 @@
         colorChatMessages = true;
         messageSaturation = 40.0;
         pollResults = true;
+      };
+
+      secretRingToneEnabler = {
+        enable = true;
+        #onlySnow = true;
       };
 
       serverInfo = {
@@ -153,6 +195,23 @@
         channelStyle = 0; # 0 = Classic, 1 = Muted, 2 = Show Unreads, 3 = Muted and Show Unreads
         defaultAllowedUsersAndRolesDropdownState = true;
         showMode = 0; # 0 = Lock Icon replacing channel icon, 2 = Eye icon on the right, 1 = Lock icon on the right
+      };
+
+      showHiddenThings = {
+        enable = true;
+      };
+
+      silentMessageToggle = {
+        enable = true;
+        persistState = "restarts"; # "none", "channels", "restarts"
+        autoDisable = false;
+      };
+
+      silentTyping = {
+        enable = true;
+        chatIcon = true;
+        chatContextMenu = true;
+        enabledGlobally = true;
       };
 
       stickerPaste.enable = true;
