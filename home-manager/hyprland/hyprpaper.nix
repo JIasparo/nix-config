@@ -12,7 +12,7 @@
           {
             monitor = "";
             path = "${config.stylix.image}";
-            fit_mode = "cover"; # contain, cover, tile, fill
+            fit_mode = "cover"; # "contain", "cover", "tile", "fill"
           }
         ];
       };
