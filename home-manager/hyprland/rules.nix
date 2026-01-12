@@ -87,6 +87,7 @@
         "tag +pop-up, match:title ^(File Operation Progress)$"
         "tag +pop-up, match:title ^(Select Install Path)$"
         "tag +pop-up, match:title ^(Select what to share)$"
+        "tag +pop-up, match:class ^([Zz]enity)$" # GTK+ dialog boxes
 
         # Assign window rules
         # Float, center, and resize pop-ups and dialogue boxes
