@@ -82,9 +82,15 @@
       loadingQuotes = {
         enable = true;
         replaceEvents = true;
-        enablePluginPresetQuotes = true;
+        enablePluginPresetQuotes = false;
         enableDiscordPresetQuotes = false;
-        additionalQuotes = "Good Girl :3";
+        additionalQuotes = ''
+          Good girl :3
+          |You're such a good girl
+          |Trans rights are human rights 🏳️‍⚧️
+          |Be gay, do crime
+          |Reminder to stay hydrated! <3
+        '';
         additionalQuotesDelimiter = "|";
       };
 
