@@ -6,6 +6,7 @@
       bitwarden-desktop
       blender
       brightnessctl
+      chatterino2
       #davinci-resolve
       ffmpeg-full
       #freecad
