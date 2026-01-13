@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   config = {
@@ -6,6 +6,7 @@
       # Variables
       "$mod" = "SUPER";
       "$move" = "SHIFT";
+      "$resize" = "CTRL";
 
       "$left" = "left";
       "$right" = "right";
@@ -47,6 +48,7 @@
         "$mod, S, exec, steam"
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
+        #"$mod SHIFT, W, exec, $browser -P ${config.programs.librewolf.profiles."streaming".name}" # Opens a specific Firefox profile
         "CTRL ALT, DELETE, exec, $terminal $sysMon"
 
         # Kill the active window
@@ -88,12 +90,6 @@
         "$mod $move, $up, movewindow, u"
         "$mod $move, $down, movewindow, d"
 
-        # Resize active window with $mod + CTRL + arrow keys
-        "$mod CTRL, $left, splitratio, -0.1"
-        "$mod CTRL, $right, splitratio, 0.1"
-        "$mod CTRL, $up, splitratio, -0.1"
-        "$mod CTRL, $down, splitratio, 0.1"
-
         # Switch workspaces with $mod + [0-9]
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
@@ -134,6 +130,14 @@
         # Move/resize windows with $mod + LMB/RMB and dragging
         "$mod $move, mouse:272, movewindow"
         "$mod $move, mouse:273, resizewindow"
+      ];
+
+      binde = [
+        # Resize active window with $mod + $resize + arrow keys
+        "$mod $resize, $left, splitratio, -0.1"
+        "$mod $resize, $right, splitratio, 0.1"
+        "$mod $resize, $up, splitratio, -0.1"
+        "$mod $resize, $down, splitratio, 0.1"
       ];
 
       bindel = [
