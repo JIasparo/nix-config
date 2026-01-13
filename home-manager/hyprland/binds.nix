@@ -48,7 +48,7 @@
         "$mod, S, exec, steam"
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
-        #"$mod SHIFT, W, exec, $browser -P ${config.programs.librewolf.profiles."streaming".name}" # Opens a specific Firefox profile
+        #"$mod SHIFT, W, exec, $browser -P ${config.programs.librewolf.profiles."content-creation".name}" # Opens a specific Firefox profile
         "CTRL ALT, DELETE, exec, $terminal $sysMon"
 
         # Kill the active window

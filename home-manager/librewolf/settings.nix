@@ -63,9 +63,9 @@
             containers = { };
           };
 
-          "streaming" = {
+          "content-creation" = {
             id = 2;
-            name = "stream";
+            name = "content-creator";
             settings = {
               # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
               "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
