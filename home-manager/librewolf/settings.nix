@@ -68,7 +68,7 @@
             name = "stream";
             settings = {
               # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
-              "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = false;
+              "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
               "browser.uiCustomization.state" = toolbar-customization;
             };
 
