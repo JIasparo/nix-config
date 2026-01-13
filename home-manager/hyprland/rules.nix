@@ -83,11 +83,12 @@
         "tag +pop-up, match:title ^(.*)(wants to save)$"
         "tag +pop-up, match:title ^(.*)(wants to open)$"
         "tag +pop-up, match:title ^(Log out)(.*)$"
-        "tag +pop-up, match:title ^(Save Image As)(.*)$"
+        "tag +pop-up, match:title ^(Save Image)(.*)$"
         "tag +pop-up, match:title ^(File Operation Progress)$"
         "tag +pop-up, match:title ^(Select Install Path)$"
         "tag +pop-up, match:title ^(Select what to share)$"
-        "tag +pop-up, match:class ^([Zz]enity)$" # GTK+ dialog boxes
+        "tag +pop-up, match:class ^(Zenity)$" # GTK+ dialog boxes
+        "tag +pop-up, match:title ^(Chatterino Settings)$"
 
         # Assign window rules
         # Float, center, and resize pop-ups and dialogue boxes
