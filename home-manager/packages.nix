@@ -6,14 +6,14 @@
       bitwarden-desktop
       blender
       brightnessctl
-      chatterino2
+      #chatterino2
       #davinci-resolve
       ffmpeg-full
       #freecad
       heroic
       #kdePackages.okular # Good for annotating PDFs
       #krita
-      #nexusmods-app
+      #nexusmods-app-unfree
       #orca-slicer
       piper
       picard
