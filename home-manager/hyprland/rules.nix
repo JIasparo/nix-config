@@ -101,10 +101,7 @@
         "match:tag games*, float on, center on"
 
         # Disable eye candy for games
-        "match:tag games*, decorate off"
-
-        # Prevent sensitive windows from showing in a screenshare
-        "match:tag sensitive*, no_screen_share on"
+        "match:tag games*, decorate off, no_blur on, no_anim on, no_shadow on, opaque on"
 
         # Prevent idling while playing games
         "match:tag games*, idle_inhibit always"
@@ -112,6 +109,9 @@
         # Prevent idling while playing videos
         "match:tag multimedia*, idle_inhibit focus"
         "match:title ^(.*YouTube.*)$, idle_inhibit fullscreen"
+
+        # Prevent sensitive windows from showing in a screenshare
+        "match:tag sensitive*, no_screen_share on"
 
         # Workspace specific rules
         # Make game-launchers spawn on workspace 5
