@@ -193,11 +193,6 @@
         sorting = "displayname"; # "username", "displayname", "none"
       };
 
-      #settings = {
-      #  enable = true;
-      #  settingsLocation = "belowNitro";
-      #};
-
       showHiddenChannels = {
         enable = true;
         channelStyle = 0; # 0 = Classic, 1 = Muted, 2 = Show Unreads, 3 = Muted and Show Unreads
