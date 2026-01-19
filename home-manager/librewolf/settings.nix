@@ -50,25 +50,11 @@
           };
 
           "${username}" = {
-          #"personal" = { # Backup bookmarks before you set this as the new name.
             id = 1;
             name = "${username}";
             settings = {
               # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
               "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = false;
-              "browser.uiCustomization.state" = toolbar-customization;
-            };
-
-            containersForce = true;
-            containers = { };
-          };
-
-          "content-creation" = {
-            id = 2;
-            name = "content-creator";
-            settings = {
-              # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
-              "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
               "browser.uiCustomization.state" = toolbar-customization;
             };
 
