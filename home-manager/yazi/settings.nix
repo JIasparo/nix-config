@@ -3,9 +3,12 @@
 {
   config = {
     programs.yazi.settings = {
-      manager = {};
+      mgr = {
+        ratio = [1 4 3];
+      };
 
       preview = {
+        wrap = "no";
         max_width = 1200;
         max_height = 1800;
       };
@@ -15,6 +18,10 @@
       open = {};
 
       tasks = {};
+      
+      input = {
+        cursor_blink = false;
+      };
     };
   };
 }
