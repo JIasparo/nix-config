@@ -70,7 +70,7 @@
         # Sensitive tags
         "tag +sensitive, match:class ^([Bb]itwarden)$"
         "tag +sensitive, match:tag browser, match:title ^(.*)([Tt][Dd] [Bb]ank)(.*)$"
-        "tag +sensitive, match:tag browser, match:title ^(Discover - Personal Banking.*)$"
+        "tag +sensitive, match:tag browser, match:title ^(.*)(Discover)(.*)$"
 
         # Pop-up tags
         "tag +pop-up, match:title ^(Open File)(.*)$"
