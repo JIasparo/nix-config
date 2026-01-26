@@ -14,6 +14,7 @@
           "browser.download.autohideButton" = true;
           "browser.low_commit_space_threshold_mb" = 200;
           "browser.low_commit_space_threshold_percent" = 20;
+          "browser.ml.linkPreview.longPress" = false;
           "browser.quitShortcut.disabled" = true;
           "browser.search.separatePrivateDefault" = false;
           "browser.tabs.fadeOutUnloadedTabs" = true;
