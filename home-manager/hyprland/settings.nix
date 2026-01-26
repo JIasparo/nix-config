@@ -13,10 +13,6 @@
         "XDG_SESSION_DESKTOP,Hyprland"
       ];
 
-      exec-once = [
-        "hyprpaper"
-      ];
-
       general = {
         gaps_in = "3";
         gaps_out = "9";
