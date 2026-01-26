@@ -74,7 +74,7 @@
       gameActivityToggle = {
         enable = true;
         oldIcon = true;
-        location = "PANEL"; # "PANEL", "TOOLBOX"
+        #location = "PANEL"; # "PANEL", "TOOLBOX"
       };
 
       gifPaste.enable = true;
