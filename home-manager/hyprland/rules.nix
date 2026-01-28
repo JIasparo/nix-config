@@ -52,6 +52,7 @@
         "tag +games, match:class ^(Slay the Spire)$"
         "tag +games, match:class ^(.*)(.x86_64)$"
         "tag +games, match:initial_title ^([Gg]odot)$"
+        "tag +games, match:title ^(DEADBOLT)$"
 
         # Game launcher tags
         "tag +game-launcher, match:class ^([Ss]team)$"
