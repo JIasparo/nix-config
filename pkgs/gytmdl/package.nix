@@ -1,11 +1,11 @@
 {
   lib,
-  python3Packages,
+  python314Packages,
   fetchFromGitHub,
   ffmpeg
 }:
 
-python3Packages.buildPythonApplication rec {
+python314Packages.buildPythonApplication rec {
   pname = "gytmdl";
   version = "2.1.6";
 
@@ -23,7 +23,7 @@ python3Packages.buildPythonApplication rec {
   doCheck = false; # set to true if it has tests
 
   # Dependencies that should exist in the runtime environment and also propagated to downstream runtime environments
-  propagatedBuildInputs = with python3Packages; [
+  propagatedBuildInputs = with python314Packages; [
     click
     colorama
     flit-core
