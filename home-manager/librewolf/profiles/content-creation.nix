@@ -21,39 +21,44 @@
               force = true;
               settings = [
                 {
-                  name = "Social media";
-                  toolbar = true;
+                  name = "Bookmarks Toolbar";
+                  toolbar = true; # Turns this directory into the Bookmarks Toolbar.
                   bookmarks = [
                     {
-                      name = "YouTube";
-                      url = "https://youtube.com/";
+                      name = "Social Media";
+                      bookmarks = [
+                        {
+                          name = "YouTube";
+                          url = "https://youtube.com/";
+                        }
+                        {
+                          name = "Twitch";
+                          url = "https://twitch.tv/";
+                        }
+                        {
+                          name = "TikTok";
+                          url = "https://tiktok.com/";
+                        }
+                        "separator"
+                        {
+                          name = "Bluesky";
+                          url = "https://bsky.app/";
+                        }
+                        {
+                          name = "Twitter/X";
+                          url = "https://x.com/";
+                        }
+                      ];
                     }
+
                     {
-                      name = "Twitch";
-                      url = "https://twitch.tv/";
-                    }
-                    {
-                      name = "TikTok";
-                      url = "https://tiktok.com/";
-                    }
-                    "separator"
-                    {
-                      name = "Bluesky";
-                      url = "https://bsky.app/";
-                    }
-                    {
-                      name = "Twitter/X";
-                      url = "https://x.com/";
-                    }
-                  ];
-                }
-                {
-                  name = "Other";
-                  toolbar = true;
-                  bookmarks = [
-                    {
-                      name = "Reactive";
-                      url = "https://reactive.fugi.tech/";
+                      name = "Other";
+                      bookmarks = [
+                        {
+                          name = "Reactive";
+                          url = "https://reactive.fugi.tech/";
+                        }
+                      ];
                     }
                   ];
                 }
