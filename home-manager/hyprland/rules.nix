@@ -53,6 +53,7 @@
         "tag +games, match:class ^(.*)(.x86_64)$"
         "tag +games, match:initial_title ^([Gg]odot)$"
         "tag +games, match:title ^(DEADBOLT)$"
+        "tag +games, match:title ^(Team Fortress 2)(.*)$"
 
         # Game launcher tags
         "tag +game-launcher, match:class ^([Ss]team)$"
