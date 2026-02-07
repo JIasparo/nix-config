@@ -30,6 +30,7 @@
     ./obsidian
     ./packages.nix
     ./playerctl.nix
+    ./prism-launcher.nix
     ./qt.nix
     ./ripgrep.nix
     ./rofi

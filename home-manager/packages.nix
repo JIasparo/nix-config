@@ -17,7 +17,6 @@
       #orca-slicer
       piper
       picard
-      #prismlauncher
       pwvucontrol
       unrar
       vlc
