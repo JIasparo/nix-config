@@ -5,9 +5,19 @@
     programs.satty.settings = {
       general = {
         # Start Satty in fullscreen mode
-        fullscreen = false;
-        # Exit directly after copy/save action
+        fullscreen = false; # true, false, "all", "current-screen"
+        # Resize Satty
+        #resize = {
+        #  mode = "size"; # "size", "smart"
+        #  width = 2000;
+        #  height = 800;
+        #};
+        # Try to have the window float. This may depend on the compositor.
+        #floating-hack = false;
+        # Exit directly after copy/save action. Does not apply to save as.
         early-exit = false;
+        # Exit directly after save as
+        #early-exit-save-as = false;
         # Draw corners of rectangles round if the value is greater than 0
         corner-roundness = 0; # 0 = disabled
         # Select the tool on startup
@@ -17,7 +27,7 @@
         # Increase or decrease the size of the annotations
         annotation-size-factor = 1.0;
         # Filename to use for saving action. Omit to disable saving to file. Might contain format specifiers: https://docs.rs/chrono/latest/chrono/format/strftime/index.html
-        output-filename = "/tmp/test-%Y-%m-%d_%H:%M:%S.png";
+        output-filename = "~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png";
         # After copying the screenshot, save it to a file as well
         save-after-copy = false;
         # Hide toolbars by default
@@ -44,6 +54,10 @@
         #pan-step-size = 50.0;
         # Experimental: The zoom factor to use for the image.
         #zoom-factor = 1.1; # 1.0 = no zoom
+        # Experimental: The length to move the text when using arrow keys.
+        #text-move-length = 50.0;
+        # Experimental: Scale factor on the input image when it was taken (e.g. DPI scale on the monitor it was recorded from)
+        #input-scale = 2.0;
       };
 
       keybinds = {
