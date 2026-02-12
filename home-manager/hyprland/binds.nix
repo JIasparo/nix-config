@@ -119,11 +119,13 @@
         "$mod $move, grave, movetoworkspace, special"
 
         # Take a screenshot of active monitor, then open it in satty
-        "$mod, Print, exec, grim -g \"$(slurp -o -r -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"
+        #"$mod, Print, exec, grim -g \"$(slurp -o -r -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"
+        "$mod, Print, exec, grim -g \"$(slurp -o -r -w 0)\" -t ppm - | satty --filename - --output-filename ${config.programs.satty.settings.general.output-filename}"
 
 
         # Take a screenshot of select area, then open it in satty
-        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"
+        #"$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"
+        "$mod $move, Print, exec, grim -g \"$(slurp -w 0)\" -t ppm - | satty --filename - --output-filename ${config.programs.satty.settings.general.output-filename}"
       ];
 
       bindm = [
