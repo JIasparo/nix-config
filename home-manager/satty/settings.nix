@@ -27,7 +27,7 @@
         # Increase or decrease the size of the annotations
         annotation-size-factor = 1.0;
         # Filename to use for saving action. Omit to disable saving to file. Might contain format specifiers: https://docs.rs/chrono/latest/chrono/format/strftime/index.html
-        output-filename = "~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png";
+        output-filename = "~/Pictures/Screenshots/satty-%Y%m%d-%H:%M:%S.png";
         # After copying the screenshot, save it to a file as well
         save-after-copy = false;
         # Hide toolbars by default
