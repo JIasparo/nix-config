@@ -87,8 +87,9 @@
         additionalQuotes = ''
           Good girl :3
           |You're such a good girl
-          |Mrrp mreow meow :3 :3 :3 
-          |Mreep mreeow :3 
+          |Mrrp mreow meow :3 :3 :3
+          |Mreep mreeow :3
+          |Mrrp nya~
           |Trans rights are human rights 🏳️‍⚧️
           |Be gay, do crime
           |Reminder to stay hydrated! <3
