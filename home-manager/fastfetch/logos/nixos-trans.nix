@@ -5,12 +5,19 @@
     programs.fastfetch.settings = {
 
       logo = let 
+        #bottom-left={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
+        #middle-left={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
+        #top-left={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
+        #top-right={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
+        #middle-right={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
+        #bottom-right={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
+        
         bottom-left={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
-        middle-left={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
-        top-left={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
+        middle-left={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
+        top-left={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
         top-right={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
-        middle-right={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
-        bottom-right={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
+        middle-right={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
+        bottom-right={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
       in{
         type = "data";
         source = ''
