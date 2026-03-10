@@ -12,13 +12,14 @@
           "browser.bookmarks.openInTabClosesMenu" = false;
           "browser.bookmarks.restore_default_bookmarks" = false;
           "browser.download.autohideButton" = true;
-          "browser.low_commit_space_threshold_mb" = 200;
-          "browser.low_commit_space_threshold_percent" = 20;
+          "browser.low_commit_space_threshold_mb" = 200; # Tab unloading kicks in when available memory falls below this number
+          "browser.low_commit_space_threshold_percent" = 40; # Tab unloading kicks in when available memory falls below this percent
           "browser.ml.linkPreview.longPress" = false;
           "browser.quitShortcut.disabled" = true;
           "browser.search.separatePrivateDefault" = false;
           "browser.tabs.dragDrop.pinInteractionCue.delayMS" = 1500;
           "browser.tabs.fadeOutUnloadedTabs" = true;
+          "browser.tabs.min_inactive_duration_before_unload" = 600000;
           "browser.tabs.unloadOnLowMemory" = true;
           "browser.urlbar.shortcuts.bookmarks" = false;
           "browser.urlbar.shortcuts.history" = false;
@@ -29,6 +30,8 @@
           "browser.urlbar.suggest.openpage" = false;
           "browser.urlbar.suggest.recentsearches" = false;
           "browser.urlbar.suggest.topsites" = false;
+          "full-screen-api.warning.delay" = 0;
+          "full-screen-api.warning.timeout" = 1000;
           "general.autoScroll" = true;
           "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
           "middlemouse.paste" = false;
