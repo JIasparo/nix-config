@@ -77,7 +77,7 @@
         # Pop-up tags
         "tag +pop-up, match:title ^(Open File)(.*)$"
         "tag +pop-up, match:title ^(Select a File)(.*)$"
-        "tag +pop-up, match:title ^(Open Folder)(.*)$"
+        "tag +pop-up, match:title ^(Open [Ff]older)(.*)$"
         "tag +pop-up, match:title ^(Save As)(.*)$"
         "tag +pop-up, match:title ^(Save Workspace)(.*)$"
         "tag +pop-up, match:title ^(Library)(.*)$"
@@ -91,6 +91,7 @@
         "tag +pop-up, match:title ^(Select what to share)$"
         "tag +pop-up, match:class ^(Zenity)$" # GTK+ dialog boxes
         "tag +pop-up, match:title ^(Chatterino Settings)$"
+        "tag +pop-up, match:title ^(Sign in to Steam)$"
 
         # Assign window rules
         # Float, center, and resize pop-ups and dialogue boxes
