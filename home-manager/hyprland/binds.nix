@@ -136,10 +136,10 @@
 
       binde = [
         # Resize active window with $mod + $resize + arrow keys
-        "$mod $resize, $left, splitratio, -0.1"
-        "$mod $resize, $right, splitratio, 0.1"
-        "$mod $resize, $up, splitratio, -0.1"
-        "$mod $resize, $down, splitratio, 0.1"
+        "$mod $resize, $left, resizeactive, -50 0"
+        "$mod $resize, $right, resizeactive, 50 0"
+        "$mod $resize, $up, resizeactive, 0 -50"
+        "$mod $resize, $down, resizeactive, 0 50"
       ];
 
       bindel = [
