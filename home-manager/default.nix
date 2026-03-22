@@ -41,6 +41,7 @@
     ./swaync
     ./vscodium
     ./yazi
+    ./yt-dlp
     ./zoxide.nix
   ];
 }
