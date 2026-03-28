@@ -3,7 +3,7 @@
 {
   config = {
     home.packages = with pkgs; [
-      archipelago
+      #archipelago
       bitwarden-desktop
       blender
       brightnessctl
