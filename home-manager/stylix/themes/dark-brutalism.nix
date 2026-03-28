@@ -59,8 +59,8 @@
 
       cursor = {
         package = pkgs.volantes-cursors;
-        name = "volantes_light_cursors"; # volantes_cursors for light theme | volantes_light_cursors for dark theme
-        size = 24;
+        name = "volantes_light_cursors"; # "volantes_cursors" for light theme | "volantes_light_cursors" for dark theme
+        size = 32; # Sizes: 24/32/48/64
       };
     };
   };
