@@ -129,9 +129,14 @@
       ];
 
       bindm = [
-        # Move/resize windows with $mod + LMB/RMB and dragging
+        # Move windows with $mod + $move + LMB and dragging
         "$mod $move, mouse:272, movewindow"
-        "$mod $move, mouse:273, resizewindow"
+
+        # Resize windows with $mod + $resize + RMB and dragging
+        #"$mod $resize, mouse:273, resizewindow"
+
+        # Resize windows with $mod + $resize + LMB and dragging
+        "$mod $resize, mouse:272, resizewindow"
       ];
 
       binde = [
