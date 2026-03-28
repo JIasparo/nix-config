@@ -27,6 +27,7 @@
         "tag +browser, match:class ^(Brave-browser(-beta|-dev|-unstable)?)$"
         "tag +browser, match:class ^([Tt]horium-browser|[Cc]achy-browser)$"
         "tag +browser, match:class ^(zen-alpha|zen)$"
+        "tag +browser, match:title ^(Steam - Browser)$"
 
         # Notification tags
         "tag +notif, match:class ^(swaync-control-center|swaync-notification-window|swaync-client|class)$"
@@ -57,6 +58,7 @@
 
         # Game launcher tags
         "tag +game-launcher, match:class ^([Ss]team)$"
+        "tag +game-launcher, match:title ^([Ss]team)$"
         "tag +game-launcher, match:title ^([Ll]utris)$"
         "tag +game-launcher, match:title ^(EA)$"
         "tag +game-launcher, match:class ^([Hh]eroic)$"
@@ -95,7 +97,7 @@
 
         # Assign window rules
         # Float, center, and resize pop-ups and dialogue boxes
-        "match:tag pop-up*, float on, center on, size 40% 40%"
+        "match:tag pop-up*, float on, center on, size 50% 50%"
 
         # Make multimedia windows opaque
         "match:tag multimedia*, no_blur on, opaque on"
