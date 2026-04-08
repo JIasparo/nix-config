@@ -4,6 +4,7 @@
   config = {
     wayland.windowManager.hyprland.settings = {
       # Variables
+      "$alter" = "ALT";
       "$mod" = "SUPER";
       "$move" = "SHIFT";
       "$resize" = "CTRL";
@@ -15,7 +16,8 @@
 
       "$browser" = "librewolf";
       "$editor" = "codium";
-      "$fileManager" = "$terminal yazi";
+      "$file-manager-gui" = "thunar";
+      "$file-manager-tui" = "$terminal yazi";
       "$mediaplayer" = "vlc";
       "$menu" = "rofi -show drun";
       #"$menu" = "hyprlauncher";
@@ -42,7 +44,8 @@
         # Application binds
         "$mod, D, exec, discord"
         "$mod, E, exec, $editor"
-        "$mod, F, exec, $fileManager"
+        "$mod, F, exec, $file-manager-tui"
+        "$mod $alter, F, exec, $file-manager-gui"
         "$mod, M, exec, $mediaplayer"
         "$mod, RETURN, exec, $terminal"
         "$mod, S, exec, steam"
@@ -148,20 +151,34 @@
       ];
 
       bindel = [
-        # Volume keybinds
+        # Adjust volume levels with dedicated volume keys
         ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
 
-        # Brightness keybinds
-        ", XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-        ", XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+        # Adjust brightness levels with dedicated brightness keys
+        ", XF86MonBrightnessUp, exec, brightnessctl s 5%+"
+        ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
       ];
 
       bindl = [
-        # Media keybinds
+        # Set volume levels to a set percentage using the dedicated volume keys
+        "$alter, XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 80%"
+        "$alter, XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 40%"
+
+        # Mute audio sink (outputs, i.e. headphones) with dedicated volume mute key
         ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        
+        # Mute audio source (inputs, i.e. microphones) with dedicated mic mute key
         ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 
+        # Mute audio source (inputs, i.e. microphones) using the dedicated volume mute key. Useful for keyboards without a dedicated mic mute key.
+        "$alter, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+
+        # Set brightness levels to a set percentage using the dedicated brightness keys
+        "$alter, XF86MonBrightnessUp, exec, brightnessctl s 100%"
+        "$alter, XF86MonBrightnessDown, exec, brightnessctl s 1%"
+
+        # Playback keybinds
         ", XF86AudioPlay, exec, playerctl play-pause"
         ", XF86AudioPrev, exec, playerctl previous"
         ", XF86AudioNext, exec, playerctl next"
