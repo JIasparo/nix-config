@@ -11,6 +11,7 @@
       #davinci-resolve
       ffmpeg-full
       #freecad
+      #gale
       heroic
       #kdePackages.okular # Good for annotating PDFs
       #krita
