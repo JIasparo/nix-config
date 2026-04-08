@@ -17,14 +17,15 @@
     ./git
     ./gtk.nix
     ./gytmdl
-    ./hyprland
-    #./niri
+    #./hyprland
     ./kitty
     ./librewolf
     #./lutris.nix
+    ./mangowc
     #./mpv.nix
     #./nemo.nix
     ./network-applet.nix
+    #./niri
     ./nixcord
     ./obs-studio
     ./obsidian
