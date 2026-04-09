@@ -165,13 +165,13 @@
         "$alter, XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 80%"
         "$alter, XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 40%"
 
-        # Mute audio sink (outputs, i.e. headphones) with dedicated volume mute key
+        # Mute audio sink (outputs, e.g., headphones) with dedicated volume mute key
         ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
         
-        # Mute audio source (inputs, i.e. microphones) with dedicated mic mute key
+        # Mute audio source (inputs, e.g., microphones) with dedicated mic mute key
         ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 
-        # Mute audio source (inputs, i.e. microphones) using the dedicated volume mute key. Useful for keyboards without a dedicated mic mute key.
+        # Mute audio source (inputs, e.g., microphones) using the dedicated volume mute key. Useful for keyboards without a dedicated mic mute key.
         "$alter, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 
         # Set brightness levels to a set percentage using the dedicated brightness keys
