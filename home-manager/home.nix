@@ -13,7 +13,6 @@
         TERM = "kitty";
         VISUAL_EDITOR = "codium";
         MEDIA_PLAYER = "vlc";
-        NIXOS_OZONE_WL = "1";
       };
 
       # The NixOS version the config was built upon.
