@@ -19,9 +19,9 @@
       */
       monitorrule = [
         # Dell Inc. Dell S2716DG
-        "model:Dell S2716DG,width:2560,height:1440,refresh:144,x:0,y:0,scale:1,vrr:0"
+        "name:DP-2,width:2560,height:1440,refresh:144,x:0,y:0,scale:1,vrr:0,rr:0"
         # Acer Technologies ED320QR S
-        "model:ED320QR S,width:1920,height:1080,refresh:144,x:2560,y:,scale:1,vrr:0"
+        "name:DP-1,width:1920,height:1080,refresh:144,x:2560,y:,scale:1,vrr:0,rr:0"
       ];
     };
   };
