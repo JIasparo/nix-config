@@ -70,7 +70,7 @@
         #"${mod}+${move},GRAVE,minimized"
         #"${mod},GRAVE,toggle_scratchpad"
         #"${mod}+${move},GRAVE,restore_minimized"
-        "${mod},GRAVE,toggle_named_scratchpad,none,password-manager,${password-manager} -T password-manager"
+        #"${mod},GRAVE,toggle_named_scratchpad,none,password-manager,${password-manager} -T password-manager"
 
         # Switch client focus
         #"ALT,TAB,focusstack,next"
@@ -97,26 +97,44 @@
         "${mod}+${resize},${right},resizewin,+50,+0"
 
         # Switch tag
-        "${mod},1,view,1,0"
-        "${mod},2,view,2,0"
-        "${mod},3,view,3,0"
-        "${mod},4,view,4,0"
-        "${mod},5,view,5,0"
-        "${mod},6,view,6,0"
-        "${mod},7,view,7,0"
-        "${mod},8,view,8,0"
-        "${mod},9,view,9,0"
+        #"${mod},1,view,1,0"
+        #"${mod},2,view,2,0"
+        #"${mod},3,view,3,0"
+        #"${mod},4,view,4,0"
+        #"${mod},5,view,5,0"
+        #"${mod},6,view,6,0"
+        #"${mod},7,view,7,0"
+        #"${mod},8,view,8,0"
+        #"${mod},9,view,9,0"
+        "${mod},1,viewcrossmon,1,name:DP-2"
+        "${mod},2,viewcrossmon,2,name:DP-2"
+        "${mod},3,viewcrossmon,3,name:DP-2"
+        "${mod},4,viewcrossmon,4,name:DP-2"
+        "${mod},5,viewcrossmon,5,name:DP-2"
+        "${mod},6,viewcrossmon,6,name:DP-2"
+        "${mod},7,viewcrossmon,7,name:DP-1"
+        "${mod},8,viewcrossmon,8,name:DP-1"
+        "${mod},9,viewcrossmon,9,name:DP-1"
 
         # Move active client to tag
-        "${mod}+${move},1,tag,1,0"
-        "${mod}+${move},2,tag,2,0"
-        "${mod}+${move},3,tag,3,0"
-        "${mod}+${move},4,tag,4,0"
-        "${mod}+${move},5,tag,5,0"
-        "${mod}+${move},6,tag,6,0"
-        "${mod}+${move},7,tag,7,0"
-        "${mod}+${move},8,tag,8,0"
-        "${mod}+${move},9,tag,9,0"
+        #"${mod}+${move},1,tag,1,0"
+        #"${mod}+${move},2,tag,2,0"
+        #"${mod}+${move},3,tag,3,0"
+        #"${mod}+${move},4,tag,4,0"
+        #"${mod}+${move},5,tag,5,0"
+        #"${mod}+${move},6,tag,6,0"
+        #"${mod}+${move},7,tag,7,0"
+        #"${mod}+${move},8,tag,8,0"
+        #"${mod}+${move},9,tag,9,0"
+        "${mod}+${move},1,tagcrossmon,1,name:DP-2"
+        "${mod}+${move},2,tagcrossmon,2,name:DP-2"
+        "${mod}+${move},3,tagcrossmon,3,name:DP-2"
+        "${mod}+${move},4,tagcrossmon,4,name:DP-2"
+        "${mod}+${move},5,tagcrossmon,5,name:DP-2"
+        "${mod}+${move},6,tagcrossmon,6,name:DP-2"
+        "${mod}+${move},7,tagcrossmon,7,name:DP-1"
+        "${mod}+${move},8,tagcrossmon,8,name:DP-1"
+        "${mod}+${move},9,tagcrossmon,9,name:DP-1"
 
         # Screenshots
         # Take a screenshot of active monitor, then open it in satty
@@ -145,13 +163,13 @@
         "${alter},XF86AudioRaiseVolume,spawn,wpctl set-volume @DEFAULT_AUDIO_SINK@ 80%"
         "${alter},XF86AudioLowerVolume,spawn,wpctl set-volume @DEFAULT_AUDIO_SINK@ 40%"
 
-        # Mute audio sink (outputs, i.e. headphones) with dedicated volume mute key
+        # Mute audio sink (outputs, e.g., headphones) with dedicated volume mute key
         "NONE,XF86AudioMute,spawn,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
-        # Mute audio source (inputs, i.e. microphones) with dedicated mic mute key
+        # Mute audio source (inputs, e.g., microphones) with dedicated mic mute key
         "NONE,XF86AudioMicMute,spawn,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 
-        # Mute audio source (inputs, i.e. microphones) using the dedicated volume mute key. Useful for keyboards without a dedicated mic mute key.
+        # Mute audio source (inputs, e.g., microphones) using the dedicated volume mute key. Useful for keyboards without a dedicated mic mute key.
         "${alter},XF86AudioMute,spawn,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 
         # Brightness keybinds
