@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, config, ... }:
 
 {
   imports = [
@@ -10,6 +10,18 @@
   ];
 
   config = {
+    xdg.portal = {
+      enable = true;
+      config.common.default = ["wlr"];
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-wlr
+      ];
+    };
+
+    home.packages = with pkgs; [
+      swaybg
+    ];
+
     wayland.windowManager.mango = {
       enable = true;
     };
@@ -22,7 +34,7 @@
         # trying to stop a previous wayland compositor session
         systemctl --user is-active mango.service && systemctl --user stop mango.service
         # and then we start a new one
-        /run/current-system/sw/bin/mango-session
+        ${lib.getExe config.wayland.windowManager.mango.package}
       '';
       executable = true;
     };
