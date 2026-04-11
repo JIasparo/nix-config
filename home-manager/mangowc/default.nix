@@ -2,7 +2,6 @@
 
 {
   imports = [
-    #./autostart.nix
     ./binds.nix
     ./monitors.nix
     ./rules.nix
@@ -15,6 +14,7 @@
       config.common.default = ["wlr"];
       extraPortals = with pkgs; [
         xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk
       ];
     };
 
