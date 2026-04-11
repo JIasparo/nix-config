@@ -4,12 +4,13 @@
   config = {
     wayland.windowManager.mango.settings = {
       env = [
-        "ELECTRON_OZONE_PLATFORM_HINT,auto"
+        #"ELECTRON_OZONE_PLATFORM_HINT,auto"
         # WLR_DRM_NO_ATOMIC=1 mango # Needed on some graphics cards to allow tearing.
       ];
 
       exec-once = [
         "swaybg -i ${config.stylix.image}"
+        "easyeffects --service-mode --hide-window"
       ];
 
       # Scroller layout
@@ -76,7 +77,10 @@
       accel_speed = 0.0; # Speed adjustment (-1.0 to 1.0).
 
       # Misc
-      allow_tearing = 1; # Global tearing control (0: Disable, 1: Enable, 2: Fullscreen only).
+      allow_tearing = 2; # Global tearing control (0: Disable, 1: Enable, 2: Fullscreen only).
+      drag_tile_to_tile = 1; # Allow dragging a tiled window onto another to swap their positions (0: disable, 1: enable).
+      focus_cross_monitor = 0; # Allow directional focus to cross monitor boundaries (0: disable, 1: enable).
+      scratchpad_cross_monitor = 1; # Share the scratchpad pool across all monitors (0: disable, 1: enable).
     };
   };
 }
