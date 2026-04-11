@@ -29,7 +29,7 @@
         # trying to stop a previous wayland compositor session
         systemctl --user is-active Hyprland.service && systemctl --user stop Hyprland.service
         # and then we start a new one
-        ${lib.getExe config.wayland.windowManager.hyprland.package}
+        ${lib.getBin config.wayland.windowManager.hyprland.package}/bin/start-hyprland
       '';
       executable = true;
     };
