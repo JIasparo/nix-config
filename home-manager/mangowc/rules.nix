@@ -15,8 +15,27 @@
         "id:9,layout_name:scroller"
       ];
 
+      # mmsg -w -c # Watch focused client appid and title.
       windowrule = [
-        #"isnamedscratchpad:1,width:1920,height:1080,title:password-manager"
+        # Instant Messenger rules
+        "monitor:name:DP-2,tags:8,appid:^(discord)$"
+
+        # Game launcher rules
+        "monitor:name:DP-1,tags:4,appid:^(steam)$"
+        "monitor:name:DP-1,tags:4,appid:^(heroic)$"
+
+        # Game rules
+        "monitor:name:DP-1,tags:5,appid:^(steam_app_\\d+)$"
+        "isfullscreen:1,noblur:1,focused_opacity:1,appid:^(steam_app_\\d+)$"
+        
+        # Recording rules
+        "monitor:name:DP-2,tags:9,appid:^(com.obsproject.Studio)$"
+
+        # Terminal rules
+        "isterm:1,appid:^(kitty)$"
+        
+        # Scratchpad rules
+        "isnamedscratchpad:1,appid:^(Bitwarden)$"
       ];
 
       layerrule = [
