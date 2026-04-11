@@ -67,10 +67,7 @@
         #"ALT,RETURN,togglefullscreen"
 
         # Scratchpad keybinds
-        #"${mod}+${move},GRAVE,minimized"
-        #"${mod},GRAVE,toggle_scratchpad"
-        #"${mod}+${move},GRAVE,restore_minimized"
-        #"${mod},GRAVE,toggle_named_scratchpad,none,password-manager,${password-manager} -T password-manager"
+        "${mod},GRAVE,toggle_named_scratchpad,Bitwarden,none,${password-manager}"
 
         # Switch client focus
         #"ALT,TAB,focusstack,next"
