@@ -27,6 +27,8 @@
         # Game rules
         "monitor:name:DP-1,tags:5,appid:^(steam_app_\\d+)$"
         "isfullscreen:1,noblur:1,focused_opacity:1,appid:^(steam_app_\\d+)$"
+        "monitor:name:DP-1,tags:5,appid:^(cs2)$"
+        "isfullscreen:1,noblur:1,focused_opacity:1,appid:^(cs2)$"
         
         # Recording rules
         "monitor:name:DP-2,tags:9,appid:^(com.obsproject.Studio)$"
