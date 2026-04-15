@@ -16,7 +16,7 @@
     ./fzf.nix
     ./git
     ./gtk.nix
-    ./gytmdl
+    #./gytmdl
     #./hyprland
     ./kitty
     ./librewolf
