@@ -49,6 +49,7 @@
         "${mod},S,spawn,steam"
         "${mod},SPACE,spawn,${menu}"
         "${mod},W,spawn,${browser}"
+        "${mod}+${alter},W,spawn,${browser} --new-window about:profiles"
         "CTRL+ALT,DELETE,spawn,${system-monitor}"
 
         # Reload config
