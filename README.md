@@ -14,7 +14,6 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 #### TODO
 
-+ [x] fix Niri setup
 + [ ] setup OrcaSlicer module
 + [ ] setup dev environments
 + [ ] overhaul my modules
