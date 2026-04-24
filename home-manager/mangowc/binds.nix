@@ -23,6 +23,7 @@
       editor = "codium";
       file-manager-gui = "thunar";
       file-manager-tui = "${terminal} yazi";
+      instant-messenger = "discord";
       media-player = "vlc";
       menu = "rofi -show drun";
       password-manager = "bitwarden";
@@ -40,7 +41,7 @@
       */
       bind = [
         # Application keybinds
-        "${mod},D,spawn,discord"
+        "${mod},D,spawn,${instant-messenger}"
         "${mod},E,spawn,${editor}"
         "${mod},F,spawn,${file-manager-tui}"
         "${mod}+${alter},F,spawn,${file-manager-gui}"
