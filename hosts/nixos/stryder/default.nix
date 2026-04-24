@@ -13,7 +13,7 @@
     #./../../common/optional/niri
     ./../../common/optional/greetd.nix
     #./../../common/optional/gvfs.nix
-    ./../../common/optional/xdg.nix
+    #./../../common/optional/xdg.nix
     ./../../common/optional/nvidia.nix
     ./../../common/optional/openrgb.nix
     ./../../common/optional/pipewire-fixes/disable-suspension.nix
