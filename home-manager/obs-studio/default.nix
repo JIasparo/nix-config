@@ -7,6 +7,7 @@
       package = (pkgs.obs-studio.override { cudaSupport = true; });
 
       plugins = with pkgs.obs-studio-plugins; [
+        #obs-livesplit-one
         obs-pipewire-audio-capture
         #obs-tuna
       ];
