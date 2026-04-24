@@ -18,11 +18,11 @@
       "$editor" = "codium";
       "$file-manager-gui" = "thunar";
       "$file-manager-tui" = "$terminal yazi";
-      "$mediaplayer" = "vlc";
+      "$instant-messenger" = "discord";
+      "$media-player" = "vlc";
       "$menu" = "rofi -show drun";
-      #"$menu" = "hyprlauncher";
-      "$passManager" = "bitwarden";
-      "$sysMon" = "btop";
+      "$password-manager" = "bitwarden";
+      "$system-monitor" = "$terminal btop";
       "$terminal" = "kitty";
 
       /*
@@ -42,17 +42,16 @@
 
       bind = [
         # Application binds
-        "$mod, D, exec, discord"
+        "$mod, D, exec, $instant-messenger"
         "$mod, E, exec, $editor"
         "$mod, F, exec, $file-manager-tui"
         "$mod $alter, F, exec, $file-manager-gui"
-        "$mod, M, exec, $mediaplayer"
+        "$mod, M, exec, $media-player"
         "$mod, RETURN, exec, $terminal"
         "$mod, S, exec, steam"
         "$mod, SPACE, exec, $menu"
         "$mod, W, exec, $browser"
-        #"$mod SHIFT, W, exec, $browser -P ${config.programs.librewolf.profiles."content-creation".name}" # Opens a specific Firefox profile
-        "CTRL ALT, DELETE, exec, $terminal $sysMon"
+        "CTRL ALT, DELETE, exec, $system-monitor"
 
         # Kill the active window
         "$mod, Q, killactive,"

@@ -14,7 +14,7 @@
         "8, monitor:DP-2, default:true"
         "9, monitor:DP-2"
         "10, monitor:DP-2"
-        "special:special, on-created-empty:$passManager"
+        "special:special, on-created-empty:$password-manager"
       ];
 
       windowrule = [
