@@ -2,6 +2,7 @@
 
 {
   config = {
+    # Plugins for Discord client mods, e.g., Vencord and Equicord.
     programs.nixcord.config.plugins = {
       accountPanelServerProfile = {
         enable = true;
