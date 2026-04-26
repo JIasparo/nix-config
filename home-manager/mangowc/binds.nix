@@ -23,7 +23,7 @@
       editor = "codium";
       file-manager-gui = "thunar";
       file-manager-tui = "${terminal} yazi";
-      instant-messenger = "discord";
+      instant-messenger = "equibop";
       media-player = "vlc";
       menu = "rofi -show drun";
       password-manager = "bitwarden";

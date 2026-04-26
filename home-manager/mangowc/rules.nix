@@ -18,7 +18,7 @@
       # mmsg -w -c # Watch focused client appid and title.
       windowrule = [
         # Instant Messenger rules
-        "monitor:name:DP-2,tags:8,appid:^(discord)$"
+        "monitor:name:DP-2,tags:8,appid:^(electron),title:^((Discord)(.*))|(Equibop)$"
 
         # Game launcher rules
         "monitor:name:DP-1,tags:4,appid:^(steam)$"
