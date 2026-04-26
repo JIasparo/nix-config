@@ -9,6 +9,7 @@
     ./bottles.nix
     ./btop.nix
     ./easyeffects
+    ./equibop
     ./eza.nix
     ./fastfetch
     ./fd.nix
@@ -26,7 +27,7 @@
     #./nemo.nix
     ./network-applet.nix
     #./niri
-    ./nixcord
+    #./nixcord
     ./obs-studio
     ./obsidian
     ./packages.nix
