@@ -6,7 +6,7 @@
     ./home.nix
     # Optional
     ./bash.nix
-    ./bottles.nix
+    #./bottles.nix
     ./btop.nix
     ./easyeffects
     ./equibop
@@ -22,11 +22,11 @@
     ./kitty
     ./librewolf
     #./lutris.nix
-    ./mangowc
+    #./mangowc
     #./mpv.nix
     #./nemo.nix
     ./network-applet.nix
-    #./niri
+    ./niri
     #./nixcord
     ./obs-studio
     ./obsidian
