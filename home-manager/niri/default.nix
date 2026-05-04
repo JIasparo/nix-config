@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, config, ... }:
 
 {
   imports = [
@@ -6,9 +6,19 @@
     ./monitors.nix
     ./rules.nix
     ./settings.nix
+    ./workspaces.nix
   ];
 
   config = {
+    xdg.portal = {
+      enable = true;
+      config.common.default = ["gnome"];
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-gnome
+        xdg-desktop-portal-gtk
+      ];
+    };
+
     home.packages = with pkgs; [
       xwayland-satellite
       swaybg
@@ -31,7 +41,7 @@
         # trying to stop a previous wayland compositor session
         systemctl --user is-active niri.service && systemctl --user stop niri.service
         # and then we start a new one
-        /run/current-system/sw/bin/niri-session
+        ${lib.getBin config.programs.niri.package}/bin/niri-session
       '';
       executable = true;
     };
