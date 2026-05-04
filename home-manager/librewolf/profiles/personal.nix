@@ -17,6 +17,44 @@
               "browser.uiCustomization.state" = toolbar-customization;
             };
 
+            bookmarks = {
+              force = true;
+              settings = [
+                {
+                  name = "Bookmarks Toolbar";
+                  toolbar = true; # Turns this directory into the Bookmarks Toolbar.
+                  bookmarks = [
+                    {
+                      name = "YouTube";
+                      url = "https://YouTube.com";
+                    }
+                    
+                    {
+                      name = "Anime/Manga";
+                      bookmarks = [
+                        {
+                          name = "MyAnimeList";
+                          url = "https://myanimelist.net/";
+                        }
+                        {
+                          name = "AniList";
+                          url = "https://anilist.co/";
+                        }
+                        {
+                          name = "AnimeKAI";
+                          url = "https://animekai.to/home";
+                        }
+                        {
+                          name = "MangaDex";
+                          url = "https://mangadex.org/";
+                        }
+                      ];
+                    }
+                  ];
+                }
+              ];
+            };
+
             containersForce = true;
             containers = { };
           };
