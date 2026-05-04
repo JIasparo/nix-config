@@ -2,8 +2,8 @@
 
 {
   config = {
-    programs.vscode.profiles = {
-      default = {
+    programs.vscodium.profiles = {
+      "default" = {
         userSettings = {
           "breadcrumbs.enabled" = false;
           "chat.disableAIFeatures" = true;

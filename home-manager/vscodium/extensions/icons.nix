@@ -2,7 +2,7 @@
 
 {
   config = {
-    programs.vscode.profiles.default = {
+    programs.vscodium.profiles."default" = {
       extensions = with pkgs.vscode-extensions; [
         pkief.material-icon-theme
       ];

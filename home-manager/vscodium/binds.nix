@@ -2,7 +2,7 @@
 
 {
   config = {
-    programs.vscode.profiles.default.keybindings = [
+    programs.vscodium.profiles."default".keybindings = [
       #{
         #"key" = "";
         #"command" = "";
