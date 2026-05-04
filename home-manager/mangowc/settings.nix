@@ -4,7 +4,7 @@
   config = {
     wayland.windowManager.mango.settings = {
       env = [
-        #"ELECTRON_OZONE_PLATFORM_HINT,auto"
+        "ELECTRON_OZONE_PLATFORM_HINT,auto"
         # WLR_DRM_NO_ATOMIC=1 mango # Needed on some graphics cards to allow tearing.
       ];
 
@@ -20,7 +20,7 @@
       scroller_prefer_center = 0; # Center focused window only if it was outside the view (0: disable, 1: enable).
       scroller_prefer_overspread = 1; # Allow windows to overspread when there's extra space (0: disable, 1: enable).
       edge_scroller_pointer_focus = 0; # Focus windows even if partially off-screen (0: disable, 1: enable).
-      scroller_proportion_preset = "0.2,0.5,0.8"; # Presets for cycling window widths.
+      scroller_proportion_preset = "0.2,0.5,0.8,1.0"; # Presets for cycling window widths.
       scroller_ignore_proportion_single = 1; # Ignore proportion adjustments for single windows (0: disable, 1: enable).
       scroller_default_proportion_single = 1.0; # Default proportion for single windows in scroller. Requires scroller_ignore_proportion_single=0 to take effect.
 
