@@ -59,20 +59,16 @@
         # Kill the focused window
         "${mod},Q,killclient"
         "${mod},F4,killclient"
-        #"ALT,F4,killclient"
 
         # Window management
         "${mod},TAB,toggleoverview"
-        #"${mod},V,togglefloating"
         "${mod},V,togglemaximizescreen"
         "${mod}+${move},V,togglefullscreen"
-        #"ALT,RETURN,togglefullscreen"
 
         # Scratchpad keybinds
         "${mod},GRAVE,toggle_named_scratchpad,Bitwarden,none,${password-manager}"
 
         # Switch client focus
-        #"ALT,TAB,focusstack,next"
         "${mod},${down},focusdir,down"
         "${mod},${left},focusdir,left"
         "${mod},${right},focusdir,right"
@@ -96,15 +92,6 @@
         "${mod}+${resize},${right},resizewin,+50,+0"
 
         # Switch tag
-        #"${mod},1,view,1,0"
-        #"${mod},2,view,2,0"
-        #"${mod},3,view,3,0"
-        #"${mod},4,view,4,0"
-        #"${mod},5,view,5,0"
-        #"${mod},6,view,6,0"
-        #"${mod},7,view,7,0"
-        #"${mod},8,view,8,0"
-        #"${mod},9,view,9,0"
         "${mod},1,viewcrossmon,1,name:DP-1"
         "${mod},2,viewcrossmon,2,name:DP-1"
         "${mod},3,viewcrossmon,3,name:DP-1"
@@ -116,15 +103,6 @@
         "${mod},9,viewcrossmon,9,name:DP-2"
 
         # Move active client to tag
-        #"${mod}+${move},1,tag,1,0"
-        #"${mod}+${move},2,tag,2,0"
-        #"${mod}+${move},3,tag,3,0"
-        #"${mod}+${move},4,tag,4,0"
-        #"${mod}+${move},5,tag,5,0"
-        #"${mod}+${move},6,tag,6,0"
-        #"${mod}+${move},7,tag,7,0"
-        #"${mod}+${move},8,tag,8,0"
-        #"${mod}+${move},9,tag,9,0"
         "${mod}+${move},1,tagcrossmon,1,name:DP-1"
         "${mod}+${move},2,tagcrossmon,2,name:DP-1"
         "${mod}+${move},3,tagcrossmon,3,name:DP-1"
