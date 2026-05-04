@@ -2,105 +2,202 @@
 
 {
   config = {
-    programs.niri.settings.binds = with config.lib.niri.actions; {
-      # Application binds
-      "Ctrl+Alt+Delete".action = spawn "${config.home.sessionVariables.TERM}" "btop";
-      "Mod+D".action = spawn "discord";
-      "Mod+E".action = spawn "${config.home.sessionVariables.VISUAL_EDITOR}";
-      "Mod+F".action = spawn "${config.home.sessionVariables.TERM}" "yazi";
-      "Mod+M".action = spawn "${config.home.sessionVariables.MEDIA_PLAYER}";
-      "Mod+Return".action = spawn "${config.home.sessionVariables.TERM}";
-      "Mod+S".action = spawn "steam";
-      "Mod+Space".action = spawn "rofi" "-show" "drun";
-      "Mod+W".action = spawn "${config.home.sessionVariables.BROWSER}";
+    programs.niri.settings.binds =
+      let
+        # Variables
+        alter = "ALT";
+        mod = "SUPER";
+        move = "SHIFT";
+        resize = "CTRL";
 
-      # Toggle overview
-      "Mod+Tab".action = toggle-overview;
+        down = "DOWN";
+        left = "LEFT";
+        right = "RIGHT";
+        up = "UP";
 
-      # Kill binds
-      "Mod+Q".action = close-window;
-      "Mod+F4".action = close-window;
+        #down = "J";
+        #left = "H";
+        #right = "L";
+        #up = "K";
 
-      # Toggle between floating and tiling
-      "Mod+V".action = toggle-window-floating;
+        browser = "librewolf";
+        editor = "codium";
+        file-manager-gui = "thunar";
+        file-manager-tui = "${terminal} yazi";
+        instant-messenger = "equibop";
+        media-player = "vlc";
+        menu = "rofi -show drun";
+        password-manager = "bitwarden";
+        system-monitor = "${terminal} btop";
+        terminal = "kitty";
+      in
+      {
+        # Application keybinds
+        "${mod}+D".action.spawn = instant-messenger;
+        "${mod}+E".action.spawn = editor;
+        "${mod}+F".action.spawn-sh = file-manager-tui;
+        "${mod}+${alter}+F".action.spawn = file-manager-gui;
+        "${mod}+M".action.spawn = media-player;
+        "${mod}+Return".action.spawn = terminal;
+        "${mod}+S".action.spawn = "steam";
+        "${mod}+Space".action.spawn-sh = menu;
+        "${mod}+W".action.spawn = browser;
+        "${mod}+${alter}+W".action.spawn-sh = "${browser} --new-window about:profiles";
+        "Ctrl+Alt+Delete".action.spawn-sh = system-monitor;
 
-      # Toggle fullscreen
-      "Mod+Shift+V".action = fullscreen-window;
+        # Kill the focused window
+        "${mod}+Q".action.close-window = [ ];
+        "${mod}+F4".action.close-window = [ ];
 
-      # Move window into or out of a column
-      "Mod+Shift+Comma".action = consume-or-expel-window-left;
-      "Mod+Shift+Period".action = consume-or-expel-window-right;
+        # Window management
+        "${mod}+Tab".action.toggle-overview = [ ];
+        "${mod}+V".action.toggle-window-floating = [ ];
+        "${mod}+${move}+V".action.maximize-column = [ ];
+        "${mod}+${resize}+V".action.fullscreen-window = [ ];
 
-      # Merge column together
-      "Mod+Shift+Slash".action = toggle-column-tabbed-display;
+        # Scratchpad keybinds
+        # If Niri had them.
+        "${mod}+GRAVE".action.spawn = password-manager;
 
-      # Swap window positions
-      "Mod+Comma".action = swap-window-left;
-      "Mod+Period".action = swap-window-right;
+        # Switch column/window focus
+        "${mod}+${down}".action.focus-window-down = [ ];
+        "${mod}+${left}".action.focus-column-left = [ ];
+        "${mod}+${right}".action.focus-column-right = [ ];
+        "${mod}+${up}".action.focus-window-up = [ ];
 
-      # Move focus
-      "Mod+Left".action = focus-column-left;
-      "Mod+Right".action = focus-column-right;
-      "Mod+Up".action = focus-window-up;
-      "Mod+Down".action = focus-window-down;
-      
-      # Move active column/window
-      "Mod+Shift+Left".action = move-column-left;
-      "Mod+Shift+Right".action = move-column-right;
-      "Mod+Shift+Up".action = move-window-up;
-      "Mod+Shift+Down".action = move-window-down;
+        # Move active column/window
+        "${mod}+${move}+${down}".action.move-window-down = [ ];
+        "${mod}+${move}+${left}".action.move-column-left = [ ];
+        "${mod}+${move}+${right}".action.move-column-right = [ ];
+        "${mod}+${move}+${up}".action.move-window-up = [ ];
 
-      # Resize active column/window
-      "Mod+Ctrl+Left".action = switch-preset-column-width-back;
-      "Mod+Ctrl+Right".action = switch-preset-column-width;
-      "Mod+Ctrl+Up".action = switch-preset-window-height-back;
-      "Mod+Ctrl+Down".action = switch-preset-window-height;
-      "Mod+Slash".action = maximize-column;
-      "Mod+Ctrl+Slash".action = expand-column-to-available-width;
+        # Change scroller layout
+        "${mod}+SLASH".action.switch-preset-column-width = [ ];
+        "${mod}+${move}+SLASH".action.toggle-column-tabbed-display = [ ];
+        "${mod}+${move}+COMMA".action.consume-or-expel-window-left = [ ];
+        "${mod}+${move}+PERIOD".action.consume-or-expel-window-right = [ ];
 
-      # Switch workspaces
-      "Mod+1".action = focus-workspace "${config.programs.niri.settings.workspaces.workspace-1.name}";
-      "Mod+2".action = focus-workspace "${config.programs.niri.settings.workspaces.workspace-2.name}";
-      "Mod+3".action = focus-workspace "${config.programs.niri.settings.workspaces.workspace-3.name}";
-      "Mod+8".action = focus-workspace "${config.programs.niri.settings.workspaces.workspace-4.name}";
-      "Mod+9".action = focus-workspace "${config.programs.niri.settings.workspaces.workspace-5.name}";
-      "Mod+0".action = focus-workspace "${config.programs.niri.settings.workspaces.workspace-6.name}";
+        # Resize active column/window
+        "${mod}+${resize}+${down}".action.set-window-height = "-50";
+        "${mod}+${resize}+${left}".action.set-column-width = "-50";
+        "${mod}+${resize}+${right}".action.set-column-width = "+50";
+        "${mod}+${resize}+${up}".action.set-window-height = "+50";
 
-      # Move active column to a workspace
-      # As of October 21, 2025: move-column-to-workspace is not available in the niri-flake.
-      #"Mod+Shift+1".action = move-column-to-workspace "${config.programs.niri.settings.workspaces.workspace-1.name}";
-      #"Mod+Shift+2".action = move-column-to-workspace "${config.programs.niri.settings.workspaces.workspace-2.name}";
-      #"Mod+Shift+3".action = move-column-to-workspace "${config.programs.niri.settings.workspaces.workspace-3.name}";
-      #"Mod+Shift+8".action = move-column-to-workspace "${config.programs.niri.settings.workspaces.workspace-4.name}";
-      #"Mod+Shift+9".action = move-column-to-workspace "${config.programs.niri.settings.workspaces.workspace-5.name}";
-      #"Mod+Shift+0".action = move-column-to-workspace "${config.programs.niri.settings.workspaces.workspace-6.name}";
+        # Switch workspaces
+        "${mod}+1".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-01.name}";
+        "${mod}+2".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-02.name}";
+        "${mod}+3".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-03.name}";
+        "${mod}+4".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-04.name}";
+        "${mod}+5".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-05.name}";
+        "${mod}+6".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-06.name}";
+        "${mod}+7".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-07.name}";
+        "${mod}+8".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-08.name}";
+        "${mod}+9".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-09.name}";
+        "${mod}+0".action.focus-workspace = "${config.programs.niri.settings.workspaces.workspace-10.name}";
 
-      # Take a screenshot of active monitor, then open it in satty
-      "Mod+Print".action = spawn "sh" "-c" "grim -g \"$(slurp -o -r -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png";
+        # Move active column to a workspace
+        "${mod}+${move}+1".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-01.name}";
+        "${mod}+${move}+2".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-02.name}";
+        "${mod}+${move}+3".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-03.name}";
+        "${mod}+${move}+4".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-04.name}";
+        "${mod}+${move}+5".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-05.name}";
+        "${mod}+${move}+6".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-06.name}";
+        "${mod}+${move}+7".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-07.name}";
+        "${mod}+${move}+8".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-08.name}";
+        "${mod}+${move}+9".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-09.name}";
+        "${mod}+${move}+0".action.move-column-to-workspace = "${config.programs.niri.settings.workspaces.workspace-10.name}";
 
-      # Take a screenshot of select area, then open it in satty
-      "Mod+Shift+Print".action = spawn "sh" "-c" "grim -g \"$(slurp -w 0)\" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png";
+        # Screenshots
+        # Take a screenshot of active monitor, then open it in satty
+        "${mod}+PRINT".action.spawn-sh =
+          "grim -g \"$(slurp -o -r -w 0)\" -t ppm - | satty --filename - --output-filename ${config.programs.satty.settings.general.output-filename}";
+        # Take a screenshot of select area, then open it in satty
+        "${mod}+${alter}+PRINT".action.spawn-sh =
+          "grim -g \"$(slurp -w 0)\" -t ppm - | satty --filename - --output-filename ${config.programs.satty.settings.general.output-filename}";
 
-      # Move / resize windows/columns with mouse
-      #"Mod+Shift+MouseLeft".action = ;
-      #"Mod+Ctrl+MouseLeft".action = ;
+        # Mouse bindings
+        #"${mod}+${move}+MouseLeft".action = "";
+        #"${mod}+${resize}+MouseRight".action = "";
+        #"${mod}+MouseForward".action = [];
+        #"${mod}+MouseBack".action = [];
 
-      # Volume keybinds
-      "XF86AudioRaiseVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+";
-      "XF86AudioLowerVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-";
+        # Audio keybinds
+        # Adjust volume levels with dedicated volume keys
+        "XF86AudioRaiseVolume" = {
+          action.spawn-sh = "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+";
+          allow-when-locked = true;
+        };
+        "XF86AudioLowerVolume" = {
+          action.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
+          allow-when-locked = true;
+        };
 
-      # Brightness keybinds
-      "XF86MonBrightnessUp".action = spawn "brightnessctl" "s" "10%+";
-      "XF86MonBrightnessDown".action = spawn "brightnessctl" "s" "10%-";
+        # Set volume levels to a set percentage using the dedicated volume keys
+        "${alter}+XF86AudioRaiseVolume" = {
+          action.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 80%";
+          allow-when-locked = true;
+        };
+        "${alter}+XF86AudioLowerVolume" = {
+          action.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 40%";
+          allow-when-locked = true;
+        };
 
-      # Media keybinds
-      "XF86AudioMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
-      "XF86AudioMicMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle";
+        # Mute audio sink (outputs, e.g., headphones) with dedicated volume mute key
+        "XF86AudioMute" = {
+          action.spawn-sh = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+          allow-when-locked = true;
+        };
 
-      "XF86AudioPlay".action = spawn "playerctl" "play-pause";
-      "XF86AudioStop".action = spawn "playerctl" "pause";
-      "XF86AudioPrev".action = spawn "playerctl" "previous";
-      "XF86AudioNext".action = spawn "playerctl" "next";
-    };
+        # Mute audio source (inputs, e.g., microphones) with dedicated mic mute key
+        "XF86AudioMicMute" = {
+          action.spawn-sh = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
+          allow-when-locked = true;
+        };
+
+        # Mute audio source (inputs, e.g., microphones) using the dedicated volume mute key. Useful for keyboards without a dedicated mic mute key.
+        "${alter}+XF86AudioMute" = {
+          action.spawn-sh = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
+          allow-when-locked = true;
+        };
+
+        # Brightness keybinds
+        # Adjust brightness levels with dedicated brightness keys
+        "XF86MonBrightnessUp" = {
+          action.spawn-sh = "brightnessctl s 5%+";
+          allow-when-locked = true;
+        };
+        "XF86MonBrightnessDown" = {
+          action.spawn-sh = "brightnessctl s 5%-";
+          allow-when-locked = true;
+        };
+
+        # Set brightness levels to a set percentage using the dedicated brightness keys
+        "${alter}+XF86MonBrightnessUp" = {
+          action.spawn-sh = "brightnessctl s 100%";
+          allow-when-locked = true;
+        };
+        "${alter}+XF86MonBrightnessDown" = {
+          action.spawn-sh = "brightnessctl s 1%";
+          allow-when-locked = true;
+        };
+
+        # Playback keybinds
+        "XF86AudioNext" = {
+          action.spawn-sh = "playerctl next";
+          allow-when-locked = true;
+        };
+        "XF86AudioPlay" = {
+          action.spawn-sh = "playerctl play-pause";
+          allow-when-locked = true;
+        };
+        "XF86AudioPrev" = {
+          action.spawn-sh = "playerctl previous";
+          allow-when-locked = true;
+        };
+        "XF86AudioStop" = {
+          action.spawn-sh = "playerctl stop";
+          allow-when-locked = true;
+        };
+      };
   };
 }
