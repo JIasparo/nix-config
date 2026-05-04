@@ -17,8 +17,12 @@
 
       # mmsg -w -c # Watch focused client appid and title.
       windowrule = [
+        # Browser rules
+        "unfocused_opacity:1,focused_opacity:1,title:^(.*)(YouTube)(.*)$"
+
         # Instant Messenger rules
-        "monitor:name:DP-2,tags:8,appid:^(electron),title:^((Discord)(.*))|(Equibop)$"
+        "monitor:name:DP-2,tags:8,title:^((Discord)(.*))|(Equibop)$"
+        "globalkeybinding:ctrl+shift-m,title:^((Discord)(.*))|(Equibop)$"
 
         # Game launcher rules
         "monitor:name:DP-1,tags:4,appid:^(steam)$"
