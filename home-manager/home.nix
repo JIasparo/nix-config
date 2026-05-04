@@ -8,11 +8,11 @@
       homeDirectory = "/home/${username}";
 
       sessionVariables = {
-        BROWSER = "librewolf";
-        EDITOR = "nano";
-        TERM = "kitty";
-        VISUAL_EDITOR = "codium";
-        MEDIA_PLAYER = "vlc";
+        #BROWSER = "librewolf";
+        #EDITOR = "nano";
+        #TERM = "kitty";
+        #VISUAL_EDITOR = "codium";
+        #MEDIA_PLAYER = "vlc";
       };
 
       # The NixOS version the config was built upon.
