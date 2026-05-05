@@ -1,23 +1,47 @@
-{ ... }:
+{ lib, ... }:
 
 {
   config = {
     programs.fastfetch.settings = {
 
       logo = let 
-        #bottom-left={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
-        #middle-left={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
-        #top-left={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
-        #top-right={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
-        #middle-right={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
-        #bottom-right={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
+        bottom-left-color = "5BCEFA"; # Blue: #5BCEFA
+        middle-left-color = "FFFFFF"; # White: #FFFFFF
+        top-left-color = "F5A9B8"; # Pink: #F5A9B8
+        top-right-color = "5BCEFA"; # Blue: #5BCEFA
+        middle-right-color = "FFFFFF"; # White: #FFFFFF
+        bottom-right-color = "F5A9B8"; # Pink: #F5A9B8
         
-        bottom-left={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
-        middle-left={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
-        top-left={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
-        top-right={r = "91"; g = "206"; b = "250";}; # Blue: #5BCEFA
-        middle-right={r = "255"; g = "255"; b = "255";}; # White: #FFFFFF
-        bottom-right={r = "245"; g = "169"; b = "184";}; # Pink: #F5A9B8
+        bottom-left = {
+            r = "${toString (lib.fromHexString (lib.substring 0 2 bottom-left-color))}";
+            g = "${toString (lib.fromHexString (lib.substring 2 2 bottom-left-color))}";
+            b = "${toString (lib.fromHexString (lib.substring 4 2 bottom-left-color))}";
+          };
+        middle-left = {
+            r = "${toString (lib.fromHexString (lib.substring 0 2 middle-left-color))}";
+            g = "${toString (lib.fromHexString (lib.substring 2 2 middle-left-color))}";
+            b = "${toString (lib.fromHexString (lib.substring 4 2 middle-left-color))}";
+          };
+        top-left = {
+            r = "${toString (lib.fromHexString (lib.substring 0 2 top-left-color))}";
+            g = "${toString (lib.fromHexString (lib.substring 2 2 top-left-color))}";
+            b = "${toString (lib.fromHexString (lib.substring 4 2 top-left-color))}";
+          };
+        top-right = {
+            r = "${toString (lib.fromHexString (lib.substring 0 2 top-right-color))}";
+            g = "${toString (lib.fromHexString (lib.substring 2 2 top-right-color))}";
+            b = "${toString (lib.fromHexString (lib.substring 4 2 top-right-color))}";
+          };
+        middle-right = {
+            r = "${toString (lib.fromHexString (lib.substring 0 2 middle-right-color))}";
+            g = "${toString (lib.fromHexString (lib.substring 2 2 middle-right-color))}";
+            b = "${toString (lib.fromHexString (lib.substring 4 2 middle-right-color))}";
+          };
+        bottom-right = {
+            r = "${toString (lib.fromHexString (lib.substring 0 2 bottom-right-color))}";
+            g = "${toString (lib.fromHexString (lib.substring 2 2 bottom-right-color))}";
+            b = "${toString (lib.fromHexString (lib.substring 4 2 bottom-right-color))}";
+          };
       in{
         type = "data";
         source = ''
@@ -38,7 +62,7 @@
           [38;2;${bottom-left.r};${bottom-left.g};${bottom-left.b}m       ◢███◤◥███◣[38;2;${bottom-right.r};${bottom-right.g};${bottom-right.b}m   ◥███◣
           [38;2;${bottom-left.r};${bottom-left.g};${bottom-left.b}m       ◥██◤  ◥███◣[38;2;${bottom-right.r};${bottom-right.g};${bottom-right.b}m   ◥██◤
         '';
-
+        
         padding = {
           top = 1;
           left = 3;
