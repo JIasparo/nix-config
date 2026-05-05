@@ -92,7 +92,7 @@
         ];
 
         always-center-single-column = false; # Whether a single column is always centered.
-        center-focused-column = "on-overflow"; # When changing focus, the focused column is automatically centered ("never": If the focused column doesn't fit, it will be aligned to the edges of the screen, "on-overflow": If the focused column doesn't fit, it will be centered on the screen, "always": The focused column will always be centered, even if it was already fully visible).
+        center-focused-column = "never"; # When changing focus, the focused column is automatically centered ("never": If the focused column doesn't fit, it will be aligned to the edges of the screen, "on-overflow": If the focused column doesn't fit, it will be centered on the screen, "always": The focused column will always be centered, even if it was already fully visible).
         default-column-display = "normal"; # How windows in columns should be displayed by default ("normal": Windows are arranged vertically, "tabbed": Windows are arranged in tabs).
 
         # The default width for new columns.
