@@ -3,7 +3,8 @@
 {
   imports = [
     #./nixos-default.nix
-    ./nixos-trans.nix
     #./nixos-rainbow.nix
+    #./nixos-stylix.nix
+    ./nixos-trans.nix
   ];
 }
