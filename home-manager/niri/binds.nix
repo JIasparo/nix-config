@@ -45,6 +45,10 @@
         "${mod}+${alter}+W".action.spawn-sh = "${browser} --new-window about:profiles";
         "Ctrl+Alt+Delete".action.spawn-sh = system-monitor;
 
+        # Global application actions
+        "${mod}+INSERT".action.spawn-sh = "${instant-messenger} --toggle-mic";
+        "${mod}+${alter}+INSERT".action.spawn-sh = "${instant-messenger} --toggle-deafen";
+
         # Kill the focused window
         "${mod}+Q".action.close-window = [ ];
         "${mod}+F4".action.close-window = [ ];
