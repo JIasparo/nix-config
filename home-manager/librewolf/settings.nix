@@ -12,6 +12,7 @@
           "browser.bookmarks.openInTabClosesMenu" = false;
           "browser.bookmarks.restore_default_bookmarks" = false;
           "browser.download.autohideButton" = true;
+          "browser.fullscreen.autohide" = false;
           "browser.low_commit_space_threshold_mb" = 200; # Tab unloading kicks in when available memory falls below this number
           "browser.low_commit_space_threshold_percent" = 40; # Tab unloading kicks in when available memory falls below this percent
           "browser.ml.linkPreview.longPress" = false;
