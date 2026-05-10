@@ -4,9 +4,9 @@
   imports = [
     # Required
     ./home.nix
+    
     # Optional
     ./bash.nix
-    #./bottles.nix
     ./btop.nix
     ./easyeffects
     ./equibop
@@ -24,7 +24,6 @@
     #./lutris.nix
     #./mangowc
     #./mpv.nix
-    #./nemo.nix
     ./network-applet.nix
     ./niri
     #./nixcord

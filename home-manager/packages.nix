@@ -6,6 +6,8 @@
       #archipelago
       bitwarden-desktop
       blender
+      #(blender.override { config.cudaSupport = true; config.rocmSupport=true; }) # Blender with GPU support.
+      #(bottles.override { removeWarningPopup = true; })
       brightnessctl
       #chatterino2
       #davinci-resolve
