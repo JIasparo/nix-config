@@ -14,10 +14,11 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 #### TODO
 
-+ [ ] setup OrcaSlicer module
-+ [ ] setup dev environments
-+ [ ] overhaul my modules
-+ [ ] setup impermanence
++ convert config to dendritic pattern
++ overhaul my modules
++ setup impermanence/preservation
++ setup OrcaSlicer module
++ setup dev environments
 
 ## Config Structure
 
