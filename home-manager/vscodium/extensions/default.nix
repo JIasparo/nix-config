@@ -4,6 +4,6 @@
   imports = [
     #./clangd.nix
     ./icons.nix
-    ./nixd.nix
+    ./nix-ide.nix
   ];
 }
