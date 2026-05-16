@@ -179,14 +179,15 @@
         enablePluginPresetQuotes = false; # Add preset quotes unique to this plugin.
         enableDiscordPresetQuotes = false; # Add Discord's preset quotes.
         additionalQuotes = ''
-          Good girl :3
-          |You're such a good girl
+          Good girl~
+          |You're such a good girl~
           |Mrrp mreow meow :3 :3 :3
           |Mreep mreeow :3
           |Mrrp nya~
           |Trans rights are human rights 🏳️‍⚧️
           |Be gay, do crime
           |Reminder to stay hydrated! <3
+          |Cloth gown gridlock :3
         '';
         additionalQuotesDelimiter = "|";
       };
