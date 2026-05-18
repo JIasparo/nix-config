@@ -1,4 +1,5 @@
 {
+  lib,
   pkgs,
   configpath,
   hostname,
@@ -8,11 +9,6 @@
 
 {
   config = {
-    home.packages = with pkgs; [
-      nixd
-      nixfmt
-    ];
-
     programs.vscodium.profiles."default" = {
       extensions = with pkgs.vscode-extensions; [
         jnoortheen.nix-ide
@@ -21,11 +17,11 @@
       userSettings = {
         "nix.enableLanguageServer" = true;
         "nix.hiddenLanguageServerErrors" = [ "textDocument/definition" ];
-        "nix.serverPath" = "nixd";
+        "nix.serverPath" = "${lib.getExe pkgs.nixd}";
         "nix.serverSettings" = {
-          "nixd" = {
+          "${lib.getName pkgs.nixd}" = {
             "formatting" = {
-              "command" = [ "nixfmt" ];
+              "command" = [ "${lib.getExe pkgs.nixfmt}" ];
             };
             "options" = {
               "nixos" = {
