@@ -29,6 +29,7 @@
           matches = [
             { app-id = "^(steam_app_\\d+)$"; }
             { app-id = "^(cs2)$"; }
+            { app-id = "^(sm64coopdx)$"; }
           ];
         }
 
@@ -48,6 +49,7 @@
 
           matches = [
             { app-id = "^(vlc)$"; }
+            { app-id = "^(mpv)$"; }
           ];
         }
 
@@ -94,7 +96,7 @@
       layer-rules = [
         # Sensitive layer rules
         {
-          block-out-from = "screencast"; # ("screencast", "screen-capture").
+          block-out-from = "screencast"; # ("screencast": Window cannot be seen by screen recorders but can be seen by screenshots, "screen-capture": Window cannot be seen by screen recorders or screenshots).
 
           matches = [
             { namespace = "^(swaync-notification-window)$"; }
