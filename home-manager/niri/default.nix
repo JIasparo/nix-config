@@ -20,9 +20,7 @@
     };
 
     home.packages = with pkgs; [
-      xwayland-satellite
       nautilus
-      swaybg
     ];
 
     programs.niri = {
