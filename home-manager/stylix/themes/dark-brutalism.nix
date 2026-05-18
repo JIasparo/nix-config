@@ -8,6 +8,23 @@
       image = ./../../../wallpapers/pexels-serinus-5602124.jpg;
 
       base16Scheme = {
+        #base00 = "141414"; # Default Background
+        #base01 = "1f1f1f"; # Lighter Background (Used for status bars, line number and folding marks)
+        #base02 = "313131"; # Selection Background
+        #base03 = "4c4c4c"; # Comments, Invisibles, Line Highlighting
+        #base04 = "777777"; # Dark Foreground (Used for status bars)
+        #base05 = "c2c2c2"; # Default Foreground, Caret, Delimiters, Operators
+        #base06 = "d6d6d6"; # Light Foreground (Not often used)
+        #base07 = "e9e9e9"; # Light Background (Not often used)
+        #base08 = "b32834"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+        #base09 = "c5693e"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+        #base0A = "d7aa48"; # Classes, Markup Bold, Search Text Background
+        #base0B = "8ea27b"; # Strings, Inherited Class, Markup Code, Diff Inserted
+        #base0C = "9376a1"; # Support, Regular Expressions, Escape Characters, Markup Quotes
+        #base0D = "709d99"; # Functions, Methods, Attribute IDs, Headings, Accent color
+        #base0E = "bd843b"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
+        #base0F = "597479"; # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+
         base00 = "141414"; # Default Background
         base01 = "1f1f1f"; # Lighter Background (Used for status bars, line number and folding marks)
         base02 = "313131"; # Selection Background
@@ -18,14 +35,12 @@
         base07 = "e9e9e9"; # Light Background (Not often used)
         base08 = "b32834"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
         base09 = "c5693e"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
-        base0A = "d7aa48"; # Classes, Markup Bold, Search Text Background
-        base0B = "8ea27b"; # Strings, Inherited Class, Markup Code, Diff Inserted
-        base0C = "9376a1"; # Support, Regular Expressions, Escape Characters, Markup Quotes
+        base0A = "bd843b"; # Classes, Markup Bold, Search Text Background
+        base0B = "D7AA48"; # Strings, Inherited Class, Markup Code, Diff Inserted
+        base0C = "8ea27b"; # Support, Regular Expressions, Escape Characters, Markup Quotes
         base0D = "709d99"; # Functions, Methods, Attribute IDs, Headings, Accent color
-        base0E = "bd843b"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
+        base0E = "9376a1"; # Keywords, Storage, Selector, Markup Italic, Diff Changed
         base0F = "597479"; # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
-        #base0C = "709d99"; # Support, Regular Expressions, Escape Characters, Markup Quotes
-        #base0D = "9376a1"; # Functions, Methods, Attribute IDs, Headings, Accent color
       };
 
       icons = {
