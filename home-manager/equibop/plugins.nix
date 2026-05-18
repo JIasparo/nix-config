@@ -188,6 +188,7 @@
           |Be gay, do crime
           |Reminder to stay hydrated! <3
           |Cloth gown gridlock :3
+          |You can't wait for the world to change. We are the world.
         '';
         additionalQuotesDelimiter = "|";
       };
