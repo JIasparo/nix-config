@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./plugins.nix
-    ./settings.nix
+    #./plugins.nix
+    #./settings.nix
   ];
 
   config = {
