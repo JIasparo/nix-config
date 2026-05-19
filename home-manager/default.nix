@@ -23,7 +23,7 @@
     ./librewolf
     #./lutris.nix
     #./mangowc
-    #./mpv.nix
+    ./mpv.nix
     ./network-applet.nix
     ./niri
     #./nixcord
