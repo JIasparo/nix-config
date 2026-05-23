@@ -39,6 +39,7 @@
           "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
           "privacy.resistFingerprinting.letterboxing" = true;
           "privacy.resistFingerprinting" = false;
+          "ui.key.menuAccessKeyFocuses" = false;
         };
 
         profiles = {
