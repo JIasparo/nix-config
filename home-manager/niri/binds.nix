@@ -38,6 +38,7 @@
         "${mod}+F".action.spawn-sh = file-manager-tui;
         "${mod}+${alter}+F".action.spawn = file-manager-gui;
         "${mod}+M".action.spawn = media-player;
+        "${mod}+P".action.spawn = "picard";
         "${mod}+Return".action.spawn = terminal;
         "${mod}+S".action.spawn = "steam";
         "${mod}+Space".action.spawn-sh = menu;
