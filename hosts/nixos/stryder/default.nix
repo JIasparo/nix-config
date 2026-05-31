@@ -8,6 +8,7 @@
     ./hardware-configuration.nix
     
     # Optional
+    #./../../common/optional/bluetooth.nix
     #./../../common/optional/gnome.nix
     #./../../common/optional/hyprland
     #./../../common/optional/niri
