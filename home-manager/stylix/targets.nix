@@ -7,7 +7,7 @@
 
       obsidian.vaultNames = [ "Obsidian" ];
 
-      vscode.profileNames = [ "default" ];
+      vscodium.profileNames = [ "default" ];
     };
   };
 }
