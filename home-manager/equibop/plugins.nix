@@ -189,6 +189,7 @@
           |Reminder to stay hydrated! <3
           |Cloth gown gridlock :3
           |You can't wait for the world to change. We are the world.
+          |She system on my d till I init
         '';
         additionalQuotesDelimiter = "|";
       };
@@ -325,6 +326,9 @@
         chatIconRightClickAction = "settings"; # What to do when right clicking the chat icon ("global": Toggle typing globally, "channel": Toggle typing in channel, "guild": Toggle typing in guild, "settings": Open plugin settings).
         chatContextMenu = true; # Show a dropdown in the chat context menu to modify plugin settings on the go.
         defaultHidden = true; # If enabled, the plugin will hide your typing from others in any DMs/channels/guilds/ not listed in "Disabled Locations" below. If disabled, the plugin will show your typing to others for any DMs/channels/guilds/ not listed in "Enabled Locations" below.
+        alwaysEnableInActiveVoiceChat = false; # If enabled, allows your typing indicator to show when typing in a voice channel you are connected to.
+        temporaryEnableThresholdServers = 0; # Temporarily allow your typing indicator to show for this many seconds after sending a message in a server channel. If the typing indicator is already visible in the channel, this setting will have no effect.
+        temporaryEnableThresholdDirectMessages = 0; # Temporarily allow your typing indicator to show for this many seconds after sending a message in a DM or Group DM. If the typing indicator is already visible in the channel, this setting will have no effect.
         enabledLocations = ""; # Enable functionality for these IDs. Accepts a comma separated list. Only used if "Default Hidden" is disabled ("ID-1,ID-2,ID-3").
         disabledLocations = ""; # Disable functionality for these IDs. Accepts a comma separated list. Only used if "Default Hidden" is enabled ("ID-1,ID-2,ID-3").
       };
@@ -408,6 +412,7 @@
         noModalAnimation = false; # Remove the 300ms long animation when opening or closing modals.
         disableAdoptTagPrompt = false; # Disable the prompt to adopt tags.
         jsonGateway = false; # Forces JSON on gateway reconnect.
+        hideVoiceIndicatorForMutedChannels = false; # Hide voice indictor in server list when only active channels are muted.
       };
 
       NoTrack = {
