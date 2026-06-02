@@ -13,8 +13,8 @@
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
 
-    mango.url = "github:mangowm/mango";
-    mango.inputs.nixpkgs.follows = "nixpkgs";
+    #mango.url = "github:mangowm/mango";
+    #mango.inputs.nixpkgs.follows = "nixpkgs";
 
     niri.url = "github:sodiboo/niri-flake";
     niri.inputs.nixpkgs.follows = "nixpkgs";
@@ -45,7 +45,7 @@
           modules = [
             ./hosts/nixos/${hostname}
             inputs.disko.nixosModules.disko
-            inputs.mango.nixosModules.mango
+            #inputs.mango.nixosModules.mango
             inputs.niri.nixosModules.niri
           ];
           specialArgs = { inherit inputs username useremail hostname configpath; };
@@ -59,7 +59,7 @@
             ./home-manager
             inputs.stylix.homeModules.stylix
             #inputs.nixcord.homeModules.nixcord
-            inputs.mango.hmModules.mango
+            #inputs.mango.hmModules.mango
             inputs.niri.homeModules.niri
             inputs.niri.homeModules.stylix
           ];
