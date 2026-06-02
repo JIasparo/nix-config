@@ -4,7 +4,11 @@
   config = {
     programs.librewolf =
       let
-        toolbar-customization = "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[\"_762f9885-5a13-4abd-9c77-433dcd38b8fd_-browser-action\",\"_0d7cafdd-501c-49ca-8ebb-e3341caaa55e_-browser-action\"],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"vertical-spacer\",\"urlbar-container\",\"downloads-button\",\"fxa-toolbar-menu-button\",\"ublock0_raymondhill_net-browser-action\",\"unified-extensions-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"vertical-tabs\":[],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"developer-button\",\"ublock0_raymondhill_net-browser-action\",\"_762f9885-5a13-4abd-9c77-433dcd38b8fd_-browser-action\",\"_0d7cafdd-501c-49ca-8ebb-e3341caaa55e_-browser-action\",\"screenshot-button\"],\"dirtyAreaCache\":[\"nav-bar\",\"vertical-tabs\",\"PersonalToolbar\",\"toolbar-menubar\",\"TabsToolbar\",\"unified-extensions-area\"],\"currentVersion\":23,\"newElementCount\":4}";
+        toolbar-customization = "{\"placements\":{\"widget-overflow-fixed-list\":[],\"unified-extensions-area\":[\"_762f9885-5a13-4abd-9c77-433dcd38b8fd_-browser-action\",\"_0d7cafdd-501c-49ca-8ebb-e3341caaa55e_-browser-action\"],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"vertical-spacer\",\"customizableui-special-spring1\",\"customizableui-special-spring2\",\"customizableui-special-spring3\",\"urlbar-container\",\"customizableui-special-spring4\",\"customizableui-special-spring5\",\"customizableui-special-spring6\",\"downloads-button\",\"fxa-toolbar-menu-button\",\"ublock0_raymondhill_net-browser-action\",\"unified-extensions-button\",\"reset-pbm-toolbar-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"vertical-tabs\":[],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"developer-button\",\"ublock0_raymondhill_net-browser-action\",\"_762f9885-5a13-4abd-9c77-433dcd38b8fd_-browser-action\",\"_0d7cafdd-501c-49ca-8ebb-e3341caaa55e_-browser-action\",\"screenshot-button\",\"reset-pbm-toolbar-button\"],\"dirtyAreaCache\":[\"nav-bar\",\"vertical-tabs\",\"PersonalToolbar\",\"toolbar-menubar\",\"TabsToolbar\",\"unified-extensions-area\"],\"currentVersion\":24,\"newElementCount\":30}";
+
+        toolbar-customization-vertical-tabs = "[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"vertical-spacer\",\"customizableui-special-spring7\",\"customizableui-special-spring8\",\"customizableui-special-spring9\",\"urlbar-container\",\"customizableui-special-spring10\",\"customizableui-special-spring11\",\"customizableui-special-spring12\",\"downloads-button\",\"fxa-toolbar-menu-button\",\"ublock0_raymondhill_net-browser-action\",\"unified-extensions-button\",\"reset-pbm-toolbar-button\",\"new-tab-button\",\"alltabs-button\"]";
+
+        toolbar-customization-horizontal-tabs = "[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"]";
       in
       {
         settings = {
@@ -18,6 +22,7 @@
           "browser.ml.linkPreview.longPress" = false;
           "browser.quitShortcut.disabled" = true;
           "browser.search.separatePrivateDefault" = false;
+          "browser.tabs.closeWindowWithLastTab" = false;
           "browser.tabs.dragDrop.pinInteractionCue.delayMS" = 1500;
           "browser.tabs.fadeOutUnloadedTabs" = true;
           "browser.tabs.min_inactive_duration_before_unload" = 600000;
@@ -39,6 +44,9 @@
           "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
           "privacy.resistFingerprinting.letterboxing" = true;
           "privacy.resistFingerprinting" = false;
+          "sidebar.animation.expand-on-hover.delay-duration-ms" = 0;
+          "sidebar.animation.expand-on-hover.duration-ms" = 0;
+          "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
           "ui.key.menuAccessKeyFocuses" = false;
         };
 
@@ -48,8 +56,11 @@
             name = "default";
             settings = {
               # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
-              "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
+              "browser.uiCustomization.horizontalTabstrip" = toolbar-customization-horizontal-tabs;
+              "browser.uiCustomization.navBarWhenVerticalTabs" = toolbar-customization-vertical-tabs;
               "browser.uiCustomization.state" = toolbar-customization;
+              "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
+              "sidebar.verticalTabs" = true;
             };
 
             containersForce = true;
@@ -61,8 +72,10 @@
             name = "${username}";
             settings = {
               # Preferences set here will appear as user_pref; The preference reverts back to this value each time the browser is started.
-              "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = false;
+              "browser.uiCustomization.horizontalTabstrip" = toolbar-customization-horizontal-tabs;
+              "browser.uiCustomization.navBarWhenVerticalTabs" = toolbar-customization-vertical-tabs;
               "browser.uiCustomization.state" = toolbar-customization;
+              "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = false;
             };
 
             containersForce = true;
