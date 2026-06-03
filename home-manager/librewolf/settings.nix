@@ -27,6 +27,7 @@
           "browser.tabs.fadeOutUnloadedTabs" = true;
           "browser.tabs.min_inactive_duration_before_unload" = 600000;
           "browser.tabs.unloadOnLowMemory" = true;
+          "browser.toolbarbuttons.introduced.sidebar-button" = true;
           "browser.urlbar.shortcuts.bookmarks" = false;
           "browser.urlbar.shortcuts.history" = false;
           "browser.urlbar.shortcuts.tabs" = false;
@@ -76,6 +77,7 @@
               "browser.uiCustomization.navBarWhenVerticalTabs" = toolbar-customization-vertical-tabs;
               "browser.uiCustomization.state" = toolbar-customization;
               "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = false;
+              "sidebar.verticalTabs" = true;
             };
 
             containersForce = true;
