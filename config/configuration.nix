@@ -15,6 +15,9 @@
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.UTF-8";
 
+  services.desktopManager.plasma6.enable = true;
+  services.displayManager.plasma-login-manager.enable = true;
+
   users.users.alice = {
     isNormalUser = true;
     initialPassword = "pizza123";
