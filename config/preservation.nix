@@ -4,7 +4,8 @@
 
     preserveAt."/persistent" = {
       directories = [
-        #
+        "/etc/NetworkManager/system-connections"
+        "/var/db/sudo/lectured"
       ];
 
       files = [
@@ -17,7 +18,7 @@
         ];
 
         files = [
-          #
+          ".bash_history"
         ];
       };
     };
