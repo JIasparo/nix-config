@@ -1,10 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -27,10 +26,14 @@
     ];
   };
 
-  nix.settings.experimental-features = [
-      "nix-command"
-      "flakes"
+  environment.systemPackages = with pkgs; [
+      git
     ];
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   system.stateVersion = "26.11";
 }
