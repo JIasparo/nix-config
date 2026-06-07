@@ -62,7 +62,7 @@
 
         # Scratchpad keybinds
         # If Niri had them.
-        "${mod}+GRAVE".action.spawn = password-manager;
+        #"${mod}+GRAVE".action.spawn = password-manager;
 
         # Switch column/window focus
         "${mod}+${down}".action.focus-window-down = [ ];
