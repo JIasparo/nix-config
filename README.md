@@ -22,6 +22,7 @@ I am new to Nix, NixOS, and GNU/Linux itself. I cannot guarantee best practices;
 
 ## Config Structure
 
++ **config** - experimental nix config for testing out an impermanent setup and the dendritic pattern. Specifically intended for use on my HP laptop. Probably should have made a new Git branch.
 + **home-manager** - my programs and dotfiles managed by Home Manager
     + **default.nix** - used to import the desired modules
 + **hosts** - computers managed by this repo
