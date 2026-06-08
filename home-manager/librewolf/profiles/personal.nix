@@ -18,11 +18,11 @@
             };
 
             bookmarks = {
-              force = true;
+              force = true; # Whether to force override existing custom bookmarks.
               settings = [
                 {
                   name = "Bookmarks Toolbar";
-                  toolbar = true; # Turns this directory into the Bookmarks Toolbar.
+                  toolbar = true; # Turns this folder into the Bookmarks Toolbar.
                   bookmarks = [
                     {
                       name = "YouTube";
@@ -55,7 +55,7 @@
               ];
             };
 
-            containersForce = true;
+            containersForce = true; # Whether to force replace the existing containers configuration.
             containers = { };
           };
         };

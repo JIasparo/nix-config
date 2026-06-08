@@ -17,7 +17,7 @@
               "browser.uiCustomization.state" = toolbar-customization;
             };
 
-            containersForce = true;
+            containersForce = true; # Whether to force replace the existing containers configuration.
             containers = { };
           };
         };
