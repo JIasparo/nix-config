@@ -6,10 +6,10 @@
 
       modules = [
         "break"
-        {
-          type = "custom";
-          format = "────────────────────────────────────────────────";
-        }
+        #{
+        #  type = "title";
+        #  key = "UserHost";
+        #}
         {
           type = "os";
         }
@@ -19,10 +19,7 @@
         {
           type = "packages";
         }
-        {
-          type = "custom";
-          format = "────────────────────────────────────────────────";
-        }
+        "break"
         {
           type = "wm";
         }
@@ -32,9 +29,9 @@
         {
           type = "shell";
         }
+        "break"
         {
-          type = "custom";
-          format = "────────────────────────────────────────────────";
+          type = "board";
         }
         {
           type = "cpu";
@@ -45,10 +42,7 @@
         {
           type = "memory";
         }
-        {
-          type = "custom";
-          format = "────────────────────────────────────────────────";
-        }
+        "break"
         {
           type = "uptime";
         }
@@ -73,8 +67,9 @@
             '';
         }
         {
-          type = "custom";
-          format = "────────────────────────────────────────────────";
+          type = "colors";
+          key = "Colors";
+          symbol = "circle";
         }
         "break"
       ];
