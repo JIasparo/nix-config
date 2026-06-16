@@ -6,10 +6,6 @@
 
       modules = [
         "break"
-        #{
-        #  type = "title";
-        #  key = "UserHost";
-        #}
         {
           type = "os";
         }
@@ -30,9 +26,7 @@
           type = "shell";
         }
         "break"
-        {
-          type = "board";
-        }
+        "break"
         {
           type = "cpu";
         }
