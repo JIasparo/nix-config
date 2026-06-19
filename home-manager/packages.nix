@@ -22,10 +22,10 @@
       piper
       picard
       pwvucontrol
+      #sm64coopdx
       unrar
       vlc
       wl-clipboard
-      sm64coopdx
     ];
   };
 }
