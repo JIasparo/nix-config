@@ -28,10 +28,15 @@
                       name = "YouTube";
                       url = "https://YouTube.com";
                     }
-                    
+
                     {
                       name = "Anime/Manga";
                       bookmarks = [
+                        {
+                          name = "EverythingMoe";
+                          url = "https://everythingmoe.com/";
+                        }
+                        "separator"
                         {
                           name = "MyAnimeList";
                           url = "https://myanimelist.net/";
@@ -40,9 +45,10 @@
                           name = "AniList";
                           url = "https://anilist.co/";
                         }
+                        "separator"
                         {
-                          name = "AnimeKAI";
-                          url = "https://animekai.to/home";
+                          name = "Comix";
+                          url = "https://comix.to/";
                         }
                         {
                           name = "MangaDex";
