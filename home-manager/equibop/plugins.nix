@@ -185,7 +185,7 @@
           |Mreep mreeow :3
           |Mrrp nya~
           |Mrraow *purrs*
-          |Trans rights are human rights 🏳️‍⚧️
+          |Trans rights are human rights! 🏳️‍⚧️
           |Be gay, do crime
           |Reminder to stay hydrated! <3
           |Cloth gown gridlock :3
