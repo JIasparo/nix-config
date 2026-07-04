@@ -4,7 +4,7 @@
   config = {
     programs.niri.settings = {
       # niri msg windows # List all open windows.
-      
+
       window-rules = [
         # Game launcher rules
         {
@@ -13,10 +13,7 @@
 
           matches = [
             { app-id = "^(steam)$"; }
-            {
-              app-id = "^(electron)$";
-              title = "^(Heroic Games Launcher)$";
-            }
+            { app-id = "^(heroic)$"; }
           ];
         }
 
