@@ -15,6 +15,8 @@
         #MEDIA_PLAYER = "vlc";
       };
 
+      pointerCursor.enable = true;
+
       # The NixOS version the config was built upon.
       stateVersion = "24.11"; # Read Home Manager release notes before changing this value.
     };
