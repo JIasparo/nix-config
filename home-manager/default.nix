@@ -18,7 +18,7 @@
     ./git
     ./gtk.nix
     #./gytmdl
-    #./hyprland
+    #./hypr/hyprland
     ./kitty
     ./librewolf
     #./lutris.nix
@@ -39,7 +39,6 @@
     ./starship
     ./stylix
     #./swappy
-    ./swaync
     ./vscodium
     ./yazi
     ./yt-dlp

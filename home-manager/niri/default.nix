@@ -2,11 +2,16 @@
 
 {
   imports = [
+    # Required
     ./binds.nix
     ./monitors.nix
     ./rules.nix
     ./settings.nix
     ./workspaces.nix
+
+    # Optional
+    ./../sway/swaync.nix
+    #./../sway/swayidle.nix
   ];
 
   config = {
@@ -40,7 +45,7 @@
         # trying to stop a previous wayland compositor session
         systemctl --user is-active niri.service && systemctl --user stop niri.service
         # and then we start a new one
-        ${lib.getBin config.programs.niri.package}/bin/niri-session
+        ${lib.getExe' config.programs.niri.package "niri-session"}
       '';
       executable = true;
     };
