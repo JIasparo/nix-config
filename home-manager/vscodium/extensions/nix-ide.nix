@@ -16,7 +16,7 @@
 
       userSettings = {
         "nix.enableLanguageServer" = true;
-        #"nix.hiddenLanguageServerErrors" = [ "textDocument/definition" ];
+        "nix.hiddenLanguageServerErrors" = [ "textDocument/definition" ];
         "nix.serverPath" = "${lib.getExe pkgs.nixd}";
         "nix.serverSettings" = {
           "${lib.getName pkgs.nixd}" = {
