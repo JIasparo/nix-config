@@ -2,14 +2,18 @@
 
 {
   imports = [
+    # Required
     ./binds.nix
-    ./hypridle.nix
-    #./hyprlauncher.nix
-    ./hyprlock.nix
-    ./hyprpaper.nix
     ./monitors.nix
     ./rules.nix
     ./settings.nix
+
+    # Optional
+    ./../../sway/swaync.nix
+    ./../hypridle.nix
+    #./../hyprlauncher.nix
+    ./../hyprlock.nix
+    ./../hyprpaper.nix
   ];
 
   config = {
@@ -29,7 +33,7 @@
         # trying to stop a previous wayland compositor session
         systemctl --user is-active Hyprland.service && systemctl --user stop Hyprland.service
         # and then we start a new one
-        ${lib.getBin config.wayland.windowManager.hyprland.package}/bin/start-hyprland
+        ${lib.getExe' config.wayland.windowManager.hyprland.package "start-hyprland"}
       '';
       executable = true;
     };
