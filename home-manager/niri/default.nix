@@ -10,14 +10,14 @@
     ./workspaces.nix
 
     # Optional
+    ./../sway/swayidle.nix
     ./../sway/swaync.nix
-    #./../sway/swayidle.nix
   ];
 
   config = {
     xdg.portal = {
       enable = true;
-      config.common.default = ["gnome"];
+      config.common.default = [ "gnome" ];
       extraPortals = with pkgs; [
         xdg-desktop-portal-gnome
         xdg-desktop-portal-gtk
