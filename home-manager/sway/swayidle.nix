@@ -1,34 +1,39 @@
-{ ... }:
+{ lib, pkgs, ... }:
 
 {
   config = {
-    services.swayidle = {
+    services.swayidle = let
+      lock = "${lib.getExe pkgs.swaylock} -fF"; # Pam service required for swaylock.
+      display-niri = status: "niri msg action power-${status}-monitors";
+    in{
       enable = true;
 
+      events = {
+        #before-sleep = (display-niri "off") + "; " + lock;
+        before-sleep = (display-niri "off");
+        after-resume = (display-niri "on");
+        #lock = lock;
+        #unlock = (display-niri "on");
+      };
+
       timeouts = [
+        #{
+        #  # lock the screen after 5 minutes of inactivity
+        #  timeout = 300;
+        #  command = lock;
+        #}
+
         {
-          # lock the screen after 10 minutes of inactivity
+          # Turn off monitor(s) after 10 minutes of inactivity
           timeout = 600;
-          command = "${pkgs.swaylock}/bin/swaylock -fF";
+          command = (display-niri "off");
+          resumeCommand = (display-niri "on");
         }
 
         {
-          # Turn off monitor(s) after 15 minutes of inactivity
+          # Suspend PC after 15 minutes of inactivity
           timeout = 900;
-          command = "${pkgs.swaylock}/bin/swaylock -fF";
-        }
-
-        {
-          # Suspend PC after 20 minutes of inactivity
-          timeout = 1200;
-          command = "${pkgs.systemd}/bin/systemctl suspend";
-        }
-      ];
-
-      events = [
-        {
-          "before-sleep" = "${pkgs.swaylock}/bin/swaylock -fF";
-          "lock" = "lock";
+          command = "${lib.getExe' pkgs.systemd "systemctl"} suspend";
         }
       ];
     };
