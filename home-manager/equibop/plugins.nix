@@ -101,10 +101,13 @@
         removeAvatarDecoration = false; # Remove avatar decorations.
         removeNameplate = false; # Remove nameplates.
         removeProfileEffect = false; # Remove profile animation effects on open.
+        removeProfileFrame = false; # Remove profile frames.
         removeClanTag = false; # Remove clan tags.
         alwaysShowUsername = false; # Always show username instead of status.
-        removeShopAboveDM = false; # Remove shops above DMs list.
-        removeQuestsAboveDM = false; # Remove quests above DMs list.
+        removeShopAboveDms = false; # Remove shops above DMs list.
+        removeQuestsAboveDms = false; # Remove quests above DMs list.
+        removeLibraryAboveDms = false; # Remove library above DMs list.
+        removeFamilyCenterAboveDms = false; # Remove family center above DMs list.
         removeServerBoostInfo = true; # Remove server boost info above channel list.
         removeBillingSettings = false; # Remove billing settings.
         removeGiftButton = true; # Removes the gift button in the chat bar.
@@ -323,7 +326,7 @@
         hideMembersListTypingIndicators = false; # Hide other users' typing indicators from the members list.
         chatIcon = true; # Show an icon in the chat bar for modifying the plugin on the go.
         chatIconLeftClickAction = "global"; # What to do when left clicking the chat icon ("global": Toggle typing globally, "channel": Toggle typing in channel, "guild": Toggle typing in guild, "settings": Open plugin settings).
-        chatIconMiddleClickAction = "global"; # What to do when middle clicking the chat icon ("global": Toggle typing globally, "channel": Toggle typing in channel, "guild": Toggle typing in guild, "settings": Open plugin settings).
+        chatIconMiddleClickAction = "channel"; # What to do when middle clicking the chat icon ("global": Toggle typing globally, "channel": Toggle typing in channel, "guild": Toggle typing in guild, "settings": Open plugin settings).
         chatIconRightClickAction = "settings"; # What to do when right clicking the chat icon ("global": Toggle typing globally, "channel": Toggle typing in channel, "guild": Toggle typing in guild, "settings": Open plugin settings).
         chatContextMenu = true; # Show a dropdown in the chat context menu to modify plugin settings on the go.
         defaultHidden = true; # If enabled, the plugin will hide your typing from others in any DMs/channels/guilds/ not listed in "Disabled Locations" below. If disabled, the plugin will show your typing to others for any DMs/channels/guilds/ not listed in "Enabled Locations" below.
