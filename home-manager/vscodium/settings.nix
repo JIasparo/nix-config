@@ -10,7 +10,7 @@
           "editor.selectionClipboard" = false; # Turns off middle-mouse paste
           "editor.wordWrap" = "on";
           "extensions.autoCheckUpdates" = false;
-          "extensions.autoUpdate" = false;
+          "extensions.autoUpdate" = "off";
           "telemetry.telemetryLevel" = "off";
           "update.mode" = "none";
           "workbench.activityBar.location" = "top";
