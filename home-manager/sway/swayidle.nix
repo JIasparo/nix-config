@@ -1,10 +1,10 @@
-{ lib, pkgs, ... }:
+{ lib, pkgs, config, ... }:
 
 {
   config = {
     services.swayidle = let
       lock = "${lib.getExe pkgs.swaylock} -fF"; # Pam service required for swaylock.
-      display-niri = status: "niri msg action power-${status}-monitors";
+      display-niri = status: "${lib.getExe config.programs.niri.package} msg action power-${status}-monitors";
     in{
       enable = true;
 
