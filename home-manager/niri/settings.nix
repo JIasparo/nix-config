@@ -8,8 +8,8 @@
       };
 
       spawn-at-startup = [
-        #{ argv = [ "swaybg" "-i" "${config.stylix.image}" ]; }
         { argv = [ "${lib.getExe pkgs.swaybg}" "-i" "${config.stylix.image}" ]; }
+        { argv = [ "${lib.getExe pkgs.sway-audio-idle-inhibit}" ]; }
       ];
 
       hotkey-overlay = {
