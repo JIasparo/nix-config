@@ -1,57 +1,55 @@
-{ config, ... }:
+{ ... }:
 
 {
   config = {
-    programs.niri.settings.outputs = {
+    wayland.windowManager.niri.settings._children = [
       # niri msg outputs # List connected outputs.
 
-      # Dell Inc. Dell S2716DG
-      "DP-1" = {
-        enable = true;
-        focus-at-startup = true; # Whether to focus this output by default when niri starts.
-        scale = 1; # Niri will automatically pick a scale for this output when null.
-        variable-refresh-rate = "on-demand"; # Whether to enable variable refresh rate (VRR) on this output (false: no VRR, "on-demand": VRR is on for windows with the `variable-refresh-rate` window-rule, true: VRR always on).
+      {
+        # Dell Inc. Dell S2716DG
+        output = {
+          _args = [ "DP-1" ]; # Outputs are matched by connector name ("DP-1") or by the monitor manufacturer, model, and serial ("<manufacturer> <model> <serial>").
+          mode._args = [ "2560x1440@143.964" ]; # Set the monitor resolution and refresh rate ("<width>x<height>@<refresh rate>").
+          scale = 1; # Set the scale of the monitor.
+          transform = "normal"; # Rotate the output counter-clockwise ("normal", "90", "180", "270", "flipped", "flipped-90", "flipped-180", "flipped-270").
 
-        mode = {
-          width = 2560;
-          height = 1440;
-          refresh = null; # Niri will pick the highest refresh rate for the resolution when omitted.
+          # Set the position of the output in the global coordinate space.
+          position._props = {
+            x = 0;
+            y = 0;
+          };
+
+          # Enables variable refresh rate (VRR) on this output.
+          variable-refresh-rate = {
+            _props.on-demand = true; # VRR is on for windows with the `variable-refresh-rate` window-rule.
+          };
+
+          focus-at-startup = { }; # Whether to focus this output by default when niri starts.
         };
+      }
 
-        position = {
-          x = 0;
-          y = 0;
+      {
+        # Acer Technologies ED320QR S
+        output = {
+          _args = [ "DP-2" ]; # Outputs are matched by connector name ("DP-1") or by the monitor manufacturer, model, and serial ("<manufacturer> <model> <serial>").
+          mode._args = [ "1920x1080@144.001" ]; # Set the monitor resolution and refresh rate ("<width>x<height>@<refresh rate>").
+          scale = 1; # Set the scale of the monitor.
+          transform = "normal"; # Rotate the output counter-clockwise ("normal", "90", "180", "270", "flipped", "flipped-90", "flipped-180", "flipped-270").
+
+          # Set the position of the output in the global coordinate space.
+          position._props = {
+            x = 2560;
+            y = 0;
+          };
+
+          # Enables variable refresh rate (VRR) on this output.
+          variable-refresh-rate = {
+            _props.on-demand = true; # VRR is on for windows with the `variable-refresh-rate` window-rule.
+          };
+
+          #focus-at-startup = { }; # Whether to focus this output by default when niri starts.
         };
-
-        transform = {
-          flipped = false; # Whether to flip this output vertically.
-          rotation = 0; # Counter-clockwise rotation of this output in degrees (0, 90, 180, 270).
-        };
-      };
-
-      # Acer Technologies ED320QR S
-      "DP-2" = {
-        enable = true;
-        focus-at-startup = false; # Whether to focus this output by default when niri starts.
-        scale = 1; # Niri will automatically pick a scale for this output when null.
-        variable-refresh-rate = "on-demand"; # Whether to enable variable refresh rate (VRR) on this output (false: no VRR, "on-demand": VRR is on for windows with the `variable-refresh-rate` window-rule, true: VRR always on).
-
-        mode = {
-          width = 1920;
-          height = 1080;
-          refresh = null; # Niri will pick the highest refresh rate for the resolution when omitted.
-        };
-
-        position = {
-          x = config.programs.niri.settings.outputs."DP-1".mode.width/ config.programs.niri.settings.outputs."DP-1".scale;
-          y = 0;
-        };
-
-        transform = {
-          flipped = false; # Whether to flip this output vertically.
-          rotation = 0; # Counter-clockwise rotation of this output in degrees (0, 90, 180, 270).
-        };
-      };
-    };
+      }
+    ];
   };
 }

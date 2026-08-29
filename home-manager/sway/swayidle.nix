@@ -4,7 +4,7 @@
   config = {
     services.swayidle = let
       lock = "${lib.getExe pkgs.swaylock} -fF"; # Pam service required for swaylock.
-      display-niri = status: "${lib.getExe config.programs.niri.package} msg action power-${status}-monitors";
+      display-niri = status: "${lib.getExe config.wayland.windowManager.niri.package} msg action power-${status}-monitors";
     in{
       enable = true;
 

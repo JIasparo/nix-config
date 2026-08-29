@@ -1,105 +1,154 @@
-{ config, ... }:
+{ ... }:
 
 {
   config = {
-    programs.niri.settings = {
+    wayland.windowManager.niri.settings._children = [
+      # Window rules
       # niri msg windows # List all open windows.
 
-      window-rules = [
+      {
         # Game launcher rules
-        {
-          open-on-workspace = "${config.programs.niri.settings.workspaces.workspace-04.name}";
-          open-focused = true;
+        window-rule._children = [
+          { open-on-workspace = "workspace-04"; }
+          { open-focused = true; }
 
-          matches = [
-            { app-id = "^(steam)$"; }
-            { app-id = "^(heroic)$"; }
-          ];
-        }
+          {
+            match._props = {
+              app-id = "^(steam)$";
+            };
+          }
+          {
+            match._props = {
+              app-id = "^(heroic)$";
+            };
+          }
+        ];
+      }
 
+      {
         # Game rules
-        {
-          open-on-workspace = "${config.programs.niri.settings.workspaces.workspace-05.name}";
-          open-focused = true;
-          variable-refresh-rate = true; # Whether windows use VRR when displayed on an output with `on-demand` VRR.
+        window-rule._children = [
+          { open-on-workspace = "workspace-05"; }
+          { open-focused = true; }
+          { variable-refresh-rate = true; } # Whether windows use VRR when displayed on an output with `on-demand` VRR.
 
-          matches = [
-            { app-id = "^(steam_app_\\d+)$"; }
-            { app-id = "^(cs2)$"; }
-            { app-id = "^(sm64coopdx)$"; }
-          ];
-        }
+          {
+            match._props = {
+              app-id = "^(steam_app_\\d+)$";
+            };
+          }
+          {
+            match._props = {
+              app-id = "^(cs2)$";
+            };
+          }
+          {
+            match._props = {
+              app-id = "^(sm64coopdx)$";
+            };
+          }
+        ];
+      }
 
+      {
         # Instant messenger rules
-        {
-          open-on-workspace = "${config.programs.niri.settings.workspaces.workspace-08.name}";
-          open-focused = true;
+        window-rule._children = [
+          { open-on-workspace = "workspace-08"; }
+          { open-focused = true; }
 
-          matches = [
-            { app-id = "^(equibop)$"; }
-          ];
-        }
+          {
+            match._props = {
+              app-id = "^(equibop)$";
+            };
+          }
+        ];
+      }
 
+      {
         # Multimedia rules
-        {
+        window-rule._children = [
           #
 
-          matches = [
-            { app-id = "^(vlc)$"; }
-            { app-id = "^(mpv)$"; }
-          ];
-        }
+          {
+            match._props = {
+              app-id = "^(vlc)$";
+            };
+          }
+          {
+            match._props = {
+              app-id = "^(mpv)$";
+            };
+          }
+        ];
+      }
 
+      {
         # Recording software rules
-        {
-          open-on-workspace = "${config.programs.niri.settings.workspaces.workspace-09.name}";
-          open-focused = true;
+        window-rule._children = [
+          { open-on-workspace = "workspace-09"; }
+          { open-focused = true; }
 
-          matches = [
-            { app-id = "^(com.obsproject.Studio)$"; }
-          ];
-        }
+          {
+            match._props = {
+              app-id = "^(com.obsproject.Studio)$";
+            };
+          }
+        ];
+      }
 
+      {
         # Screen recording window rules
-        {
-          border = {
-            active.color = "#B32834";
-            inactive.color = "#792F35";
-          };
+        window-rule._children = [
+          {
+            focus-ring = {
+              active-color = "#B32834";
+              inactive-color = "#792F35";
+            };
+          }
+          {
+            border = {
+              active-color = "#B32834";
+              inactive-color = "#792F35";
+            };
+          }
+          { shadow.color = "#792F35"; }
 
-          focus-ring = {
-            active.color = "#B32834";
-            inactive.color = "#792F35";
-          };
+          {
+            match._props = {
+              is-window-cast-target = true;
+            };
+          }
+        ];
+      }
 
-          shadow.color = "#792F35";
-
-          matches = [
-            { is-window-cast-target = true; }
-          ];
-        }
-
+      {
         # Sensitive window rules
-        {
-          block-out-from = "screencast"; # ("screencast": Window cannot be seen by screen recorders but can be seen by screenshots, "screen-capture": Window cannot be seen by screen recorders or screenshots).
+        window-rule._children = [
+          { block-out-from = "screencast"; } # Blocks out windows from xdg-desktop-portal screencasts ("screencast": Window cannot be seen by screen recorders but can be seen by screenshots, "screen-capture": Window cannot be seen by screen recorders or screenshots).
 
-          matches = [
-            { app-id = "^(Bitwarden)$"; }
-          ];
-        }
-      ];
+          {
+            match._props = {
+              app-id = "^(Bitwarden)$";
+            };
+          }
+        ];
+      }
 
-      # niri msg layers # List all open layer-shell surfaces.
-      layer-rules = [
+      # Layer rules
+      # niri msg layers # List all open layer-shell
+
+      {
         # Sensitive layer rules
-        {
-          block-out-from = "screencast"; # ("screencast": Window cannot be seen by screen recorders but can be seen by screenshots, "screen-capture": Window cannot be seen by screen recorders or screenshots).
+        layer-rule._children = [
+          { block-out-from = "screencast"; } # Blocks out windows from xdg-desktop-portal screencasts ("screencast": Window cannot be seen by screen recorders but can be seen by screenshots, "screen-capture": Window cannot be seen by screen recorders or screenshots).
 
-          matches = [
-            { namespace = "^(swaync-notification-window)$"; }
-          ];
-        }
-      ];
-    };
+          {
+            match._props = {
+              namespace = "^(swaync-notification-window)$";
+            };
+          }
+        ];
+      }
+    ];
   };
 }

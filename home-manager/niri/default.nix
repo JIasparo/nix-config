@@ -1,4 +1,9 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   imports = [
@@ -15,26 +20,12 @@
   ];
 
   config = {
-    xdg.portal = {
-      enable = true;
-      config.common.default = [ "gnome" ];
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-gnome
-        xdg-desktop-portal-gtk
-      ];
-    };
-
     home.packages = with pkgs; [
       nautilus
     ];
 
-    programs.niri = {
+    wayland.windowManager.niri = {
       enable = true;
-
-      settings.xwayland-satellite = {
-        enable = true;
-        path = "${lib.getExe pkgs.xwayland-satellite}";
-      };
     };
 
     # Taken from github:ryan4yin/nix-config.
@@ -45,7 +36,7 @@
         # trying to stop a previous wayland compositor session
         systemctl --user is-active niri.service && systemctl --user stop niri.service
         # and then we start a new one
-        ${lib.getExe' config.programs.niri.package "niri-session"}
+        ${lib.getExe' config.wayland.windowManager.niri.package "niri-session"}
       '';
       executable = true;
     };
