@@ -16,9 +16,6 @@
     #mango.url = "github:mangowm/mango";
     #mango.inputs.nixpkgs.follows = "nixpkgs";
 
-    niri.url = "github:sodiboo/niri-flake";
-    niri.inputs.nixpkgs.follows = "nixpkgs";
-
     #nixcord.url = "github:kaylorben/nixcord";
     #nixcord.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -46,7 +43,6 @@
             ./hosts/nixos/${hostname}
             inputs.disko.nixosModules.disko
             #inputs.mango.nixosModules.mango
-            inputs.niri.nixosModules.niri
           ];
           specialArgs = { inherit inputs username useremail hostname configpath; };
         };
@@ -60,8 +56,6 @@
             inputs.stylix.homeModules.stylix
             #inputs.nixcord.homeModules.nixcord
             #inputs.mango.hmModules.mango
-            inputs.niri.homeModules.niri
-            inputs.niri.homeModules.stylix
           ];
           extraSpecialArgs = { inherit inputs username useremail hostname configpath; };
         };
