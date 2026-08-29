@@ -1,4 +1,4 @@
-{ config, ... }:
+{ lib, pkgs, config, ... }:
 
 {
   config = {
@@ -9,7 +9,7 @@
       ];
 
       exec-once = [
-        "swaybg -i ${config.stylix.image}"
+        "${lib.getExe pkgs.swaybg} -i ${config.stylix.image}"
         "easyeffects --service-mode --hide-window"
       ];
 

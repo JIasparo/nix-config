@@ -18,10 +18,6 @@
       ];
     };
 
-    home.packages = with pkgs; [
-      swaybg
-    ];
-
     wayland.windowManager.mango = {
       enable = true;
     };
