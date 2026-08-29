@@ -37,7 +37,7 @@
         closeServerFolder = true; # Close folder when selecting a server in that folder.
         forceOpen = false; # Force a folder to open when switching to a server of that folder.
         enableNestedFolders = false;
-        nestedFolders = {};
+        nestedFolders = { };
         keepIcons = false; # Keep showing guild icons in the primary guild bar folder when it's open in the BetterFolders sidebar.
         showFolderIcon = 0; # Show the folder icon above the folder guilds in the BetterFolders sidebar (0: Never, 1: Always, 2: When more than one folder is expanded).
       };
@@ -341,6 +341,10 @@
         enabled = true;
       };
 
+      TenorGifSearch = {
+        enabled = true;
+      };
+
       TypingIndicator = {
         enabled = true;
         includeCurrentChannel = true; # Whether to show the typing indicator for the currently selected channel.
@@ -388,6 +392,8 @@
 
       WebKeybinds = {
         enabled = true;
+        showNavigationButtons = true; # Show the back/forward navigation buttons in the title bar.
+        overrideCommonKeybinds = true; # Allows Discord to override the most common tab navigation keybinds (ctrl+t, ctrl+shift+t, ctrl+tab, ctrl+shift+tab, ctrl+n). Only works in a few select browsers that allow website keybinds to take priority over native ones.
       };
 
       WebScreenShareFixes = {
