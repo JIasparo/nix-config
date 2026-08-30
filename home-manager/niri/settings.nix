@@ -135,7 +135,7 @@
       cursor = {
         xcursor-theme = "${config.stylix.cursor.name}";
         xcursor-size = config.stylix.cursor.size;
-        hide-after-inactive-ms = 1000; # The cursor will automatically hide once this number of milliseconds passes since the last cursor movement.
+        #hide-after-inactive-ms = 1000; # The cursor will automatically hide once this number of milliseconds passes since the last cursor movement.
       };
 
       clipboard.disable-primary = { }; # Disable primary selection clipboard (middle mouse paste).
