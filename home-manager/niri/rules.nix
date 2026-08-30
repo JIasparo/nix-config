@@ -30,6 +30,7 @@
         window-rule._children = [
           { open-on-workspace = "workspace-05"; }
           { open-focused = true; }
+          { open-fullscreen = true; }
           { variable-refresh-rate = true; } # Whether windows use VRR when displayed on an output with `on-demand` VRR.
 
           {
