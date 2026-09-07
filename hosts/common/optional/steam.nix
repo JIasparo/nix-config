@@ -21,7 +21,7 @@
         ];
       };
 
-      gamemode.enable = true;
+      gamemode.enable = true; # GameMode allows games to request a set of Linux specific optimisations. Steam launch option: `gamemoderun %command%`.
 
       gamescope = {
         enable = true;
