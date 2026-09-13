@@ -16,6 +16,7 @@
     ./fonts.nix
     ./fzf.nix
     ./git
+    ./gram
     ./gtk.nix
     #./gytmdl
     #./hypr/hyprland
@@ -27,7 +28,7 @@
     ./network-applet.nix
     ./niri
     #./nixcord
-    ./obs-studio
+    #./obs-studio
     ./obsidian
     ./packages.nix
     ./playerctl.nix
