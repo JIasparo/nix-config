@@ -103,6 +103,7 @@
         removeProfileEffect = false; # Remove profile animation effects on open.
         removeProfileFrame = false; # Remove profile frames.
         removeClanTag = false; # Remove clan tags.
+        removeDisplayNameStyles = false; # Remove animated/styled display names in the member list.
         alwaysShowUsername = false; # Always show username instead of status.
         removeShopAboveDms = false; # Remove shops above DMs list.
         removeQuestsAboveDms = false; # Remove quests above DMs list.
