@@ -4,6 +4,7 @@
   config = {
     home.packages = with pkgs; [
       # Add font packages here:
+      nerd-fonts.symbols-only
     ];
 
     fonts.fontconfig = {
