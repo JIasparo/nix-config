@@ -9,7 +9,6 @@
   config = {
     programs.gram = {
       enable = true;
-      #settings = {tacos = {tuesdays = {};};};
     };
   };
 }
