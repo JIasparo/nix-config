@@ -4,6 +4,8 @@
   config = {
     home.packages = with pkgs; [
       #archipelago
+      #amarok # test this music player
+      #fooyin # test this music player
       #bitwarden-desktop # Uses outdated version of Electron
       blender
       #(blender.override { config.cudaSupport = true; config.rocmSupport=true; }) # Blender with GPU support.
@@ -20,7 +22,7 @@
       #nexusmods-app-unfree
       #orca-slicer
       piper
-      picard
+      #picard
       pwvucontrol
       #sm64coopdx
       unrar
