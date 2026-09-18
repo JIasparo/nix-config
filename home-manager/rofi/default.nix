@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./settings.nix
     ./theme.nix
   ];
 
@@ -11,12 +12,6 @@
 
       plugins = with pkgs; [
         rofi-calc
-      ];
-
-      modes = [
-        "drun"
-        "calc"
-        "window"
       ];
     };
   };
