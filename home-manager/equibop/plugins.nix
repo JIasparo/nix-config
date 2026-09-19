@@ -10,6 +10,10 @@
         prioritizeServerProfile = true; # Prioritize Server Profile when left clicking your account panel.
       };
 
+      AddAttachments = {
+        enabled = true;
+      };
+
       AlwaysExpandRoles = {
         enabled = true;
         hideArrow = true;
@@ -40,6 +44,14 @@
         nestedFolders = { };
         keepIcons = false; # Keep showing guild icons in the primary guild bar folder when it's open in the BetterFolders sidebar.
         showFolderIcon = 0; # Show the folder icon above the folder guilds in the BetterFolders sidebar (0: Never, 1: Always, 2: When more than one folder is expanded).
+      };
+
+      BetterImageEditor = {
+        enabled = true;
+        librarySize = 24; # How many pictures to keep on each shelf (6, 12, 24, 48).
+        rememberCrop = true; # Restore the zoom and position you last used for a picture.
+        saveCropped = true; # Keep a copy of each picture after you crop it.
+        askBeforeSavingCropped = true; # Ask first, instead of keeping the cropped copy automatically.
       };
 
       BetterInvites = {
@@ -268,6 +280,10 @@
       PermissionsViewer = {
         enabled = true;
         permissionsSortOrder = 0; # The sort method used for defining which role grants a user a certain permission (0: Highest Role, 1: Lowest Role).
+      };
+
+      ReactionTimestamps = {
+        enabled = true;
       };
 
       RelationshipNotifier = {
