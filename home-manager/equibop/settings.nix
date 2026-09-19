@@ -58,8 +58,8 @@
       };
 
       # Updater
-      autoUpdate = false; # When enabled, Equicord will automatically download and install updates.
-      autoUpdateNotification = false; # When enabled, receive a notification when Equicord finishes downloading an update in the background.
+      autoUpdate = true; # When enabled, Equicord will automatically download and install updates.
+      autoUpdateNotification = true; # When enabled, receive a notification when Equicord finishes downloading an update in the background.
     };
   };
 }
