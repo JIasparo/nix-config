@@ -44,7 +44,8 @@
         "${mod}+${alter}+S".spawn-sh = "steam steam://open/console";
         "${mod}+Space".spawn-sh = menu;
         "${mod}+W".spawn = browser;
-        "${mod}+${alter}+W".spawn-sh = "${browser} --new-window about:profiles";
+        "${mod}+${alter}+W".spawn-sh = "${browser} --private-window";
+        #"${mod}+${alter}+W".spawn-sh = "${browser} --new-window about:profiles";
         "Ctrl+Alt+Delete".spawn-sh = system-monitor;
 
         # Global application actions
