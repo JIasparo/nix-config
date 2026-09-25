@@ -10,8 +10,6 @@
     # Optional
     ./../../common/optional/bluetooth.nix
     #./../../common/optional/gnome.nix
-    #./../../common/optional/hyprland
-    #./../../common/optional/niri
     ./../../common/optional/greetd.nix
     ./../../common/optional/gvfs.nix
     #./../../common/optional/xdg.nix
