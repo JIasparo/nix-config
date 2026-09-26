@@ -138,6 +138,15 @@
         #hide-after-inactive-ms = 1000; # The cursor will automatically hide once this number of milliseconds passes since the last cursor movement.
       };
 
+      # A zoomed-out view of your workspaces and windows for easier navigation.
+      overview = {
+        zoom = 0.5; # Control how much the workspaces zoom out in the overview (0 - 0.75, where lower values make everything smaller).
+
+        workspace-shadow = {
+          off = { }; # Turns off the shadow behind the workspaces visible in the overview.
+        };
+      };
+
       clipboard.disable-primary = { }; # Disable primary selection clipboard (middle mouse paste).
 
       # Niri shows important keybinds, even if they are not bound to a key.
@@ -161,6 +170,10 @@
         hot-corners = {
           off = { }; # Turns off hot corners.
         };
+      };
+
+      recent-windows = {
+        #off = { }; # Turns off the recent windows switcher (Alt-Tab).
       };
     };
   };
