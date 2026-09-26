@@ -402,6 +402,10 @@
         echoCancellation = false; # Whether to use echo cancellation in voice messages.
       };
 
+      VoiceMessagesInBackground = {
+        enabled = true;
+      };
+
       VolumeBooster = {
         enabled = true;
         multiplier = 2.0; # Volume multiplier (1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5).
@@ -440,10 +444,12 @@
         disableAdoptTagPrompt = false; # Disable the prompt to adopt tags.
         jsonGateway = false; # Forces JSON on gateway reconnect.
         hideVoiceIndicatorForMutedChannels = false; # Hide voice indictor in server list when only active channels are muted.
+        noOnboarding = false; # Skips the server onboarding by gaslighting it.
       };
 
       NoTrack = {
         disableAnalytics = true; # Disable Discord's tracking, i.e., analytics and 'science.'
+        diableStackDumping = false; # Print a native stack trace to the console when Discord crashes. Requires full restart.
       };
 
       Settings = {
