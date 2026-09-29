@@ -3,13 +3,15 @@
 {
   config = {
     # Enable flakes
-    nix.settings.experimental-features = [
-      "nix-command"
-      "flakes"
-    ];
+    nix.settings = {
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
 
-    # Set the $NIX_PATH env to follow flake.nix
-    nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+      # Set the $NIX_PATH env to follow flake.nix
+      nix-path = [ "nixpkgs=${inputs.nixpkgs}" ];
+    };
 
     # Garbage collection
     nix.optimise.automatic = true;
