@@ -28,9 +28,15 @@
 
       icons = {
         enable = true;
-        package = pkgs.papirus-icon-theme;
-        light = "Papirus-Light";
-        dark = "Papirus-Dark";
+        #package = pkgs.papirus-icon-theme;
+        #light = "Papirus-Light";
+        #dark = "Papirus-Dark";
+        package = pkgs.super-tiny-icons;
+        light = "SuperTinyIcons";
+        dark = "SuperTinyIcons";
+        #package = pkgs.gruvbox-plus-icons;
+        #light = "Gruvbox-Plus-Light";
+        #dark = "Gruvbox-Plus-Dark";
       };
 
       fonts = {
