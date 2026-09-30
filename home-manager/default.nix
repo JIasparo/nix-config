@@ -25,7 +25,7 @@
     #./lutris.nix
     #./mangowc
     ./mpv.nix
-    ./network-applet.nix
+    #./network-applet.nix # Used for system tray
     ./niri
     #./nixcord
     #./obs-studio
