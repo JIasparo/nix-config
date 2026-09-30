@@ -4,9 +4,9 @@
   config = {
     home.packages = with pkgs; [
       #archipelago
-      #amarok # test this music player
-      #fooyin # test this music player
-      #bitwarden-desktop # Uses outdated version of Electron
+      amarok # test this music player
+      fooyin # test this music player
+      #bitwarden-desktop
       blender
       #(blender.override { config.cudaSupport = true; config.rocmSupport=true; }) # Blender with GPU support.
       (bottles.override { removeWarningPopup = true; })
@@ -19,7 +19,6 @@
       heroic
       #kdePackages.okular # Good for annotating PDFs
       #krita
-      #nexusmods-app-unfree
       #orca-slicer
       piper
       #picard
